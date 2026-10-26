@@ -39,12 +39,15 @@ st.markdown("""
         padding:1.4rem 1.6rem;margin:0 0 1.4rem;color:#1F2937;}
     .hero h1 {margin:0;font-size:1.55rem;font-weight:800;letter-spacing:.2px;}
     .hero p  {margin:.35rem 0 0;font-size:.95rem;color:#64748B;}
+    .kpi-grid {display:grid;gap:.9rem;margin-bottom:.4rem;
+        grid-template-columns:repeat(5,1fr);}
     .kpi {background:#FFFFFF;border:1px solid #E5E7EB;
         border-top:3px solid #0F766E;border-radius:10px;
-        padding:1rem 1.1rem .9rem;height:100%;}
+        padding:1rem 1.1rem .9rem;min-width:0;}
     .kpi .label {font-size:.74rem;font-weight:700;color:#64748B;
         text-transform:uppercase;letter-spacing:.6px;}
-    .kpi .value {font-size:1.7rem;font-weight:800;color:#111827;line-height:1.15;}
+    .kpi .value {font-size:1.7rem;font-weight:800;color:#111827;
+        line-height:1.15;word-break:break-word;}
     .kpi .sub   {font-size:.78rem;color:#94A3B8;margin-top:.15rem;}
     .sec-pill {display:inline-block;font-size:1.02rem;font-weight:800;
         color:#1F2937;margin:.6rem 0 .3rem;
@@ -67,6 +70,25 @@ st.markdown("""
         border:1px solid #E5E7EB;}
     [data-testid="stDataFrame"] {border-radius:10px;overflow:hidden;
         border:1px solid #E5E7EB;}
+    [data-testid="stMetric"] {background:#FFFFFF;border:1px solid #E5E7EB;
+        border-radius:10px;padding:.6rem .9rem;}
+
+    /* ---------- Responsive: tablet & mobile ---------- */
+    @media (max-width: 1000px) {
+        .kpi-grid {grid-template-columns:repeat(3,1fr);}
+    }
+    @media (max-width: 640px) {
+        .block-container {padding-left:.8rem;padding-right:.8rem;}
+        .kpi-grid {grid-template-columns:repeat(2,1fr);gap:.6rem;}
+        .kpi {padding:.8rem .8rem .7rem;}
+        .kpi .value {font-size:1.3rem;}
+        .hero {padding:1rem 1.1rem;}
+        .hero h1 {font-size:1.2rem;}
+        .hero p {font-size:.85rem;}
+        .sec-pill {font-size:.92rem;}
+        .stTabs [data-baseweb="tab"] {padding:.4rem .6rem;font-size:.85rem;}
+        .insight {font-size:.82rem;padding:.7rem .8rem;}
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -180,13 +202,11 @@ kpis = [
     ("On-time Go-live", f"{on_time:.0f}%", f"{len(pj_done)} proyek selesai"),
     ("SLA Support", f"{sla_pct:.0f}%", f"{titik(len(tk))} tiket"),
 ]
-for col, (label, val, sub) in zip(st.columns(5), kpis):
-    col.markdown(f"""
-    <div class="kpi">
-        <div class="label">{label}</div>
-        <div class="value">{val}</div>
-        <div class="sub">{sub}</div>
-    </div>""", unsafe_allow_html=True)
+kpi_html = '<div class="kpi-grid">'
+for label, val, sub in kpis:
+    kpi_html += (f'<div class="kpi"><div class="label">{label}</div>'
+                 f'<div class="value">{val}</div><div class="sub">{sub}</div></div>')
+st.markdown(kpi_html + "</div>", unsafe_allow_html=True)
 
 st.write("")
 tab1, tab2, tab3, tab4, tab5 = st.tabs(
