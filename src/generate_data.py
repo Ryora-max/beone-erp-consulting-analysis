@@ -39,7 +39,7 @@ INDUSTRI = {
 # Produk: SAP B1 dominan; S/4HANA GROW ~2023; Business Insight = produk
 # in-house (App Store ~2024); TSplus = distributor resmi; add-on kecil
 PRODUK = ["SAP Business One", "SAP S/4HANA GROW", "Add-on & Integrasi",
-          "Business Insight", "TSplus"]
+          "Business Insight", "TSplus", "Training/Xpertise Academy"]
 # Sumber lead: bukti publik = telemarketing intern, workshop Business Hacks,
 # website; referral khas bisnis konsultan
 SUMBER = ["Website", "Referral Klien", "Event/Workshop", "Telemarketing",
@@ -59,10 +59,10 @@ N_LEAD = {2019: 260, 2020: 300, 2021: 350, 2022: 420,
 # Probabilitas produk per tahun
 def prob_produk(tahun):
     if tahun <= 2022:
-        return [0.74, 0.06, 0.12, 0.00, 0.08]
+        return [0.72, 0.06, 0.11, 0.00, 0.07, 0.04]
     if tahun <= 2024:
-        return [0.62, 0.15, 0.12, 0.04, 0.07]   # BI mulai ~2023
-    return [0.55, 0.22, 0.11, 0.06, 0.06]
+        return [0.60, 0.15, 0.11, 0.04, 0.06, 0.04]   # BI mulai ~2023
+    return [0.52, 0.21, 0.10, 0.06, 0.05, 0.06]
 
 # Tren sumber akuisisi (digital naik, telemarketing melandai)
 def prob_sumber(tahun):
@@ -85,7 +85,8 @@ DEAL = {"SAP Business One":    dict(mu=5.7, sigma=0.55),   # median ~300jt
         "SAP S/4HANA GROW":    dict(mu=6.8, sigma=0.50),   # median ~900jt
         "Add-on & Integrasi":  dict(mu=4.7, sigma=0.60),   # median ~110jt
         "Business Insight":    dict(mu=4.3, sigma=0.50),   # median ~75jt
-        "TSplus":              dict(mu=3.5, sigma=0.55)}   # median ~33jt
+        "TSplus":              dict(mu=3.5, sigma=0.55),   # median ~33jt
+        "Training/Xpertise Academy": dict(mu=3.9, sigma=0.45)}  # ~50jt
 
 def sample_deal(produk, n=1):
     p = DEAL[produk]
@@ -145,7 +146,7 @@ for _, r in leads.iterrows():
     # sales cycle: S4HANA lebih panjang; produk ringan lebih singkat
     mu_cycle = {"SAP Business One": 105, "SAP S/4HANA GROW": 170,
                 "Add-on & Integrasi": 60, "Business Insight": 45,
-                "TSplus": 20}[r.produk_minat]
+                "TSplus": 20, "Training/Xpertise Academy": 25}[r.produk_minat]
     cycle = max(10, int(rng.normal(mu_cycle, mu_cycle * 0.30)))
     nilai = float(sample_deal(r.produk_minat)[0])
     tgl_buat = pd.Timestamp(int(r.tahun), int(r.bulan),
@@ -176,6 +177,8 @@ MODUL = {
     "Business Insight": ["Dashboard & Reporting", "Mobile Analytics",
                           "KPI Monitoring"],
     "TSplus": ["Remote Access", "Advanced Security", "Server Farm"],
+    "Training/Xpertise Academy": ["SAP B1 End-User", "SAP B1 Functional",
+                                   "Campus Seminar/Workshop", "In-house Training"],
 }
 proyek_rows, pid = [], 0
 for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
@@ -187,7 +190,7 @@ for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
     # durasi implementasi: B1 3-8 bln, S4HANA 6-14 bln, add-on 1-3 bln
     mu_dur = {"SAP Business One": 160, "SAP S/4HANA GROW": 300,
               "Add-on & Integrasi": 60, "Business Insight": 45,
-              "TSplus": 15}[o.produk]
+              "TSplus": 15, "Training/Xpertise Academy": 20}[o.produk]
     dur_target = max(20, int(rng.normal(mu_dur, mu_dur * 0.18)))
     # ~38% proyek terlambat (masalah scope creep/data migrasi khas ERP)
     if rng.random() < 0.38:

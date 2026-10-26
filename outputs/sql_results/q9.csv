@@ -1,9 +1,9 @@
 industri,tiket,proyek,tiket_per_proyek,sla_pct
-Manufaktur,1024,101,10.1,89.3
-Jasa Profesional,179,18,9.9,87.2
-Retail,478,49,9.8,87.2
-Konstruksi,274,28,9.8,92.3
-Pertambangan,185,20,9.3,87.6
-Trading/Distribusi,656,72,9.1,88.4
-Agrikultur,184,21,8.8,83.2
-F&B,246,29,8.5,82.5
+Konstruksi,226,22,10.3,85.8
+Trading/Distribusi,723,72,10.0,89.1
+Retail,458,46,10.0,86.9
+F&B,351,36,9.8,88.0
+Jasa Profesional,151,16,9.4,90.1
+Manufaktur,986,106,9.3,88.7
+Agrikultur,204,22,9.3,83.3
+Pertambangan,129,15,8.6,88.4

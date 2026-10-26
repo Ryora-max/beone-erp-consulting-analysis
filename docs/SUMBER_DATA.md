@@ -55,3 +55,10 @@ realistis industri konsultan ERP UKM:
 - Relasi korporat formal BeOne↔CORE (kepemilikan saham) belum
   terdokumentasi publik — dimodelkan sebagai "sister company" berdasarkan
   bukti personel bersama, bukan klaim legal.
+
+## Lihat juga
+
+- `docs/PROFIL_BEONE.md` — timeline legal 2012-2026, struktur grup
+  (CORE, Xpertise Academy, Gooday Cloud, BMOlsson), partner vendor,
+  klien terverifikasi, relasi kampus.
+- `docs/ANALISIS_KONEKSI.md` — analisis kemungkinan koneksi BeOne-POLINDRA.

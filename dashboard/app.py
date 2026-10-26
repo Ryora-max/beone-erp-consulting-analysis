@@ -22,7 +22,7 @@ C_PINK, C_PURPLE, C_RED = "#EC4899", "#8B5CF6", "#EF4444"
 PALETTE = [C_BLUE, C_CYAN, C_GREEN, C_AMBER, C_PINK, C_PURPLE, C_ORANGE, C_TEAL]
 PRODUK_COLOR = {"SAP Business One": C_BLUE, "SAP S/4HANA GROW": C_PURPLE,
                 "Add-on & Integrasi": C_AMBER, "Business Insight": C_GREEN,
-                "TSplus": C_CYAN}
+                "TSplus": C_CYAN, "Training/Xpertise Academy": C_PINK}
 
 st.markdown("""
 <style>
