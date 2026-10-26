@@ -74,7 +74,7 @@ Fastest Growing Partner (2018) · Indonesia Partner of the Year (2018) · Strate
 ## 5. Analisis pola jaringan
 
 ### Profil kuantitatif
-- ~15 mitra terverifikasi ✅, ~5 klaim lemah, 5 kategori jaringan
+- Di tabel: **19 entri ✅ terverifikasi, 3 🟡 klaim, 2 🔶 inferensi** (dihitung dari tabel di atas), 5 kategori jaringan
 - Jangkar tunggal: SAP (platform inti seluruh revenue engine)
 
 ### Temuan analitis

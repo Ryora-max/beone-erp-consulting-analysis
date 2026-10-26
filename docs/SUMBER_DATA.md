@@ -32,13 +32,16 @@ realistis industri konsultan ERP UKM:
 
 | Parameter | Nilai simulasi | Catatan |
 |---|---|---|
-| Win rate pipeline | ~25-35% per sumber (referral tertinggi, telemarketing terendah) | pola umum B2B: warm > cold |
-| Nilai deal | B1: median ~Rp300 jt; S/4HANA: ~Rp900 jt; Add-on: ~Rp110 jt | distribusi lognormal |
-| Sales cycle | B1 ~105 hari; S/4HANA ~170 hari; Add-on ~60 hari | ERP = keputusan multi-stakeholder |
-| Proyek terlambat | ~35% | benchmark literatur implementasi ERP (40-60% late umum dilaporkan) |
-| Budget overrun | ~28% proyek | scope creep & data readiness |
-| SLA attainment | ~85% | target umum managed support |
-| Hypercare spike | ~60% tiket muncul ≤90 hari pasca go-live | pola umum pasca-implementasi |
+| Win rate pipeline | Terukur: Referral 53,5% … Telemarketing 17,1% (keseluruhan 35,6%) | pola umum B2B: warm > cold; **asumsi**, bukan data BeOne |
+| Nilai deal | Terukur (median Won): B1 Rp304 jt; S/4HANA Rp764 jt; Add-on Rp120 jt | distribusi lognormal |
+| Sales cycle | Terukur (median Won): B1 108 hari; S/4HANA 186 hari; Add-on 58 hari | ERP = keputusan multi-stakeholder |
+| Proyek terlambat | Terukur: 40,1% (peluang telat bergantung produk, modul, level PIC, durasi — lihat DATA_DICTIONARY) | **Tidak ada benchmark yang diverifikasi di project ini**; faktor risiko adalah asumsi kualitatif tentang kompleksitas ERP |
+| Budget overrun | Terukur: 26,1% proyek overrun >3% | scope creep & data readiness (asumsi) |
+| SLA attainment | Terukur: 88,5% | asumsi |
+| Hypercare spike | ~60% tiket muncul ≤90 hari pasca go-live; proyek terlambat rata-rata 12,5 vs 8,5 tiket | asumsi pemodelan |
+
+> Nilai "Terukur" dihitung otomatis di `outputs/key_metrics.md`
+> (`python src/key_metrics.py`) dan bisa berubah jika parameter generator diubah.
 
 ## Batasan & etika
 

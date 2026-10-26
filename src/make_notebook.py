@@ -144,19 +144,23 @@ Critical attainment harus tertinggi — triase bekerja."""),
 
 MD("""## 5. Prediktor keterlambatan (Random Forest, fitur saat kickoff)"""),
 CODE("""from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_auc_score, classification_report
+from sklearn.model_selection import StratifiedKFold, cross_val_score, cross_val_predict
+from sklearn.metrics import classification_report
 
 d = done.merge(konsultan[["id_konsultan","level"]],on="id_konsultan")
 d["late"] = (d.status_proyek=="Go-live Terlambat").astype(int)
-X = pd.get_dummies(d[["produk","industri","modul_utama",
-                      "durasi_target_hari","budget_jt","level"]],drop_first=True)
+X = pd.get_dummies(d[["produk","modul_utama","durasi_target_hari","level"]],
+                   drop_first=True).astype(float)
 y = d.late
-Xtr,Xte,ytr,yte = train_test_split(X,y,test_size=.3,random_state=7,stratify=y)
-rf = RandomForestClassifier(n_estimators=200,max_depth=6,random_state=7,n_jobs=-1).fit(Xtr,ytr)
-prob = rf.predict_proba(Xte)[:,1]
-print("ROC-AUC:",round(roc_auc_score(yte,prob),3))
-print(classification_report(yte,(prob>=.5).astype(int),digits=2))
+# n proyek selesai kecil (~340) -> 1 split train/test tidak stabil; pakai 5-fold CV
+rf = RandomForestClassifier(n_estimators=300,max_depth=3,min_samples_leaf=10,
+                            random_state=7,n_jobs=-1)
+cv = StratifiedKFold(5,shuffle=True,random_state=7)
+aucs = cross_val_score(rf,X,y,cv=cv,scoring="roc_auc")
+print(f"ROC-AUC 5-fold CV: {aucs.mean():.3f} +- {aucs.std():.3f}  (base rate telat={y.mean():.1%})")
+oof = cross_val_predict(rf,X,y,cv=cv,method="predict_proba")[:,1]
+print(classification_report(y,(oof>=.4).astype(int),digits=2))
+rf.fit(X,y)
 
 imp = pd.Series(rf.feature_importances_,index=X.columns).nlargest(10).sort_values()
 fig,ax=plt.subplots(figsize=(8,3.6))
@@ -167,10 +171,10 @@ plt.tight_layout(); plt.savefig("../outputs/figures/delay_predictor.png"); plt.s
 MD("""## Ringkasan & rekomendasi
 
 1. **Marketing:** alihkan budget dari cold outreach ke referral program +
-   event workshop — win rate 2-3× lebih tinggi.
-2. **Delivery:** screening risiko delay saat kickoff (durasi target,
-   budget, level PIC, modul integrasi) → assign PM senior ke proyek
-   berisiko; pasang milestone gate untuk data readiness klien.
+   event workshop — win rate Referral/Event ±2,2–3,1× telemarketing.
+2. **Delivery:** model delay hanya **moderat** (AUC CV ≈ 0,6) — pakai untuk
+   *triase* saat kickoff (produk, modul, durasi target, level PIC), bukan
+   keputusan tunggal; pasang milestone gate untuk data readiness klien.
 3. **Support:** tiket how-to dominan → bundel training pasca go-live +
    knowledge base; menekan volume sekaligus recurring revenue.
 4. **Portofolio:** pertahankan volume SAP B1 untuk cash flow; tumbuhkan

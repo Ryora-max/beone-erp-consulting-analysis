@@ -11,7 +11,7 @@
 | produk_minat | str | SAP Business One / SAP S/4HANA GROW / Add-on & Integrasi |
 | status_lead | str | Converted / Lost - no budget / Lost - kompetitor / Cold |
 
-## `opportunities` (1.189 baris) — pipeline resmi
+## `opportunities` (1.221 baris) — pipeline resmi
 | Kolom | Tipe | Deskripsi |
 |---|---|---|
 | id_opportunity | str PK | ID opportunity |
@@ -23,7 +23,7 @@
 | tanggal_buat / tanggal_close | date | Periode pipeline |
 | sales_cycle_hari | int | Durasi close = close − buat |
 
-## `proyek` (393 baris) — delivery implementasi (dari opp Won)
+## `proyek` (389 baris) — delivery implementasi (dari opp Won)
 | Kolom | Tipe | Deskripsi |
 |---|---|---|
 | id_proyek | str PK | |
@@ -35,7 +35,7 @@
 | budget_jt / aktual_jt | float | Biaya direncanakan vs aktual |
 | status_proyek | str | Go-live Tepat Waktu / Terlambat / On Progress |
 
-## `tiket` (3.135 baris) — support pasca go-live
+## `tiket` (3.397 baris) — support pasca go-live
 | Kolom | Tipe | Deskripsi |
 |---|---|---|
 | id_tiket | str PK | |
@@ -60,3 +60,21 @@
 leads 1—n opportunities 1—0..1 proyek 1—n tiket
 konsultan 1—n proyek (sebagai PIC)
 ```
+
+## Asumsi pemodelan (mekanisme yang di-encode di generator)
+
+Data sintetis tidak mengandung "fakta" — ia mengandung **mekanisme yang
+sengaja ditetapkan** agar analisis punya sinyal yang bisa diuji. Daftar
+lengkapnya, supaya tidak ada temuan yang tampak seperti hasil observasi:
+
+| Mekanisme | Parameter | Dipakai di |
+|---|---|---|
+| Peluang proyek telat | base 0,28 + produk (S/4HANA +0,14, Add-on +0,10, B1 +0,03, BI −0,02, TSplus −0,10, Training −0,08) + modul kompleks (+0,08) + level PIC (Junior +0,12, Senior −0,10) + durasi target >115% rata-rata produk (+0,08) | `generate_data.py` |
+| Beban hypercare | tiket/proyek ~ Poisson(8,5) bila tepat, Poisson(12,5) bila telat (min. 3) | cohort delivery→support |
+| Win rate per sumber | Referral > Event > Partner SAP > Website > LinkedIn > Telemarketing | funnel |
+| Struktur grup | PT CORE hanya menjual SAP B1, mulai 2024 (±30% deal B1) | analisis entitas |
+
+**Cara membaca temuan:** "pipeline analisis memulihkan efek yang
+diasumsikan" adalah klaim yang sah; "BeOne punya efek ini" **bukan**.
+Reprodusibilitas: seed 42 + `random_state` turunan; dua kali run
+menghasilkan CSV identik.

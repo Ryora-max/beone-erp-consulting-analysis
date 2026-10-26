@@ -1,394 +1,390 @@
 id_proyek,id_opportunity,industri,produk,entitas,modul_utama,id_konsultan,tanggal_mulai,target_golive,tanggal_golive,durasi_target_hari,durasi_aktual_hari,budget_jt,aktual_jt,status_proyek
-P00001,O00001,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K002,2020-02-29,2020-08-03,2020-08-15,156,168.0,421.0,391.0,Go-live Terlambat
-P00002,O00002,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K011,2019-10-25,2019-12-16,2019-12-14,52,50.0,147.0,146.0,Go-live Tepat Waktu
-P00003,O00004,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K011,2020-01-27,2020-06-05,2020-05-23,130,117.0,318.0,319.0,Go-live Tepat Waktu
-P00004,O00007,Manufaktur,TSplus,BeOne HQ,Server Farm,K002,2019-07-27,2019-08-16,2019-08-13,20,17.0,30.0,30.0,Go-live Tepat Waktu
-P00005,O00011,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Analytics,K026,2020-01-16,2020-11-19,2021-01-30,308,380.0,347.0,408.0,Go-live Terlambat
-P00006,O00012,Manufaktur,SAP Business One,BeOne HQ,Financials,K002,2019-09-10,2020-02-28,2020-02-13,171,156.0,280.0,271.0,Go-live Tepat Waktu
-P00007,O00014,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K007,2019-09-27,2020-03-14,2020-03-02,169,157.0,485.0,461.0,Go-live Tepat Waktu
-P00008,O00017,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K007,2020-01-13,2020-10-26,2020-12-20,287,342.0,668.0,652.0,Go-live Terlambat
-P00009,O00027,Manufaktur,SAP Business One,BeOne HQ,Sales,K008,2020-01-07,2020-05-24,2020-06-25,138,170.0,110.0,109.0,Go-live Terlambat
-P00010,O00030,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K005,2020-03-12,2020-04-26,2020-04-24,45,43.0,79.0,79.0,Go-live Tepat Waktu
-P00011,O00043,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K027,2019-05-17,2019-10-21,2019-10-18,157,154.0,184.0,182.0,Go-live Tepat Waktu
-P00012,O00044,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K008,2019-12-07,2020-05-07,2020-04-21,152,136.0,514.0,507.0,Go-live Tepat Waktu
-P00013,O00045,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K008,2020-02-04,2020-08-29,2020-10-06,207,245.0,274.0,273.0,Go-live Terlambat
-P00014,O00046,Manufaktur,TSplus,BeOne HQ,Server Farm,K006,2020-02-02,2020-02-22,2020-02-21,20,19.0,30.0,29.0,Go-live Tepat Waktu
-P00015,O00052,Manufaktur,SAP Business One,BeOne HQ,Reporting,K008,2020-04-30,2020-10-21,2020-10-16,174,169.0,477.0,454.0,Go-live Tepat Waktu
-P00016,O00059,Manufaktur,TSplus,BeOne HQ,Advanced Security,K008,2020-01-09,2020-01-29,2020-01-27,20,18.0,15.0,15.0,Go-live Tepat Waktu
-P00017,O00060,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K027,2020-04-26,2020-10-12,2020-09-23,169,150.0,532.0,682.0,Go-live Tepat Waktu
-P00018,O00063,Manufaktur,SAP Business One,BeOne HQ,Financials,K027,2020-03-29,2020-06-21,2020-06-19,84,82.0,243.0,230.0,Go-live Tepat Waktu
-P00019,O00067,F&B,SAP Business One,BeOne HQ,Financials,K003,2020-02-12,2020-06-22,2020-06-08,131,117.0,105.0,125.0,Go-live Tepat Waktu
-P00020,O00070,F&B,SAP Business One,BeOne HQ,Inventory,K007,2020-02-27,2020-08-15,2020-08-02,170,157.0,574.0,554.0,Go-live Tepat Waktu
-P00021,O00073,Manufaktur,SAP Business One,BeOne HQ,Financials,K009,2020-02-07,2020-08-30,2020-10-04,205,240.0,440.0,433.0,Go-live Terlambat
-P00022,O00076,Konstruksi,SAP Business One,BeOne HQ,Sales,K003,2019-10-11,2020-02-19,2020-02-10,131,122.0,262.0,243.0,Go-live Tepat Waktu
-P00023,O00080,Retail,SAP Business One,BeOne HQ,Reporting,K025,2020-04-17,2020-08-27,2020-08-25,132,130.0,569.0,569.0,Go-live Tepat Waktu
-P00024,O00082,Trading/Distribusi,TSplus,BeOne HQ,Advanced Security,K004,2019-12-30,2020-01-19,2020-01-17,20,18.0,44.0,41.0,Go-live Tepat Waktu
-P00025,O00084,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K010,2019-12-10,2020-03-24,2020-04-09,105,121.0,322.0,369.0,Go-live Terlambat
-P00026,O00087,Pertambangan,SAP Business One,BeOne HQ,Production,K027,2019-12-10,2020-05-12,2020-05-10,154,152.0,460.0,445.0,Go-live Tepat Waktu
-P00027,O00091,Manufaktur,TSplus,BeOne HQ,Remote Access,K012,2019-12-18,2020-01-07,2020-01-10,20,23.0,32.0,35.0,Go-live Terlambat
-P00028,O00094,Agrikultur,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K027,2019-08-15,2019-09-11,2019-09-18,27,34.0,26.0,24.0,Go-live Terlambat
-P00029,O00100,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K011,2020-01-29,2020-06-14,2020-05-31,137,123.0,248.0,281.0,Go-live Tepat Waktu
-P00030,O00101,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K012,2019-07-07,2019-11-18,2019-12-11,134,157.0,230.0,277.0,Go-live Terlambat
-P00031,O00102,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K027,2019-06-28,2019-09-10,2019-10-05,74,99.0,199.0,203.0,Go-live Terlambat
-P00032,O00108,Manufaktur,SAP Business One,BeOne HQ,Inventory,K004,2019-10-10,2020-02-17,2020-02-03,130,116.0,389.0,389.0,Go-live Tepat Waktu
-P00033,O00110,Konstruksi,TSplus,BeOne HQ,Advanced Security,K014,2019-05-14,2019-06-03,2019-06-09,20,26.0,24.0,30.0,Go-live Terlambat
-P00034,O00111,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K024,2019-12-15,2020-05-06,2020-04-27,143,134.0,327.0,329.0,Go-live Tepat Waktu
-P00035,O00112,Agrikultur,Add-on & Integrasi,BeOne HQ,Coretax,K009,2020-04-12,2020-06-04,2020-06-10,53,59.0,73.0,68.0,Go-live Terlambat
-P00036,O00119,Agrikultur,Add-on & Integrasi,BeOne HQ,Coretax,K008,2021-02-06,2021-04-01,2021-03-27,54,49.0,81.0,81.0,Go-live Tepat Waktu
-P00037,O00120,Agrikultur,TSplus,BeOne HQ,Advanced Security,K011,2020-10-02,2020-10-22,2020-10-20,20,18.0,13.0,14.0,Go-live Tepat Waktu
-P00038,O00121,Manufaktur,SAP Business One,BeOne HQ,Sales,K025,2020-04-21,2020-10-02,2020-09-13,164,145.0,646.0,611.0,Go-live Tepat Waktu
-P00039,O00128,F&B,SAP Business One,BeOne HQ,Financials,K024,2021-04-05,2021-07-30,2021-07-17,116,103.0,432.0,497.0,Go-live Tepat Waktu
-P00040,O00129,Retail,SAP S/4HANA GROW,BeOne HQ,Finance,K023,2020-09-10,2021-05-25,2021-04-26,257,228.0,1188.0,1173.0,Go-live Tepat Waktu
-P00041,O00132,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K006,2021-02-18,2021-08-09,2021-07-28,172,160.0,189.0,177.0,Go-live Tepat Waktu
-P00042,O00134,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K011,2020-12-11,2021-08-11,2021-08-04,243,236.0,187.0,183.0,Go-live Tepat Waktu
-P00043,O00136,Jasa Profesional,TSplus,BeOne HQ,Remote Access,K026,2020-05-12,2020-06-01,2020-05-31,20,19.0,22.0,21.0,Go-live Tepat Waktu
-P00044,O00139,Konstruksi,SAP Business One,BeOne HQ,Inventory,K001,2020-10-12,2021-03-18,2021-03-12,157,151.0,233.0,291.0,Go-live Tepat Waktu
-P00045,O00141,F&B,SAP Business One,BeOne HQ,Inventory,K002,2020-12-16,2021-06-20,2021-06-19,186,185.0,264.0,244.0,Go-live Tepat Waktu
-P00046,O00142,F&B,SAP Business One,BeOne HQ,Inventory,K009,2020-09-30,2021-04-08,2021-03-22,190,173.0,146.0,185.0,Go-live Tepat Waktu
-P00047,O00146,Manufaktur,SAP Business One,BeOne HQ,Financials,K002,2021-03-19,2021-08-31,2021-08-29,165,163.0,402.0,506.0,Go-live Tepat Waktu
-P00048,O00148,Manufaktur,SAP Business One,BeOne HQ,Reporting,K007,2020-12-12,2021-06-01,2021-08-15,171,246.0,420.0,539.0,Go-live Terlambat
-P00049,O00154,Manufaktur,Add-on & Integrasi,BeOne HQ,POS Integration,K002,2021-02-17,2021-04-12,2021-05-02,54,74.0,108.0,139.0,Go-live Terlambat
-P00050,O00156,Retail,SAP Business One,BeOne HQ,Financials,K025,2020-07-06,2020-12-05,2020-11-30,152,147.0,273.0,268.0,Go-live Tepat Waktu
-P00051,O00158,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K011,2021-02-28,2021-09-05,2021-10-11,189,225.0,523.0,522.0,Go-live Terlambat
-P00052,O00165,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K002,2020-09-07,2021-09-30,2021-09-19,388,377.0,750.0,790.0,Go-live Tepat Waktu
-P00053,O00168,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K001,2020-08-11,2021-02-18,2021-02-09,191,182.0,291.0,285.0,Go-live Tepat Waktu
-P00054,O00169,Retail,SAP Business One,BeOne HQ,Financials,K009,2021-05-23,2021-10-28,2022-01-01,158,223.0,492.0,466.0,Go-live Terlambat
-P00055,O00171,Manufaktur,SAP Business One,BeOne HQ,Sales,K009,2021-02-13,2021-07-21,2021-07-13,158,150.0,268.0,266.0,Go-live Tepat Waktu
-P00056,O00174,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K003,2021-03-17,2021-08-25,2021-10-31,161,228.0,284.0,313.0,Go-live Terlambat
-P00057,O00175,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K027,2020-11-16,2021-03-29,2021-04-12,133,147.0,387.0,408.0,Go-live Terlambat
-P00058,O00182,F&B,SAP Business One,BeOne HQ,Production,K024,2020-12-14,2021-05-27,2021-05-15,164,152.0,217.0,205.0,Go-live Tepat Waktu
-P00059,O00184,Retail,SAP Business One,BeOne HQ,Sales,K004,2020-11-25,2021-06-12,2021-05-31,199,187.0,171.0,219.0,Go-live Tepat Waktu
-P00060,O00187,Konstruksi,SAP Business One,BeOne HQ,Production,K010,2020-12-09,2021-06-20,2021-06-17,193,190.0,332.0,333.0,Go-live Tepat Waktu
-P00061,O00190,Agrikultur,SAP Business One,BeOne HQ,Purchasing,K024,2021-03-05,2021-08-14,2021-08-09,162,157.0,390.0,489.0,Go-live Tepat Waktu
-P00062,O00191,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K026,2021-02-22,2021-07-30,2021-07-23,158,151.0,406.0,448.0,Go-live Tepat Waktu
-P00063,O00193,Pertambangan,SAP Business One,BeOne HQ,Financials,K013,2021-01-12,2021-05-27,2021-05-19,135,127.0,267.0,248.0,Go-live Tepat Waktu
-P00064,O00200,Jasa Profesional,SAP Business One,BeOne HQ,Reporting,K007,2020-08-13,2021-01-31,2021-03-06,171,205.0,354.0,355.0,Go-live Terlambat
-P00065,O00201,Retail,SAP Business One,BeOne HQ,Reporting,K013,2021-05-11,2021-10-10,2021-09-25,152,137.0,884.0,953.0,Go-live Tepat Waktu
-P00066,O00202,Pertambangan,SAP Business One,BeOne HQ,Sales,K011,2021-02-06,2021-06-29,2021-06-23,143,137.0,203.0,260.0,Go-live Tepat Waktu
-P00067,O00204,Retail,SAP Business One,BeOne HQ,Inventory,K023,2021-01-18,2021-05-13,2021-05-22,115,124.0,512.0,479.0,Go-live Terlambat
-P00068,O00208,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Finance,K027,2020-12-27,2021-10-05,2021-09-26,282,273.0,1137.0,1088.0,Go-live Tepat Waktu
-P00069,O00210,Retail,SAP Business One,BeOne HQ,Financials,K023,2020-08-01,2021-02-11,2021-04-05,194,247.0,136.0,153.0,Go-live Terlambat
-P00070,O00211,F&B,SAP Business One,BeOne HQ,Inventory,K013,2020-06-29,2020-12-04,2021-01-18,158,203.0,86.0,86.0,Go-live Terlambat
-P00071,O00212,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K001,2020-05-27,2020-12-17,2021-01-05,204,223.0,218.0,201.0,Go-live Terlambat
-P00072,O00213,Agrikultur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K001,2020-05-11,2020-07-18,2020-07-12,68,62.0,270.0,262.0,Go-live Tepat Waktu
-P00073,O00215,Jasa Profesional,SAP Business One,BeOne HQ,Production,K002,2020-12-01,2021-05-19,2021-05-27,169,177.0,377.0,395.0,Go-live Terlambat
-P00074,O00218,Agrikultur,SAP Business One,BeOne HQ,Purchasing,K023,2021-03-24,2021-07-20,2021-08-07,118,136.0,499.0,497.0,Go-live Terlambat
-P00075,O00220,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K004,2020-07-31,2020-12-07,2020-12-31,129,153.0,147.0,159.0,Go-live Terlambat
-P00076,O00221,F&B,Add-on & Integrasi,BeOne HQ,WMS,K008,2020-05-05,2020-07-11,2020-07-05,67,61.0,67.0,85.0,Go-live Tepat Waktu
-P00077,O00224,F&B,SAP Business One,BeOne HQ,Production,K003,2020-07-02,2020-12-20,2020-12-13,171,164.0,203.0,195.0,Go-live Tepat Waktu
-P00078,O00230,Manufaktur,SAP Business One,BeOne HQ,Reporting,K025,2021-04-11,2021-09-15,2021-08-31,157,142.0,304.0,299.0,Go-live Tepat Waktu
-P00079,O00232,Retail,SAP Business One,BeOne HQ,Purchasing,K003,2021-02-07,2021-09-02,2021-08-17,207,191.0,323.0,337.0,Go-live Tepat Waktu
-P00080,O00234,Manufaktur,SAP Business One,BeOne HQ,Production,K011,2021-03-16,2021-08-26,2021-09-13,163,181.0,324.0,316.0,Go-live Terlambat
-P00081,O00235,Retail,SAP Business One,BeOne HQ,Financials,K023,2020-11-06,2021-04-21,2021-04-01,166,146.0,472.0,460.0,Go-live Tepat Waktu
-P00082,O00237,Jasa Profesional,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K005,2020-07-01,2020-08-24,2020-08-19,54,49.0,105.0,112.0,Go-live Tepat Waktu
-P00083,O00240,Retail,SAP Business One,BeOne HQ,Inventory,K011,2020-10-14,2021-04-12,2021-06-05,180,234.0,315.0,342.0,Go-live Terlambat
-P00084,O00241,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,WMS,K014,2021-05-08,2021-06-29,2021-06-24,52,47.0,105.0,102.0,Go-live Tepat Waktu
-P00085,O00251,Manufaktur,SAP Business One,BeOne HQ,Sales,K002,2022-04-08,2022-09-30,2022-10-19,175,194.0,123.0,149.0,Go-live Terlambat
-P00086,O00255,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K011,2021-07-21,2022-01-22,2022-01-11,185,174.0,310.0,319.0,Go-live Tepat Waktu
-P00087,O00257,Pertambangan,TSplus,BeOne HQ,Server Farm,K005,2021-07-31,2021-08-20,2021-08-19,20,19.0,38.0,35.0,Go-live Tepat Waktu
-P00088,O00261,F&B,SAP Business One,BeOne HQ,Financials,K003,2021-04-29,2021-10-05,2021-09-28,159,152.0,182.0,168.0,Go-live Tepat Waktu
-P00089,O00262,Manufaktur,SAP Business One,BeOne HQ,Reporting,K013,2021-08-30,2021-12-28,2022-02-10,120,164.0,105.0,132.0,Go-live Terlambat
-P00090,O00264,Manufaktur,SAP Business One,BeOne HQ,Financials,K023,2022-06-19,2022-12-03,2022-11-22,167,156.0,186.0,239.0,Go-live Tepat Waktu
-P00091,O00265,Retail,SAP Business One,BeOne HQ,Purchasing,K014,2021-12-23,2022-05-24,2022-06-09,152,168.0,355.0,348.0,Go-live Terlambat
-P00092,O00267,Manufaktur,SAP Business One,BeOne HQ,Inventory,K026,2021-09-21,2021-12-18,2021-12-12,88,82.0,402.0,479.0,Go-live Tepat Waktu
-P00093,O00269,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K001,2021-09-30,2021-12-03,2021-12-01,64,62.0,178.0,196.0,Go-live Tepat Waktu
-P00094,O00270,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K007,2022-03-19,2022-08-27,2022-08-23,161,157.0,187.0,184.0,Go-live Tepat Waktu
-P00095,O00273,F&B,SAP Business One,BeOne HQ,Production,K027,2021-08-27,2022-01-25,2022-01-15,151,141.0,152.0,166.0,Go-live Tepat Waktu
-P00096,O00279,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Procurement,K007,2022-02-22,2023-02-02,2022-12-22,345,303.0,599.0,597.0,Go-live Tepat Waktu
-P00097,O00281,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K025,2021-05-09,2021-10-20,2021-10-15,164,159.0,567.0,554.0,Go-live Tepat Waktu
-P00098,O00285,Manufaktur,SAP Business One,BeOne HQ,Sales,K025,2021-12-18,2022-04-30,2022-06-18,133,182.0,96.0,96.0,Go-live Terlambat
-P00099,O00287,Manufaktur,Training/Xpertise Academy,BeOne HQ,In-house Training,K010,2021-04-14,2021-05-04,2021-05-02,20,18.0,15.0,19.0,Go-live Tepat Waktu
-P00100,O00291,Manufaktur,SAP Business One,BeOne HQ,Production,K004,2022-05-20,2022-11-24,2022-11-12,188,176.0,252.0,252.0,Go-live Tepat Waktu
-P00101,O00292,Manufaktur,SAP Business One,BeOne HQ,Production,K014,2022-01-14,2022-06-26,2022-08-25,163,223.0,595.0,572.0,Go-live Terlambat
-P00102,O00294,Retail,SAP Business One,BeOne HQ,Inventory,K023,2022-05-20,2022-11-01,2022-10-26,165,159.0,154.0,179.0,Go-live Tepat Waktu
-P00103,O00295,Manufaktur,SAP Business One,BeOne HQ,Sales,K004,2021-08-08,2022-01-06,2022-01-28,151,173.0,395.0,494.0,Go-live Terlambat
-P00104,O00306,Retail,SAP Business One,BeOne HQ,Financials,K003,2021-12-10,2022-04-22,2022-06-15,133,187.0,130.0,128.0,Go-live Terlambat
-P00105,O00309,F&B,SAP Business One,BeOne HQ,Purchasing,K003,2021-10-26,2022-04-09,2022-05-14,165,200.0,646.0,597.0,Go-live Terlambat
-P00106,O00310,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K007,2022-03-05,2022-07-23,2022-08-17,140,165.0,274.0,258.0,Go-live Terlambat
-P00107,O00311,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,POS Integration,K026,2021-12-09,2022-02-12,2022-02-05,65,58.0,117.0,118.0,Go-live Tepat Waktu
-P00108,O00313,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K026,2021-06-03,2021-11-11,2021-11-30,161,180.0,434.0,423.0,Go-live Terlambat
-P00109,O00319,Agrikultur,SAP S/4HANA GROW,BeOne HQ,Analytics,K010,2021-07-27,2022-06-27,2022-08-01,335,370.0,1069.0,1060.0,Go-live Terlambat
-P00110,O00320,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K023,2022-04-30,2022-11-22,2023-01-03,206,248.0,177.0,172.0,Go-live Terlambat
-P00111,O00326,Konstruksi,SAP Business One,BeOne HQ,Production,K014,2022-03-27,2022-08-09,2022-08-03,135,129.0,84.0,100.0,Go-live Tepat Waktu
-P00112,O00332,Retail,Add-on & Integrasi,BeOne HQ,Coretax,K003,2021-12-24,2022-02-12,2022-02-25,50,63.0,159.0,150.0,Go-live Terlambat
-P00113,O00335,Manufaktur,Add-on & Integrasi,BeOne HQ,POS Integration,K026,2021-05-18,2021-07-29,2021-08-21,72,95.0,203.0,259.0,Go-live Terlambat
-P00114,O00338,Manufaktur,SAP Business One,BeOne HQ,Reporting,K009,2021-07-10,2021-11-19,2021-11-15,132,128.0,119.0,111.0,Go-live Tepat Waktu
-P00115,O00339,F&B,SAP Business One,BeOne HQ,Production,K027,2021-05-30,2021-10-02,2021-09-22,125,115.0,358.0,335.0,Go-live Tepat Waktu
-P00116,O00342,Manufaktur,SAP Business One,BeOne HQ,Sales,K010,2022-02-23,2022-08-15,2022-08-13,173,171.0,325.0,321.0,Go-live Tepat Waktu
-P00117,O00348,Manufaktur,SAP Business One,BeOne HQ,Reporting,K002,2022-04-19,2022-10-03,2022-10-13,167,177.0,679.0,648.0,Go-live Terlambat
-P00118,O00350,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K025,2022-01-25,2022-06-03,2022-05-19,129,114.0,188.0,191.0,Go-live Tepat Waktu
-P00119,O00354,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K025,2021-12-07,2022-03-20,2022-03-07,103,90.0,103.0,99.0,Go-live Tepat Waktu
-P00120,O00355,Manufaktur,SAP Business One,BeOne HQ,Sales,K003,2022-03-03,2022-10-16,2022-09-22,227,203.0,569.0,554.0,Go-live Tepat Waktu
-P00121,O00360,Manufaktur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K013,2021-09-24,2021-12-01,2021-11-26,68,63.0,44.0,41.0,Go-live Tepat Waktu
-P00122,O00363,Pertambangan,SAP Business One,BeOne HQ,Production,K003,2021-08-27,2022-04-16,2022-04-06,232,222.0,308.0,299.0,Go-live Tepat Waktu
-P00123,O00366,Konstruksi,SAP Business One,BeOne HQ,Inventory,K005,2021-04-15,2021-10-12,2021-11-25,180,224.0,75.0,74.0,Go-live Terlambat
-P00124,O00371,Pertambangan,SAP Business One,BeOne HQ,Inventory,K013,2022-01-26,2022-07-09,2022-06-23,164,148.0,168.0,171.0,Go-live Tepat Waktu
-P00125,O00373,Manufaktur,SAP Business One,BeOne HQ,Production,K009,2021-08-04,2022-02-15,2022-04-15,195,254.0,437.0,476.0,Go-live Terlambat
-P00126,O00378,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K008,2021-05-01,2021-09-24,2021-09-11,146,133.0,992.0,977.0,Go-live Tepat Waktu
-P00127,O00382,Konstruksi,SAP Business One,BeOne HQ,Financials,K002,2021-08-07,2022-01-12,2022-03-05,158,210.0,647.0,657.0,Go-live Terlambat
-P00128,O00385,Agrikultur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K006,2021-08-19,2021-09-28,2021-09-27,40,39.0,75.0,72.0,Go-live Tepat Waktu
-P00129,O00393,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K027,2022-11-07,2023-02-17,2023-03-02,102,115.0,462.0,496.0,Go-live Terlambat
-P00130,O00397,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K002,2023-02-05,2023-08-08,2023-08-23,184,199.0,382.0,369.0,Go-live Terlambat
-P00131,O00399,Konstruksi,SAP Business One,BeOne HQ,Production,K003,2023-02-17,2023-06-05,2023-06-03,108,106.0,357.0,335.0,Go-live Tepat Waktu
-P00132,O00400,Retail,Add-on & Integrasi,BeOne HQ,WMS,K026,2022-10-22,2022-12-29,2022-12-21,68,60.0,535.0,544.0,Go-live Tepat Waktu
-P00133,O00411,Jasa Profesional,SAP Business One,BeOne HQ,Production,K003,2022-07-20,2022-12-10,2022-12-29,143,162.0,182.0,174.0,Go-live Terlambat
-P00134,O00413,Agrikultur,SAP Business One,BeOne HQ,Financials,K001,2022-12-30,2023-07-13,2023-06-30,195,182.0,265.0,321.0,Go-live Tepat Waktu
-P00135,O00414,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K010,2023-01-29,2023-03-09,2023-03-05,39,35.0,107.0,106.0,Go-live Tepat Waktu
-P00136,O00415,Jasa Profesional,SAP Business One,BeOne HQ,Reporting,K025,2022-06-11,2023-01-01,2022-12-18,204,190.0,154.0,148.0,Go-live Tepat Waktu
-P00137,O00418,F&B,SAP Business One,BeOne HQ,Purchasing,K009,2022-08-06,2023-01-15,2023-01-07,162,154.0,609.0,584.0,Go-live Tepat Waktu
-P00138,O00422,Retail,SAP Business One,BeOne HQ,Production,K001,2023-04-18,2023-09-08,2023-08-22,143,126.0,284.0,286.0,Go-live Tepat Waktu
-P00139,O00430,Retail,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K023,2022-09-27,2022-10-17,2022-10-15,20,18.0,51.0,50.0,Go-live Tepat Waktu
-P00140,O00432,Retail,Add-on & Integrasi,BeOne HQ,POS Integration,K024,2022-07-30,2022-10-13,2022-10-09,75,71.0,232.0,279.0,Go-live Tepat Waktu
-P00141,O00433,Manufaktur,SAP Business One,BeOne HQ,Financials,K012,2023-04-18,2023-10-21,2023-11-26,186,222.0,143.0,142.0,Go-live Terlambat
-P00142,O00435,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K013,2022-06-30,2022-07-20,2022-07-23,20,23.0,45.0,41.0,Go-live Terlambat
-P00143,O00436,Pertambangan,SAP Business One,BeOne HQ,Financials,K003,2022-05-15,2022-09-18,2022-10-21,126,159.0,379.0,364.0,Go-live Terlambat
-P00144,O00440,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K024,2023-03-13,2023-09-09,2023-09-21,180,192.0,291.0,300.0,Go-live Terlambat
-P00145,O00441,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K011,2022-07-21,2023-01-21,2023-03-12,184,234.0,210.0,258.0,Go-live Terlambat
-P00146,O00442,Pertambangan,SAP Business One,BeOne HQ,Reporting,K009,2022-12-15,2023-05-30,2023-06-26,166,193.0,354.0,333.0,Go-live Terlambat
-P00147,O00444,Manufaktur,SAP Business One,BeOne HQ,Reporting,K010,2022-08-07,2023-01-26,2023-01-22,172,168.0,256.0,240.0,Go-live Tepat Waktu
-P00148,O00446,Agrikultur,SAP Business One,BeOne HQ,Sales,K004,2023-05-14,2023-10-09,2023-11-16,148,186.0,370.0,396.0,Go-live Terlambat
-P00149,O00451,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K024,2023-02-09,2023-07-09,2023-08-30,150,202.0,516.0,504.0,Go-live Terlambat
-P00150,O00453,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K001,2022-08-17,2022-10-19,2022-10-16,63,60.0,209.0,221.0,Go-live Tepat Waktu
-P00151,O00460,Manufaktur,SAP Business One,BeOne HQ,Financials,K005,2022-07-18,2023-01-12,2022-12-24,178,159.0,398.0,383.0,Go-live Tepat Waktu
-P00152,O00461,Retail,SAP Business One,BeOne HQ,Purchasing,K006,2023-02-20,2023-08-06,2023-07-21,167,151.0,345.0,333.0,Go-live Tepat Waktu
-P00153,O00462,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K010,2023-02-27,2023-08-22,2023-09-21,176,206.0,245.0,232.0,Go-live Terlambat
-P00154,O00464,Manufaktur,SAP Business One,BeOne HQ,Reporting,K011,2023-02-13,2023-09-02,2023-08-20,201,188.0,994.0,1046.0,Go-live Tepat Waktu
-P00155,O00469,Manufaktur,SAP Business One,BeOne HQ,Inventory,K005,2022-12-13,2023-06-05,2023-06-30,174,199.0,467.0,572.0,Go-live Terlambat
-P00156,O00471,Pertambangan,SAP Business One,BeOne HQ,Financials,K024,2022-07-30,2023-01-01,2022-12-26,155,149.0,425.0,401.0,Go-live Tepat Waktu
-P00157,O00474,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K012,2022-09-04,2023-02-17,2023-03-02,166,179.0,280.0,279.0,Go-live Terlambat
-P00158,O00476,F&B,SAP Business One,BeOne HQ,Production,K007,2023-02-25,2023-08-17,2023-09-10,173,197.0,570.0,645.0,Go-live Terlambat
-P00159,O00478,Konstruksi,Add-on & Integrasi,BeOne HQ,WMS,K002,2022-09-28,2022-12-03,2022-12-01,66,64.0,247.0,233.0,Go-live Tepat Waktu
-P00160,O00479,Manufaktur,SAP Business One,BeOne HQ,Financials,K023,2022-08-31,2023-01-05,2022-12-28,127,119.0,555.0,525.0,Go-live Tepat Waktu
-P00161,O00481,Retail,SAP Business One,BeOne HQ,Financials,K009,2022-09-10,2023-02-04,2023-02-20,147,163.0,292.0,274.0,Go-live Terlambat
-P00162,O00482,Retail,SAP Business One,BeOne HQ,Reporting,K008,2022-06-29,2022-11-29,2022-11-12,153,136.0,803.0,932.0,Go-live Tepat Waktu
-P00163,O00483,Retail,SAP Business One,BeOne HQ,Production,K001,2022-09-07,2023-01-13,2023-01-12,128,127.0,234.0,219.0,Go-live Tepat Waktu
-P00164,O00488,Retail,SAP Business One,BeOne HQ,Reporting,K027,2023-02-02,2023-08-08,2023-07-27,187,175.0,106.0,128.0,Go-live Tepat Waktu
-P00165,O00491,Agrikultur,SAP Business One,BeOne HQ,Financials,K025,2023-06-09,2023-10-24,2023-10-23,137,136.0,559.0,534.0,Go-live Tepat Waktu
-P00166,O00493,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K010,2022-05-21,2022-10-02,2022-09-16,134,118.0,1530.0,1479.0,Go-live Tepat Waktu
-P00167,O00494,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Procurement,K008,2022-08-23,2023-05-25,2023-04-22,275,242.0,2179.0,2156.0,Go-live Tepat Waktu
-P00168,O00496,Agrikultur,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K023,2022-12-03,2023-01-31,2023-01-29,59,57.0,49.0,45.0,Go-live Tepat Waktu
-P00169,O00498,F&B,SAP Business One,BeOne HQ,Sales,K004,2023-01-31,2023-06-17,2023-07-28,137,178.0,156.0,150.0,Go-live Terlambat
-P00170,O00500,Manufaktur,TSplus,BeOne HQ,Remote Access,K009,2022-05-29,2022-06-18,2022-06-16,20,18.0,44.0,52.0,Go-live Tepat Waktu
-P00171,O00503,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Procurement,K009,2023-05-25,2024-01-16,2024-03-18,236,298.0,373.0,368.0,Go-live Terlambat
-P00172,O00504,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K013,2022-10-29,2023-04-08,2023-03-24,161,146.0,59.0,56.0,Go-live Tepat Waktu
-P00173,O00512,Konstruksi,SAP Business One,BeOne HQ,Production,K024,2022-12-02,2023-05-19,2023-06-25,168,205.0,492.0,460.0,Go-live Terlambat
-P00174,O00513,Retail,SAP Business One,BeOne HQ,Sales,K014,2023-01-05,2023-05-24,2023-05-07,139,122.0,381.0,378.0,Go-live Tepat Waktu
-P00175,O00515,Pertambangan,SAP Business One,BeOne HQ,Purchasing,K027,2022-11-11,2023-04-25,2023-07-06,165,237.0,365.0,345.0,Go-live Terlambat
-P00176,O00516,Retail,SAP Business One,BeOne HQ,Financials,K004,2022-06-15,2022-11-12,2022-11-01,150,139.0,336.0,310.0,Go-live Tepat Waktu
-P00177,O00518,Pertambangan,SAP Business One,BeOne HQ,Sales,K024,2022-04-28,2022-09-19,2022-10-18,144,173.0,419.0,404.0,Go-live Terlambat
-P00178,O00523,Konstruksi,Training/Xpertise Academy,BeOne HQ,In-house Training,K010,2022-04-01,2022-04-26,2022-04-23,25,22.0,77.0,99.0,Go-live Tepat Waktu
-P00179,O00524,F&B,SAP Business One,BeOne HQ,Sales,K010,2022-08-24,2023-02-02,2023-01-19,162,148.0,384.0,363.0,Go-live Tepat Waktu
-P00180,O00525,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K005,2023-03-17,2023-10-03,2023-10-15,200,212.0,298.0,303.0,Go-live Terlambat
-P00181,O00530,Manufaktur,TSplus,BeOne HQ,Remote Access,K005,2022-12-26,2023-01-15,2023-01-13,20,18.0,28.0,27.0,Go-live Tepat Waktu
-P00182,O00537,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K003,2023-05-08,2023-10-13,2023-12-12,158,218.0,205.0,204.0,Go-live Terlambat
-P00183,O00539,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K006,2023-01-20,2023-11-12,2023-10-15,296,268.0,1382.0,1381.0,Go-live Tepat Waktu
-P00184,O00541,Manufaktur,SAP Business One,BeOne HQ,Reporting,K006,2022-07-22,2023-02-05,2023-04-27,198,279.0,100.0,99.0,Go-live Terlambat
-P00185,O00542,Retail,SAP Business One,BeOne HQ,Inventory,K010,2022-08-17,2022-12-03,2022-12-13,108,118.0,289.0,289.0,Go-live Terlambat
-P00186,O00546,Agrikultur,SAP Business One,BeOne HQ,Purchasing,K004,2023-03-10,2023-08-31,2023-10-13,174,217.0,143.0,171.0,Go-live Terlambat
-P00187,O00548,Jasa Profesional,SAP Business One,BeOne HQ,Financials,K023,2022-06-13,2022-12-10,2022-12-08,180,178.0,364.0,471.0,Go-live Tepat Waktu
-P00188,O00551,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K023,2022-12-06,2023-04-25,2023-04-20,140,135.0,409.0,513.0,Go-live Tepat Waktu
-P00189,O00552,Retail,SAP Business One,BeOne HQ,Production,K002,2023-06-05,2023-09-24,2023-10-29,111,146.0,644.0,676.0,Go-live Terlambat
-P00190,O00553,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K008,2022-11-23,2023-05-16,2023-05-10,174,168.0,293.0,292.0,Go-live Tepat Waktu
-P00191,O00554,F&B,SAP Business One,BeOne HQ,Reporting,K004,2022-12-03,2023-05-27,2023-05-11,175,159.0,186.0,172.0,Go-live Tepat Waktu
-P00192,O00556,Manufaktur,TSplus,BeOne HQ,Advanced Security,K010,2023-10-21,2023-11-10,2023-11-08,20,18.0,30.0,38.0,Go-live Tepat Waktu
-P00193,O00561,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K012,2023-10-14,2024-04-25,2024-04-17,194,186.0,591.0,583.0,Go-live Tepat Waktu
-P00194,O00562,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K025,2023-08-14,2023-10-11,2023-10-09,58,56.0,83.0,81.0,Go-live Tepat Waktu
-P00195,O00567,F&B,SAP S/4HANA GROW,BeOne HQ,Analytics,K003,2024-03-08,2025-01-12,2025-04-13,310,401.0,758.0,712.0,Go-live Terlambat
-P00196,O00568,Agrikultur,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K012,2024-05-19,2025-03-24,2025-06-16,309,393.0,902.0,884.0,Go-live Terlambat
-P00197,O00576,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K011,2023-10-09,2024-03-20,2024-05-14,163,218.0,214.0,218.0,Go-live Terlambat
-P00198,O00577,Manufaktur,SAP Business One,BeOne HQ,Reporting,K026,2023-07-22,2023-12-12,2024-01-26,143,188.0,362.0,352.0,Go-live Terlambat
-P00199,O00578,Manufaktur,SAP Business One,BeOne HQ,Production,K026,2023-07-30,2023-11-20,2023-11-09,113,102.0,342.0,344.0,Go-live Tepat Waktu
-P00200,O00580,Konstruksi,Business Insight,BeOne HQ,KPI Monitoring,K002,2023-06-15,2023-07-21,2023-07-16,36,31.0,74.0,82.0,Go-live Tepat Waktu
-P00201,O00583,Manufaktur,SAP Business One,BeOne HQ,Reporting,K013,2023-07-17,2023-11-27,2023-11-26,133,132.0,200.0,221.0,Go-live Tepat Waktu
-P00202,O00586,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Procurement,K023,2024-01-21,2024-11-07,2024-10-16,291,269.0,633.0,640.0,Go-live Tepat Waktu
-P00203,O00588,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K014,2023-10-06,2024-03-09,2024-02-26,155,143.0,250.0,275.0,Go-live Tepat Waktu
-P00204,O00593,Pertambangan,SAP Business One,BeOne HQ,Reporting,K012,2024-05-07,2024-09-30,2024-09-28,146,144.0,234.0,234.0,Go-live Tepat Waktu
-P00205,O00598,Agrikultur,SAP Business One,BeOne HQ,Inventory,K008,2023-09-01,2024-01-27,2024-01-12,148,133.0,210.0,204.0,Go-live Tepat Waktu
-P00206,O00599,Manufaktur,SAP Business One,BeOne HQ,Sales,K010,2023-04-25,2023-10-17,2023-10-10,175,168.0,87.0,86.0,Go-live Tepat Waktu
-P00207,O00603,F&B,SAP Business One,BeOne HQ,Reporting,K008,2024-04-30,2024-09-27,2024-11-02,150,186.0,421.0,517.0,Go-live Terlambat
-P00208,O00605,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Procurement,K023,2024-08-11,2025-03-19,2025-03-15,220,216.0,367.0,472.0,Go-live Tepat Waktu
-P00209,O00608,Trading/Distribusi,TSplus,BeOne HQ,Remote Access,K013,2023-02-22,2023-03-14,2023-03-12,20,18.0,40.0,47.0,Go-live Tepat Waktu
-P00210,O00613,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K002,2023-09-30,2023-12-07,2023-12-03,68,64.0,78.0,75.0,Go-live Tepat Waktu
-P00211,O00617,Konstruksi,TSplus,BeOne HQ,Server Farm,K014,2023-12-29,2024-01-18,2024-01-19,20,21.0,37.0,39.0,Go-live Terlambat
-P00212,O00618,Jasa Profesional,Add-on & Integrasi,BeOne HQ,WMS,K003,2023-06-19,2023-08-12,2023-08-10,54,52.0,194.0,195.0,Go-live Tepat Waktu
-P00213,O00620,Konstruksi,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K027,2024-01-13,2024-02-02,2024-02-01,20,19.0,56.0,53.0,Go-live Tepat Waktu
-P00214,O00625,Manufaktur,SAP Business One,BeOne HQ,Financials,K005,2023-11-27,2024-04-22,2024-05-13,147,168.0,331.0,330.0,Go-live Terlambat
-P00215,O00627,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K026,2023-05-28,2023-11-24,2023-11-09,180,165.0,349.0,369.0,Go-live Tepat Waktu
-P00216,O00628,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,WMS,K009,2024-02-09,2024-04-16,2024-04-14,67,65.0,238.0,240.0,Go-live Tepat Waktu
-P00217,O00634,Jasa Profesional,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K027,2023-12-02,2024-10-02,2024-09-21,305,294.0,911.0,1069.0,Go-live Tepat Waktu
-P00218,O00635,F&B,SAP Business One,BeOne HQ,Sales,K007,2023-11-27,2024-03-21,2024-03-14,115,108.0,238.0,238.0,Go-live Tepat Waktu
-P00219,O00636,Manufaktur,SAP Business One,BeOne HQ,Reporting,K004,2024-05-18,2024-10-27,2024-10-22,162,157.0,322.0,325.0,Go-live Tepat Waktu
-P00220,O00638,Trading/Distribusi,TSplus,BeOne HQ,Server Farm,K013,2023-07-31,2023-08-20,2023-08-18,20,18.0,19.0,18.0,Go-live Tepat Waktu
-P00221,O00639,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K024,2023-11-17,2024-04-13,2024-05-18,148,183.0,454.0,588.0,Go-live Terlambat
-P00222,O00641,Retail,SAP Business One,BeOne HQ,Sales,K009,2023-12-03,2024-05-09,2024-05-05,158,154.0,585.0,684.0,Go-live Tepat Waktu
-P00223,O00642,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Analytics,K006,2024-03-10,2025-01-15,2025-05-14,311,430.0,580.0,571.0,Go-live Terlambat
-P00224,O00643,Pertambangan,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K023,2023-04-25,2023-06-10,2023-06-08,46,44.0,129.0,133.0,Go-live Tepat Waktu
-P00225,O00645,F&B,Add-on & Integrasi,BeOne HQ,WMS,K009,2023-04-04,2023-05-27,2023-05-23,53,49.0,141.0,146.0,Go-live Tepat Waktu
-P00226,O00646,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K006,2023-12-21,2024-06-18,2024-06-04,180,166.0,1039.0,1160.0,Go-live Tepat Waktu
-P00227,O00647,F&B,SAP Business One,BeOne HQ,Purchasing,K027,2023-11-03,2024-05-07,2024-05-03,186,182.0,281.0,285.0,Go-live Tepat Waktu
-P00228,O00650,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K001,2023-06-30,2023-07-20,2023-07-27,20,27.0,34.0,32.0,Go-live Terlambat
-P00229,O00651,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Procurement,K005,2024-01-03,2024-07-16,2024-09-03,195,244.0,711.0,669.0,Go-live Terlambat
-P00230,O00656,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Finance,K004,2024-01-23,2024-09-09,2024-11-07,230,289.0,789.0,741.0,Go-live Terlambat
-P00231,O00658,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K011,2024-01-12,2024-06-02,2024-07-25,142,195.0,424.0,391.0,Go-live Terlambat
-P00232,O00665,Manufaktur,SAP Business One,BeOne HQ,Reporting,K012,2023-10-23,2024-03-13,2024-04-05,142,165.0,263.0,244.0,Go-live Terlambat
-P00233,O00670,F&B,SAP Business One,BeOne HQ,Sales,K010,2023-11-10,2024-04-25,2024-04-20,167,162.0,256.0,239.0,Go-live Tepat Waktu
-P00234,O00672,Agrikultur,SAP Business One,BeOne HQ,Reporting,K013,2024-03-13,2024-07-19,2024-07-17,128,126.0,308.0,293.0,Go-live Tepat Waktu
-P00235,O00676,Manufaktur,SAP Business One,BeOne HQ,Reporting,K004,2023-09-29,2024-04-09,2024-04-02,193,186.0,271.0,280.0,Go-live Tepat Waktu
-P00236,O00677,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K008,2024-02-01,2024-07-23,2024-07-18,173,168.0,1078.0,1011.0,Go-live Tepat Waktu
-P00237,O00680,F&B,SAP Business One,BeOne HQ,Reporting,K002,2024-01-08,2024-08-07,2024-10-13,212,279.0,276.0,257.0,Go-live Terlambat
-P00238,O00685,Agrikultur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K002,2023-07-10,2023-09-14,2023-10-06,66,88.0,168.0,161.0,Go-live Terlambat
-P00239,O00692,Retail,SAP Business One,BeOne HQ,Purchasing,K008,2023-12-04,2024-06-01,2024-07-18,180,227.0,436.0,501.0,Go-live Terlambat
-P00240,O00696,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K013,2023-09-21,2024-03-23,2024-03-06,184,167.0,619.0,692.0,Go-live Tepat Waktu
-P00241,O00697,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K014,2024-02-02,2024-02-24,2024-02-23,22,21.0,74.0,85.0,Go-live Tepat Waktu
-P00242,O00699,Manufaktur,SAP Business One,BeOne HQ,Financials,K008,2024-01-26,2024-06-22,2024-07-05,148,161.0,248.0,233.0,Go-live Terlambat
-P00243,O00700,Retail,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K004,2023-08-21,2023-09-10,2023-09-08,20,18.0,31.0,31.0,Go-live Tepat Waktu
-P00244,O00702,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K014,2023-08-28,2024-02-14,2024-02-04,170,160.0,200.0,198.0,Go-live Tepat Waktu
-P00245,O00717,Retail,SAP Business One,BeOne HQ,Financials,K027,2024-01-28,2024-08-25,2024-08-15,210,200.0,383.0,382.0,Go-live Tepat Waktu
-P00246,O00720,Manufaktur,SAP Business One,BeOne HQ,Inventory,K012,2024-04-10,2024-11-03,2024-10-24,207,197.0,504.0,490.0,Go-live Tepat Waktu
-P00247,O00722,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K003,2023-11-08,2024-05-16,2024-06-14,190,219.0,415.0,387.0,Go-live Terlambat
-P00248,O00726,Retail,SAP Business One,BeOne HQ,Financials,K014,2023-10-31,2024-04-03,2024-03-17,155,138.0,295.0,364.0,Go-live Tepat Waktu
-P00249,O00727,Jasa Profesional,SAP Business One,BeOne HQ,Purchasing,K008,2023-10-22,2024-02-26,2024-04-14,127,175.0,187.0,175.0,Go-live Terlambat
-P00250,O00729,Agrikultur,Business Insight,BeOne HQ,Mobile Analytics,K023,2023-07-22,2023-09-16,2023-09-14,56,54.0,89.0,86.0,Go-live Tepat Waktu
-P00251,O00731,Jasa Profesional,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K027,2023-08-01,2023-08-21,2023-08-28,20,27.0,75.0,71.0,Go-live Terlambat
-P00252,O00733,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K003,2024-04-18,2024-10-26,2024-10-04,191,169.0,413.0,475.0,Go-live Tepat Waktu
-P00253,O00738,Agrikultur,SAP Business One,BeOne HQ,Production,K004,2023-08-24,2024-02-25,2024-05-16,185,266.0,164.0,206.0,Go-live Terlambat
-P00254,O00744,Konstruksi,SAP Business One,BeOne HQ,Sales,K005,2023-06-20,2023-11-30,2023-11-11,163,144.0,489.0,461.0,Go-live Tepat Waktu
-P00255,O00748,Manufaktur,SAP Business One,BeOne HQ,Sales,K014,2023-06-27,2023-11-17,2023-11-08,143,134.0,391.0,386.0,Go-live Tepat Waktu
-P00256,O00750,Retail,Business Insight,BeOne HQ,KPI Monitoring,K008,2023-04-13,2023-05-30,2023-06-10,47,58.0,50.0,57.0,Go-live Terlambat
-P00257,O00751,Retail,SAP S/4HANA GROW,BeOne HQ,Finance,K014,2023-11-14,2024-11-02,2024-09-29,354,320.0,1272.0,1172.0,Go-live Tepat Waktu
-P00258,O00762,Retail,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K012,2025-01-14,2025-03-11,2025-03-07,56,52.0,129.0,131.0,Go-live Tepat Waktu
-P00259,O00765,Pertambangan,SAP Business One,PT CORE (sister),Purchasing,K023,2025-04-01,2025-09-09,2025-09-06,161,158.0,198.0,189.0,Go-live Tepat Waktu
-P00260,O00768,Manufaktur,SAP Business One,BeOne HQ,Inventory,K003,2024-07-27,2024-12-19,2024-12-12,145,138.0,225.0,284.0,Go-live Tepat Waktu
-P00261,O00772,F&B,SAP Business One,BeOne HQ,Production,K004,2024-08-30,2025-01-11,2025-01-09,134,132.0,244.0,232.0,Go-live Tepat Waktu
-P00262,O00777,Retail,SAP Business One,BeOne HQ,Financials,K005,2024-05-18,2024-09-07,2024-09-03,112,108.0,208.0,263.0,Go-live Tepat Waktu
-P00263,O00782,Retail,SAP S/4HANA GROW,BeOne HQ,Finance,K003,2024-07-30,2025-07-13,2025-07-02,348,337.0,1191.0,1100.0,Go-live Tepat Waktu
-P00264,O00783,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Coretax,K004,2025-03-02,2025-05-15,2025-06-04,74,94.0,83.0,80.0,Go-live Terlambat
-P00265,O00788,Retail,SAP S/4HANA GROW,BeOne HQ,Procurement,K023,2024-12-16,2026-02-04,,415,,1021.0,1021.0,On Progress
-P00266,O00796,Jasa Profesional,Add-on & Integrasi,BeOne HQ,Coretax,K013,2024-11-08,2024-12-18,2024-12-22,40,44.0,122.0,117.0,Go-live Terlambat
-P00267,O00797,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Analytics,K007,2025-07-06,2026-04-12,,280,,539.0,539.0,On Progress
-P00268,O00799,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K014,2025-04-03,2025-08-31,2025-08-16,150,135.0,226.0,219.0,Go-live Tepat Waktu
-P00269,O00802,Manufaktur,SAP Business One,PT CORE (sister),Purchasing,K012,2025-05-13,2025-10-30,2025-10-11,170,151.0,615.0,604.0,Go-live Tepat Waktu
-P00270,O00810,F&B,SAP Business One,BeOne HQ,Sales,K010,2024-07-07,2025-01-01,2025-01-13,178,190.0,381.0,354.0,Go-live Terlambat
-P00271,O00814,F&B,SAP Business One,PT CORE (sister),Financials,K027,2024-10-29,2025-02-20,2025-04-01,114,154.0,221.0,221.0,Go-live Terlambat
-P00272,O00816,Retail,SAP Business One,BeOne HQ,Sales,K005,2024-06-04,2024-10-18,2024-11-16,136,165.0,430.0,416.0,Go-live Terlambat
-P00273,O00819,Manufaktur,SAP Business One,PT CORE (sister),Inventory,K001,2024-11-06,2025-04-26,2025-06-10,171,216.0,252.0,255.0,Go-live Terlambat
-P00274,O00820,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K006,2024-10-21,2025-04-25,2025-04-10,186,171.0,175.0,170.0,Go-live Tepat Waktu
-P00275,O00823,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K004,2024-10-25,2025-10-03,2025-09-06,343,316.0,937.0,953.0,Go-live Tepat Waktu
-P00276,O00828,Trading/Distribusi,SAP Business One,PT CORE (sister),Reporting,K003,2025-03-22,2025-07-28,2025-07-15,128,115.0,266.0,264.0,Go-live Tepat Waktu
-P00277,O00829,Agrikultur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K010,2024-12-11,2025-02-10,2025-02-04,61,55.0,111.0,112.0,Go-live Tepat Waktu
-P00278,O00833,Retail,SAP Business One,BeOne HQ,Purchasing,K009,2025-05-01,2025-09-17,2025-09-04,139,126.0,254.0,251.0,Go-live Tepat Waktu
-P00279,O00836,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Procurement,K002,2024-12-04,2025-08-24,2025-12-08,263,369.0,537.0,543.0,Go-live Terlambat
-P00280,O00837,Trading/Distribusi,Business Insight,BeOne HQ,KPI Monitoring,K012,2024-08-28,2024-10-08,2024-10-07,41,40.0,153.0,149.0,Go-live Tepat Waktu
-P00281,O00841,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Coretax,K026,2024-09-16,2024-12-04,2024-11-27,79,72.0,272.0,265.0,Go-live Tepat Waktu
-P00282,O00842,Manufaktur,SAP Business One,PT CORE (sister),Purchasing,K025,2024-12-11,2025-05-11,2025-04-25,151,135.0,135.0,125.0,Go-live Tepat Waktu
-P00283,O00849,Manufaktur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K006,2024-08-16,2024-10-18,2024-10-26,63,71.0,208.0,193.0,Go-live Terlambat
-P00284,O00852,Manufaktur,SAP Business One,BeOne HQ,Production,K004,2024-09-12,2025-04-12,2025-03-25,212,194.0,193.0,188.0,Go-live Tepat Waktu
-P00285,O00854,F&B,SAP S/4HANA GROW,BeOne HQ,Procurement,K003,2025-05-11,2026-02-16,,281,,1080.0,1080.0,On Progress
-P00286,O00855,Manufaktur,SAP Business One,BeOne HQ,Reporting,K026,2025-03-21,2025-08-18,2025-08-14,150,146.0,510.0,513.0,Go-live Tepat Waktu
-P00287,O00857,Trading/Distribusi,TSplus,BeOne HQ,Server Farm,K008,2024-06-21,2024-07-11,2024-07-17,20,26.0,47.0,44.0,Go-live Terlambat
-P00288,O00863,Manufaktur,SAP Business One,PT CORE (sister),Financials,K010,2025-02-13,2025-07-04,2025-06-22,141,129.0,126.0,127.0,Go-live Tepat Waktu
-P00289,O00864,F&B,TSplus,BeOne HQ,Server Farm,K027,2024-04-27,2024-05-17,2024-05-16,20,19.0,46.0,57.0,Go-live Tepat Waktu
-P00290,O00866,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K005,2025-03-10,2025-12-03,2025-12-20,268,285.0,750.0,933.0,Go-live Terlambat
-P00291,O00874,Retail,SAP Business One,BeOne HQ,Purchasing,K013,2024-05-26,2024-12-17,2024-11-28,205,186.0,239.0,233.0,Go-live Tepat Waktu
-P00292,O00875,Manufaktur,SAP Business One,BeOne HQ,Inventory,K006,2024-04-13,2024-09-25,2024-09-07,165,147.0,228.0,224.0,Go-live Tepat Waktu
-P00293,O00876,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K013,2025-01-03,2025-06-07,2025-05-31,155,148.0,297.0,278.0,Go-live Tepat Waktu
-P00294,O00877,Pertambangan,SAP Business One,PT CORE (sister),Purchasing,K024,2025-03-23,2025-10-13,2025-10-02,204,193.0,768.0,766.0,Go-live Tepat Waktu
-P00295,O00880,F&B,SAP Business One,BeOne HQ,Production,K006,2025-01-01,2025-05-25,2025-06-14,144,164.0,254.0,241.0,Go-live Terlambat
-P00296,O00884,Manufaktur,SAP Business One,BeOne HQ,Production,K004,2025-06-14,2025-11-03,2025-12-02,142,171.0,476.0,607.0,Go-live Terlambat
-P00297,O00885,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K007,2024-11-16,2025-03-18,2025-05-01,122,166.0,308.0,292.0,Go-live Terlambat
-P00298,O00886,F&B,SAP Business One,BeOne HQ,Reporting,K026,2024-07-13,2024-12-29,2025-02-23,169,225.0,560.0,541.0,Go-live Terlambat
-P00299,O00888,Manufaktur,SAP Business One,PT CORE (sister),Purchasing,K025,2024-08-06,2025-03-03,2025-02-26,209,204.0,313.0,312.0,Go-live Tepat Waktu
-P00300,O00889,F&B,SAP S/4HANA GROW,BeOne HQ,Procurement,K009,2025-05-20,2025-11-26,2025-11-19,190,183.0,500.0,494.0,Go-live Tepat Waktu
-P00301,O00894,Manufaktur,TSplus,BeOne HQ,Remote Access,K023,2024-04-13,2024-05-03,2024-05-02,20,19.0,47.0,44.0,Go-live Tepat Waktu
-P00302,O00895,F&B,SAP Business One,BeOne HQ,Sales,K007,2025-03-29,2025-09-30,2025-12-08,185,254.0,368.0,366.0,Go-live Terlambat
-P00303,O00896,Manufaktur,Add-on & Integrasi,BeOne HQ,POS Integration,K006,2024-05-06,2024-07-09,2024-07-08,64,63.0,243.0,305.0,Go-live Tepat Waktu
-P00304,O00898,Manufaktur,SAP Business One,BeOne HQ,Financials,K027,2024-08-06,2025-01-08,2025-03-12,155,218.0,566.0,720.0,Go-live Terlambat
-P00305,O00903,Retail,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K006,2024-06-03,2024-06-23,2024-06-21,20,18.0,31.0,31.0,Go-live Tepat Waktu
-P00306,O00908,Retail,SAP Business One,PT CORE (sister),Purchasing,K025,2024-08-16,2025-01-10,2025-01-09,147,146.0,329.0,310.0,Go-live Tepat Waktu
-P00307,O00909,Jasa Profesional,SAP Business One,PT CORE (sister),Financials,K027,2024-10-08,2025-03-17,2025-04-08,160,182.0,110.0,118.0,Go-live Terlambat
-P00308,O00910,Manufaktur,Add-on & Integrasi,BeOne HQ,WMS,K025,2024-12-29,2025-02-19,2025-02-12,52,45.0,46.0,44.0,Go-live Tepat Waktu
-P00309,O00916,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K025,2024-10-29,2025-04-24,2025-05-11,177,194.0,498.0,524.0,Go-live Terlambat
-P00310,O00921,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K007,2024-08-03,2024-12-04,2024-11-19,123,108.0,210.0,210.0,Go-live Tepat Waktu
-P00311,O00930,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K003,2024-07-08,2025-01-23,2025-01-04,199,180.0,168.0,169.0,Go-live Tepat Waktu
-P00312,O00933,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K006,2024-10-14,2025-03-12,2025-02-28,149,137.0,148.0,141.0,Go-live Tepat Waktu
-P00313,O00942,Konstruksi,SAP Business One,BeOne HQ,Sales,K007,2025-03-17,2025-09-12,2025-08-24,179,160.0,818.0,822.0,Go-live Tepat Waktu
-P00314,O00943,Manufaktur,TSplus,BeOne HQ,Server Farm,K024,2024-08-07,2024-08-27,2024-09-02,20,26.0,41.0,38.0,Go-live Terlambat
-P00315,O00945,F&B,SAP Business One,BeOne HQ,Purchasing,K012,2024-10-03,2025-04-19,2025-06-14,198,254.0,211.0,208.0,Go-live Terlambat
-P00316,O00953,Agrikultur,SAP Business One,BeOne HQ,Inventory,K025,2024-11-14,2025-03-18,2025-04-30,124,167.0,516.0,523.0,Go-live Terlambat
-P00317,O00957,Trading/Distribusi,TSplus,BeOne HQ,Remote Access,K024,2024-12-14,2025-01-03,2025-01-02,20,19.0,24.0,24.0,Go-live Tepat Waktu
-P00318,O00963,Retail,SAP S/4HANA GROW,BeOne HQ,Procurement,K024,2024-07-04,2025-06-09,2025-07-30,340,391.0,630.0,625.0,Go-live Terlambat
-P00319,O00978,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K010,2025-11-03,2026-08-09,,279,,1195.0,1195.0,On Progress
-P00320,O00983,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Finance,K012,2025-07-09,2026-06-12,,338,,1193.0,1193.0,On Progress
-P00321,O00984,Manufaktur,Add-on & Integrasi,BeOne HQ,POS Integration,K002,2025-06-28,2025-09-06,2025-08-30,70,63.0,44.0,55.0,Go-live Tepat Waktu
-P00322,O00986,Retail,SAP Business One,BeOne HQ,Inventory,K002,2025-11-30,2026-05-14,,165,,273.0,273.0,On Progress
-P00323,O00994,Pertambangan,SAP Business One,BeOne HQ,Financials,K004,2025-10-14,2026-03-31,,168,,445.0,445.0,On Progress
-P00324,O01000,Trading/Distribusi,Business Insight,BeOne HQ,Dashboard & Reporting,K027,2025-06-19,2025-07-16,2025-07-13,27,24.0,127.0,129.0,Go-live Tepat Waktu
-P00325,O01003,Trading/Distribusi,Business Insight,BeOne HQ,KPI Monitoring,K013,2025-03-04,2025-04-09,2025-04-08,36,35.0,146.0,137.0,Go-live Tepat Waktu
-P00326,O01004,Manufaktur,SAP Business One,BeOne HQ,Inventory,K004,2025-11-29,2026-04-20,,142,,163.0,163.0,On Progress
-P00327,O01007,Konstruksi,SAP Business One,PT CORE (sister),Production,K014,2025-05-25,2025-11-22,2025-11-16,181,175.0,414.0,384.0,Go-live Tepat Waktu
-P00328,O01011,Manufaktur,SAP Business One,PT CORE (sister),Reporting,K012,2025-11-08,2026-04-26,,169,,141.0,141.0,On Progress
-P00329,O01012,Retail,SAP S/4HANA GROW,BeOne HQ,Finance,K004,2026-07-09,2027-04-21,,286,,764.0,764.0,On Progress
-P00330,O01013,Konstruksi,SAP Business One,BeOne HQ,Sales,K001,2025-11-13,2026-06-06,,205,,532.0,532.0,On Progress
-P00331,O01016,Retail,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K011,2025-04-03,2025-06-07,2025-06-03,65,61.0,48.0,55.0,Go-live Tepat Waktu
-P00332,O01020,F&B,SAP Business One,BeOne HQ,Production,K002,2025-05-30,2025-10-14,2025-09-30,137,123.0,380.0,360.0,Go-live Tepat Waktu
-P00333,O01024,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Procurement,K025,2025-08-23,2026-07-16,,327,,815.0,815.0,On Progress
-P00334,O01026,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K023,2026-03-15,2026-05-21,,67,,58.0,58.0,On Progress
-P00335,O01028,Retail,SAP Business One,BeOne HQ,Purchasing,K013,2025-11-10,2026-05-03,,174,,291.0,291.0,On Progress
-P00336,O01029,Manufaktur,Business Insight,BeOne HQ,KPI Monitoring,K009,2025-10-10,2025-11-16,2025-11-14,37,35.0,58.0,58.0,Go-live Tepat Waktu
-P00337,O01031,Manufaktur,SAP Business One,BeOne HQ,Inventory,K007,2025-07-07,2025-12-14,2025-11-26,160,142.0,313.0,308.0,Go-live Tepat Waktu
-P00338,O01035,Konstruksi,TSplus,BeOne HQ,Remote Access,K010,2026-02-13,2026-03-05,,20,,30.0,30.0,On Progress
-P00339,O01036,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Finance,K005,2026-03-18,2027-01-20,,308,,594.0,594.0,On Progress
-P00340,O01037,Manufaktur,Training/Xpertise Academy,BeOne HQ,In-house Training,K009,2025-10-24,2025-11-13,2025-11-12,20,19.0,26.0,24.0,Go-live Tepat Waktu
-P00341,O01042,Retail,SAP Business One,BeOne HQ,Purchasing,K014,2025-08-17,2026-01-05,,141,,290.0,290.0,On Progress
-P00342,O01043,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K025,2025-11-16,2026-10-18,,336,,644.0,644.0,On Progress
-P00343,O01045,Retail,SAP Business One,PT CORE (sister),Inventory,K024,2025-06-13,2026-01-21,,222,,158.0,158.0,On Progress
-P00344,O01051,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Finance,K003,2026-08-01,2027-06-03,,306,,1300.0,1300.0,On Progress
-P00345,O01055,Jasa Profesional,SAP Business One,BeOne HQ,Sales,K013,2025-12-06,2026-05-21,,166,,286.0,286.0,On Progress
-P00346,O01058,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K007,2025-08-31,2026-06-13,,286,,457.0,457.0,On Progress
-P00347,O01064,Manufaktur,SAP Business One,BeOne HQ,Financials,K027,2025-12-08,2026-05-24,,167,,292.0,292.0,On Progress
-P00348,O01066,Retail,TSplus,BeOne HQ,Server Farm,K006,2025-11-17,2025-12-07,2025-12-13,20,26.0,27.0,35.0,Go-live Terlambat
-P00349,O01068,Manufaktur,SAP Business One,PT CORE (sister),Production,K006,2025-03-19,2025-10-09,2025-09-17,204,182.0,497.0,479.0,Go-live Tepat Waktu
-P00350,O01076,Konstruksi,SAP Business One,BeOne HQ,Sales,K027,2026-05-23,2026-11-15,,176,,535.0,535.0,On Progress
-P00351,O01077,F&B,SAP S/4HANA GROW,BeOne HQ,Procurement,K007,2025-12-15,2026-11-23,,343,,609.0,609.0,On Progress
-P00352,O01080,Pertambangan,SAP Business One,BeOne HQ,Financials,K003,2025-09-29,2026-04-06,,189,,270.0,270.0,On Progress
-P00353,O01084,Manufaktur,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K013,2025-05-25,2025-06-15,2025-06-14,21,20.0,18.0,21.0,Go-live Tepat Waktu
-P00354,O01085,Manufaktur,SAP Business One,PT CORE (sister),Sales,K008,2026-03-26,2026-10-12,,200,,161.0,161.0,On Progress
-P00355,O01086,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K012,2025-08-02,2026-01-04,,155,,184.0,184.0,On Progress
-P00356,O01093,Konstruksi,SAP Business One,BeOne HQ,Inventory,K025,2026-02-12,2026-08-11,,180,,448.0,448.0,On Progress
-P00357,O01095,Retail,SAP Business One,BeOne HQ,Purchasing,K004,2025-12-06,2026-05-26,,171,,335.0,335.0,On Progress
-P00358,O01104,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K007,2025-07-31,2025-10-28,2025-10-19,89,80.0,225.0,221.0,Go-live Tepat Waktu
-P00359,O01106,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K014,2026-01-18,2026-06-23,,156,,471.0,471.0,On Progress
-P00360,O01110,Trading/Distribusi,SAP Business One,PT CORE (sister),Reporting,K007,2026-02-09,2026-08-19,,191,,280.0,280.0,On Progress
-P00361,O01111,F&B,Add-on & Integrasi,BeOne HQ,POS Integration,K008,2025-12-02,2026-02-04,,64,,165.0,165.0,On Progress
-P00362,O01113,Retail,SAP Business One,PT CORE (sister),Financials,K007,2025-11-21,2026-05-06,,166,,124.0,124.0,On Progress
-P00363,O01114,Pertambangan,SAP Business One,BeOne HQ,Financials,K004,2025-12-24,2026-07-04,,192,,212.0,212.0,On Progress
-P00364,O01118,F&B,SAP S/4HANA GROW,BeOne HQ,Procurement,K027,2025-09-03,2026-03-31,,209,,492.0,492.0,On Progress
-P00365,O01122,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K027,2025-08-03,2026-01-19,,169,,250.0,250.0,On Progress
-P00366,O01124,Jasa Profesional,SAP Business One,BeOne HQ,Sales,K012,2026-01-24,2026-05-15,,111,,442.0,442.0,On Progress
-P00367,O01128,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K027,2026-05-18,2026-09-30,,135,,265.0,265.0,On Progress
-P00368,O01130,Konstruksi,SAP Business One,BeOne HQ,Purchasing,K004,2025-10-11,2026-04-11,,182,,209.0,209.0,On Progress
-P00369,O01135,Konstruksi,Add-on & Integrasi,BeOne HQ,POS Integration,K005,2025-04-13,2025-06-30,2025-07-04,78,82.0,338.0,334.0,Go-live Terlambat
-P00370,O01140,Manufaktur,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K024,2025-06-26,2025-07-16,2025-07-13,20,17.0,57.0,57.0,Go-live Tepat Waktu
-P00371,O01142,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Analytics,K001,2026-08-12,2027-05-22,,283,,1178.0,1178.0,On Progress
-P00372,O01148,F&B,SAP Business One,BeOne HQ,Production,K005,2025-07-13,2025-11-27,2025-11-14,137,124.0,240.0,229.0,Go-live Tepat Waktu
-P00373,O01152,Manufaktur,Business Insight,BeOne HQ,Dashboard & Reporting,K010,2025-04-10,2025-05-19,2025-05-31,39,51.0,36.0,37.0,Go-live Terlambat
-P00374,O01160,Manufaktur,SAP Business One,PT CORE (sister),Reporting,K003,2025-05-21,2025-11-22,2025-10-31,185,163.0,247.0,250.0,Go-live Tepat Waktu
-P00375,O01168,Trading/Distribusi,SAP Business One,PT CORE (sister),Sales,K010,2025-09-21,2026-01-14,,115,,271.0,271.0,On Progress
-P00376,O01169,Agrikultur,SAP S/4HANA GROW,BeOne HQ,Finance,K013,2026-03-08,2027-01-31,,329,,1048.0,1048.0,On Progress
-P00377,O01171,Jasa Profesional,SAP Business One,BeOne HQ,Financials,K009,2025-12-18,2026-05-24,,157,,460.0,460.0,On Progress
-P00378,O01179,Agrikultur,Add-on & Integrasi,BeOne HQ,WMS,K008,2026-03-06,2026-04-23,,48,,134.0,134.0,On Progress
-P00379,O01184,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K014,2025-10-21,2026-02-28,,130,,361.0,361.0,On Progress
-P00380,O01186,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K008,2026-02-25,2026-05-12,,76,,208.0,208.0,On Progress
-P00381,O01187,Agrikultur,SAP Business One,BeOne HQ,Reporting,K013,2026-03-19,2026-08-31,,165,,296.0,296.0,On Progress
-P00382,O01188,Retail,SAP Business One,BeOne HQ,Production,K026,2026-03-27,2026-11-05,,223,,448.0,448.0,On Progress
-P00383,O01192,F&B,SAP Business One,PT CORE (sister),Inventory,K008,2025-10-05,2026-02-14,,132,,202.0,202.0,On Progress
-P00384,O01194,Konstruksi,SAP Business One,PT CORE (sister),Production,K008,2026-01-08,2026-06-28,,171,,148.0,148.0,On Progress
-P00385,O01204,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K004,2026-05-14,2026-12-21,,221,,676.0,676.0,On Progress
-P00386,O01205,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K008,2025-10-12,2025-11-01,2025-11-02,20,21.0,42.0,40.0,Go-live Terlambat
-P00387,O01207,Konstruksi,SAP Business One,BeOne HQ,Sales,K025,2025-11-16,2026-05-02,,167,,267.0,267.0,On Progress
-P00388,O01211,Manufaktur,SAP Business One,BeOne HQ,Financials,K023,2026-01-01,2026-06-14,,164,,403.0,403.0,On Progress
-P00389,O01212,F&B,SAP Business One,PT CORE (sister),Production,K027,2026-03-24,2026-08-15,,144,,298.0,298.0,On Progress
-P00390,O01214,Konstruksi,Business Insight,BeOne HQ,KPI Monitoring,K023,2025-03-21,2025-04-22,2025-05-05,32,45.0,59.0,67.0,Go-live Terlambat
-P00391,O01215,F&B,SAP Business One,BeOne HQ,Financials,K026,2026-04-04,2026-08-18,,136,,330.0,330.0,On Progress
-P00392,O01220,Manufaktur,SAP Business One,PT CORE (sister),Purchasing,K027,2026-01-25,2026-05-15,,110,,211.0,211.0,On Progress
-P00393,O01221,Pertambangan,Business Insight,BeOne HQ,Mobile Analytics,K013,2026-02-04,2026-03-11,,35,,146.0,146.0,On Progress
+P00001,O00001,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K002,2020-02-21,2020-07-26,2020-09-28,156,220.0,421.0,391.0,Go-live Terlambat
+P00002,O00002,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K025,2019-10-24,2019-12-25,2020-01-10,62,78.0,147.0,142.0,Go-live Terlambat
+P00003,O00004,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K004,2019-12-29,2020-06-16,2020-05-28,170,151.0,318.0,298.0,Go-live Tepat Waktu
+P00004,O00007,Manufaktur,TSplus,BeOne HQ,Server Farm,K024,2019-08-24,2019-09-13,2019-09-11,20,18.0,30.0,30.0,Go-live Tepat Waktu
+P00005,O00011,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Finance,K010,2020-01-10,2020-10-01,2020-12-10,265,335.0,347.0,335.0,Go-live Terlambat
+P00006,O00012,Manufaktur,SAP Business One,BeOne HQ,Financials,K024,2019-10-06,2020-03-21,2020-03-09,167,155.0,280.0,273.0,Go-live Tepat Waktu
+P00007,O00014,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K026,2019-09-24,2020-03-19,2020-06-01,177,251.0,485.0,540.0,Go-live Terlambat
+P00008,O00015,Konstruksi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K011,2019-08-25,2019-11-09,2019-12-12,76,109.0,33.0,39.0,Go-live Terlambat
+P00009,O00017,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Procurement,K023,2020-01-11,2020-11-11,2020-10-14,305,277.0,668.0,764.0,Go-live Tepat Waktu
+P00010,O00025,F&B,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K011,2019-03-18,2019-04-10,2019-04-07,23,20.0,66.0,67.0,Go-live Tepat Waktu
+P00011,O00027,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K003,2019-12-19,2020-05-05,2020-06-20,138,184.0,110.0,110.0,Go-live Terlambat
+P00012,O00030,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,WMS,K007,2020-03-18,2020-05-07,2020-05-02,50,45.0,79.0,89.0,Go-live Tepat Waktu
+P00013,O00034,Manufaktur,SAP Business One,BeOne HQ,Reporting,K006,2020-02-13,2020-07-30,2020-07-24,168,162.0,228.0,219.0,Go-live Tepat Waktu
+P00014,O00044,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K004,2019-12-26,2020-04-03,2020-03-26,99,91.0,514.0,497.0,Go-live Tepat Waktu
+P00015,O00045,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K014,2020-02-11,2020-07-04,2020-06-26,144,136.0,274.0,268.0,Go-live Tepat Waktu
+P00016,O00046,Manufaktur,TSplus,BeOne HQ,Server Farm,K004,2020-02-08,2020-02-28,2020-02-25,20,17.0,30.0,38.0,Go-live Tepat Waktu
+P00017,O00052,Manufaktur,SAP Business One,BeOne HQ,Financials,K025,2020-05-16,2020-08-08,2020-08-15,84,91.0,477.0,451.0,Go-live Terlambat
+P00018,O00059,Manufaktur,TSplus,BeOne HQ,Remote Access,K008,2020-01-12,2020-02-01,2020-01-30,20,18.0,15.0,15.0,Go-live Tepat Waktu
+P00019,O00060,Manufaktur,SAP Business One,BeOne HQ,Financials,K005,2020-04-29,2020-10-02,2020-12-08,156,223.0,532.0,502.0,Go-live Terlambat
+P00020,O00063,Manufaktur,SAP Business One,BeOne HQ,Sales,K025,2020-03-31,2020-08-22,2020-10-13,144,196.0,243.0,297.0,Go-live Terlambat
+P00021,O00067,F&B,SAP Business One,BeOne HQ,Inventory,K026,2020-03-22,2020-08-30,2020-09-10,161,172.0,105.0,117.0,Go-live Terlambat
+P00022,O00070,F&B,SAP Business One,BeOne HQ,Sales,K024,2020-03-29,2020-10-05,2020-09-19,190,174.0,574.0,570.0,Go-live Tepat Waktu
+P00023,O00073,Manufaktur,SAP Business One,BeOne HQ,Sales,K013,2020-01-23,2020-07-15,2020-07-05,174,164.0,440.0,485.0,Go-live Tepat Waktu
+P00024,O00076,Konstruksi,SAP Business One,BeOne HQ,Reporting,K027,2019-09-27,2020-03-18,2020-04-07,173,193.0,262.0,290.0,Go-live Terlambat
+P00025,O00082,Trading/Distribusi,TSplus,BeOne HQ,Server Farm,K008,2020-01-15,2020-02-04,2020-02-07,20,23.0,44.0,41.0,Go-live Terlambat
+P00026,O00084,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K014,2019-11-25,2020-07-02,2020-09-01,220,281.0,322.0,297.0,Go-live Terlambat
+P00027,O00087,Pertambangan,SAP Business One,BeOne HQ,Purchasing,K027,2019-12-03,2020-04-18,2020-04-11,137,130.0,460.0,521.0,Go-live Tepat Waktu
+P00028,O00091,Manufaktur,TSplus,BeOne HQ,Advanced Security,K026,2019-12-16,2020-01-05,2020-01-02,20,17.0,32.0,30.0,Go-live Tepat Waktu
+P00029,O00100,Manufaktur,SAP Business One,BeOne HQ,Sales,K007,2020-01-15,2020-05-03,2020-04-19,109,95.0,248.0,231.0,Go-live Tepat Waktu
+P00030,O00101,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K008,2019-07-02,2019-12-12,2019-11-26,163,147.0,230.0,257.0,Go-live Tepat Waktu
+P00031,O00102,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K002,2019-06-29,2019-09-07,2019-09-06,70,69.0,199.0,192.0,Go-live Tepat Waktu
+P00032,O00108,Manufaktur,SAP Business One,BeOne HQ,Financials,K025,2019-10-27,2020-05-13,2020-04-26,199,182.0,389.0,418.0,Go-live Tepat Waktu
+P00033,O00110,Konstruksi,TSplus,BeOne HQ,Server Farm,K007,2019-04-19,2019-05-09,2019-05-07,20,18.0,24.0,23.0,Go-live Tepat Waktu
+P00034,O00111,Manufaktur,SAP Business One,BeOne HQ,Financials,K010,2020-01-10,2020-06-14,2020-06-09,156,151.0,327.0,325.0,Go-live Tepat Waktu
+P00035,O00112,Agrikultur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K003,2020-03-25,2020-04-25,2020-04-24,31,30.0,73.0,74.0,Go-live Tepat Waktu
+P00036,O00113,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K010,2020-07-12,2020-12-22,2021-01-14,163,186.0,303.0,280.0,Go-live Terlambat
+P00037,O00119,Agrikultur,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K007,2021-02-20,2021-05-09,2021-06-07,78,107.0,81.0,78.0,Go-live Terlambat
+P00038,O00120,Agrikultur,TSplus,BeOne HQ,Remote Access,K012,2020-10-01,2020-10-21,2020-10-19,20,18.0,13.0,16.0,Go-live Tepat Waktu
+P00039,O00121,Manufaktur,SAP Business One,BeOne HQ,Inventory,K005,2020-04-04,2020-10-17,2020-11-14,196,224.0,646.0,816.0,Go-live Terlambat
+P00040,O00128,F&B,SAP Business One,BeOne HQ,Sales,K027,2021-04-04,2021-09-26,2021-09-23,175,172.0,432.0,421.0,Go-live Tepat Waktu
+P00041,O00129,Retail,SAP S/4HANA GROW,BeOne HQ,Procurement,K014,2020-09-29,2021-07-22,2021-10-08,296,374.0,1188.0,1486.0,Go-live Terlambat
+P00042,O00132,Manufaktur,SAP Business One,BeOne HQ,Financials,K005,2021-03-04,2021-07-26,2021-09-05,144,185.0,189.0,207.0,Go-live Terlambat
+P00043,O00134,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K006,2020-12-07,2021-04-15,2021-04-27,129,141.0,187.0,176.0,Go-live Terlambat
+P00044,O00136,Jasa Profesional,TSplus,BeOne HQ,Advanced Security,K007,2020-04-26,2020-05-16,2020-05-15,20,19.0,22.0,21.0,Go-live Tepat Waktu
+P00045,O00139,Konstruksi,SAP Business One,BeOne HQ,Reporting,K024,2020-09-28,2021-01-08,2021-02-20,102,145.0,233.0,243.0,Go-live Terlambat
+P00046,O00141,F&B,SAP Business One,BeOne HQ,Sales,K004,2020-12-01,2021-05-17,2021-07-27,167,238.0,264.0,258.0,Go-live Terlambat
+P00047,O00142,F&B,SAP Business One,BeOne HQ,Inventory,K001,2020-09-29,2021-04-19,2021-03-31,202,183.0,146.0,136.0,Go-live Tepat Waktu
+P00048,O00146,Manufaktur,SAP Business One,BeOne HQ,Sales,K009,2021-03-01,2021-08-13,2021-07-24,165,145.0,402.0,395.0,Go-live Tepat Waktu
+P00049,O00148,Manufaktur,SAP Business One,BeOne HQ,Production,K003,2020-12-16,2021-08-18,2021-09-28,245,286.0,420.0,416.0,Go-live Terlambat
+P00050,O00154,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K014,2021-02-11,2021-04-17,2021-04-15,65,63.0,108.0,138.0,Go-live Tepat Waktu
+P00051,O00156,Retail,SAP Business One,BeOne HQ,Sales,K024,2020-06-21,2020-11-06,2020-11-05,138,137.0,273.0,261.0,Go-live Tepat Waktu
+P00052,O00158,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K001,2021-03-06,2021-10-02,2021-12-14,210,283.0,523.0,503.0,Go-live Terlambat
+P00053,O00161,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K002,2020-08-11,2020-10-14,2020-10-11,64,61.0,107.0,101.0,Go-live Tepat Waktu
+P00054,O00165,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Finance,K023,2020-08-25,2021-07-01,2021-06-10,310,289.0,750.0,868.0,Go-live Tepat Waktu
+P00055,O00168,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K006,2020-08-08,2021-02-23,2021-02-11,199,187.0,291.0,372.0,Go-live Tepat Waktu
+P00056,O00169,Retail,SAP Business One,BeOne HQ,Production,K024,2021-05-06,2021-11-15,2021-12-22,193,230.0,492.0,494.0,Go-live Terlambat
+P00057,O00171,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K008,2021-02-25,2021-09-06,2021-11-04,193,252.0,268.0,265.0,Go-live Terlambat
+P00058,O00174,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K013,2021-03-14,2021-08-07,2021-08-28,146,167.0,284.0,310.0,Go-live Terlambat
+P00059,O00175,Manufaktur,SAP Business One,BeOne HQ,Production,K003,2020-11-08,2021-05-11,2021-04-21,184,164.0,387.0,391.0,Go-live Tepat Waktu
+P00060,O00182,F&B,SAP Business One,BeOne HQ,Financials,K005,2020-12-22,2021-05-30,2021-05-14,159,143.0,217.0,203.0,Go-live Tepat Waktu
+P00061,O00184,Retail,SAP Business One,BeOne HQ,Sales,K014,2020-11-23,2021-06-16,2021-08-26,205,276.0,171.0,173.0,Go-live Terlambat
+P00062,O00187,Konstruksi,SAP Business One,BeOne HQ,Purchasing,K027,2020-11-21,2021-05-10,2021-04-28,170,158.0,332.0,308.0,Go-live Tepat Waktu
+P00063,O00190,Agrikultur,SAP Business One,BeOne HQ,Production,K027,2021-02-18,2021-07-16,2021-07-11,148,143.0,390.0,369.0,Go-live Tepat Waktu
+P00064,O00191,Trading/Distribusi,SAP Business One,BeOne HQ,Reporting,K026,2021-03-11,2021-09-11,2021-09-04,184,177.0,406.0,400.0,Go-live Tepat Waktu
+P00065,O00193,Pertambangan,SAP Business One,BeOne HQ,Inventory,K008,2021-01-31,2021-08-04,2021-08-17,185,198.0,267.0,338.0,Go-live Terlambat
+P00066,O00200,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K006,2020-08-30,2021-02-10,2021-02-25,164,179.0,354.0,342.0,Go-live Terlambat
+P00067,O00201,Retail,SAP Business One,BeOne HQ,Inventory,K003,2021-05-14,2021-11-12,2021-10-27,182,166.0,884.0,857.0,Go-live Tepat Waktu
+P00068,O00202,Pertambangan,SAP Business One,BeOne HQ,Production,K027,2021-01-28,2021-07-16,2021-08-17,169,201.0,203.0,213.0,Go-live Terlambat
+P00069,O00204,Retail,SAP Business One,BeOne HQ,Purchasing,K005,2021-01-12,2021-05-26,2021-07-16,134,185.0,512.0,499.0,Go-live Terlambat
+P00070,O00208,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Procurement,K008,2020-12-20,2021-10-23,2021-10-22,307,306.0,1137.0,1290.0,Go-live Tepat Waktu
+P00071,O00210,Retail,SAP Business One,BeOne HQ,Purchasing,K025,2020-07-10,2021-01-12,2021-01-11,186,185.0,136.0,129.0,Go-live Tepat Waktu
+P00072,O00211,F&B,SAP Business One,BeOne HQ,Reporting,K005,2020-06-27,2020-11-11,2020-12-09,137,165.0,86.0,84.0,Go-live Terlambat
+P00073,O00212,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K001,2020-05-01,2020-09-18,2020-09-07,140,129.0,218.0,222.0,Go-live Tepat Waktu
+P00074,O00213,Agrikultur,Add-on & Integrasi,BeOne HQ,WMS,K006,2020-04-16,2020-06-23,2020-07-22,68,97.0,270.0,259.0,Go-live Terlambat
+P00075,O00215,Jasa Profesional,SAP Business One,BeOne HQ,Production,K013,2020-12-28,2021-06-09,2021-05-29,163,152.0,377.0,383.0,Go-live Tepat Waktu
+P00076,O00220,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K010,2020-07-16,2020-12-05,2020-12-02,142,139.0,147.0,145.0,Go-live Tepat Waktu
+P00077,O00221,F&B,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K024,2020-05-05,2020-07-10,2020-07-08,66,64.0,67.0,66.0,Go-live Tepat Waktu
+P00078,O00224,F&B,SAP Business One,BeOne HQ,Financials,K025,2020-07-06,2020-11-10,2020-11-02,127,119.0,203.0,193.0,Go-live Tepat Waktu
+P00079,O00225,Manufaktur,TSplus,BeOne HQ,Server Farm,K004,2021-01-24,2021-02-15,2021-02-14,22,21.0,20.0,18.0,Go-live Tepat Waktu
+P00080,O00230,Manufaktur,SAP Business One,BeOne HQ,Financials,K001,2021-04-04,2021-10-08,2021-09-27,187,176.0,304.0,286.0,Go-live Tepat Waktu
+P00081,O00232,Retail,SAP Business One,BeOne HQ,Sales,K009,2021-02-07,2021-07-07,2021-06-30,150,143.0,323.0,301.0,Go-live Tepat Waktu
+P00082,O00233,F&B,SAP Business One,BeOne HQ,Financials,K001,2020-07-30,2021-01-05,2021-03-15,159,228.0,90.0,83.0,Go-live Terlambat
+P00083,O00234,Manufaktur,SAP Business One,BeOne HQ,Production,K006,2021-03-08,2021-08-27,2021-08-26,172,171.0,324.0,330.0,Go-live Tepat Waktu
+P00084,O00235,Retail,SAP Business One,BeOne HQ,Financials,K026,2020-11-18,2021-05-04,2021-04-25,167,158.0,472.0,607.0,Go-live Tepat Waktu
+P00085,O00237,Jasa Profesional,Add-on & Integrasi,BeOne HQ,POS Integration,K024,2020-07-04,2020-09-12,2020-09-30,70,88.0,105.0,100.0,Go-live Terlambat
+P00086,O00240,Retail,SAP Business One,BeOne HQ,Purchasing,K013,2020-10-22,2021-05-04,2021-05-14,194,204.0,315.0,314.0,Go-live Terlambat
+P00087,O00241,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,WMS,K026,2021-04-29,2021-07-01,2021-06-29,63,61.0,105.0,97.0,Go-live Tepat Waktu
+P00088,O00251,Manufaktur,SAP Business One,BeOne HQ,Sales,K012,2022-04-14,2022-09-05,2022-08-25,144,133.0,123.0,117.0,Go-live Tepat Waktu
+P00089,O00255,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K026,2021-07-09,2022-01-23,2022-02-19,198,225.0,310.0,311.0,Go-live Terlambat
+P00090,O00261,F&B,SAP Business One,BeOne HQ,Purchasing,K006,2021-05-16,2021-09-10,2021-10-11,117,148.0,182.0,172.0,Go-live Terlambat
+P00091,O00262,Manufaktur,SAP Business One,BeOne HQ,Reporting,K005,2021-08-23,2021-12-04,2021-12-17,103,116.0,105.0,106.0,Go-live Terlambat
+P00092,O00264,Manufaktur,SAP Business One,BeOne HQ,Financials,K009,2022-06-20,2022-11-22,2022-11-12,155,145.0,186.0,238.0,Go-live Tepat Waktu
+P00093,O00265,Retail,SAP Business One,BeOne HQ,Production,K012,2022-01-04,2022-07-11,2022-09-15,188,254.0,355.0,355.0,Go-live Terlambat
+P00094,O00267,Manufaktur,SAP Business One,BeOne HQ,Inventory,K007,2021-09-26,2022-02-23,2022-02-12,150,139.0,402.0,464.0,Go-live Tepat Waktu
+P00095,O00270,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K002,2022-02-23,2022-07-24,2022-08-17,151,175.0,187.0,175.0,Go-live Terlambat
+P00096,O00273,F&B,SAP Business One,BeOne HQ,Production,K002,2021-09-16,2022-02-11,2022-01-25,148,131.0,152.0,141.0,Go-live Tepat Waktu
+P00097,O00281,Manufaktur,SAP Business One,BeOne HQ,Production,K004,2021-04-27,2021-10-10,2021-11-04,166,191.0,567.0,647.0,Go-live Terlambat
+P00098,O00285,Manufaktur,SAP Business One,BeOne HQ,Reporting,K014,2021-12-04,2022-06-06,2022-06-05,184,183.0,96.0,92.0,Go-live Tepat Waktu
+P00099,O00287,Manufaktur,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K010,2021-04-18,2021-05-10,2021-05-18,22,30.0,15.0,18.0,Go-live Terlambat
+P00100,O00292,Manufaktur,SAP Business One,BeOne HQ,Production,K027,2021-12-31,2022-06-10,2022-08-09,161,221.0,595.0,580.0,Go-live Terlambat
+P00101,O00294,Retail,SAP Business One,BeOne HQ,Production,K008,2022-05-05,2022-10-23,2022-11-06,171,185.0,154.0,151.0,Go-live Terlambat
+P00102,O00295,Manufaktur,SAP Business One,BeOne HQ,Reporting,K011,2021-07-26,2022-01-08,2021-12-20,166,147.0,395.0,511.0,Go-live Tepat Waktu
+P00103,O00300,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K023,2022-04-27,2022-09-16,2022-10-27,142,183.0,389.0,367.0,Go-live Terlambat
+P00104,O00306,Retail,SAP Business One,BeOne HQ,Financials,K014,2021-12-18,2022-05-08,2022-05-27,141,160.0,130.0,124.0,Go-live Terlambat
+P00105,O00309,F&B,SAP Business One,BeOne HQ,Reporting,K002,2021-10-02,2022-05-13,2022-04-29,223,209.0,646.0,629.0,Go-live Tepat Waktu
+P00106,O00310,Manufaktur,SAP Business One,BeOne HQ,Inventory,K026,2022-03-19,2022-06-29,2022-07-27,102,130.0,274.0,269.0,Go-live Terlambat
+P00107,O00311,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K012,2021-12-26,2022-03-01,2022-02-22,65,58.0,117.0,151.0,Go-live Tepat Waktu
+P00108,O00319,Agrikultur,SAP S/4HANA GROW,BeOne HQ,Analytics,K013,2021-07-25,2022-05-25,2022-06-27,304,337.0,1069.0,1113.0,Go-live Terlambat
+P00109,O00320,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K025,2022-04-14,2022-09-01,2022-10-15,140,184.0,177.0,177.0,Go-live Terlambat
+P00110,O00332,Retail,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K010,2021-12-11,2022-01-18,2022-01-16,38,36.0,159.0,153.0,Go-live Tepat Waktu
+P00111,O00335,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K001,2021-05-04,2021-06-23,2021-06-17,50,44.0,203.0,206.0,Go-live Tepat Waktu
+P00112,O00338,Manufaktur,SAP Business One,BeOne HQ,Production,K014,2021-07-02,2021-12-31,2021-12-16,182,167.0,119.0,110.0,Go-live Tepat Waktu
+P00113,O00339,F&B,SAP Business One,BeOne HQ,Production,K011,2021-06-15,2021-11-06,2021-12-18,144,186.0,358.0,335.0,Go-live Terlambat
+P00114,O00342,Manufaktur,SAP Business One,BeOne HQ,Production,K002,2022-02-15,2022-09-03,2022-08-20,200,186.0,325.0,300.0,Go-live Tepat Waktu
+P00115,O00345,Manufaktur,Add-on & Integrasi,BeOne HQ,WMS,K025,2021-10-27,2021-12-20,2021-12-15,54,49.0,104.0,102.0,Go-live Tepat Waktu
+P00116,O00348,Manufaktur,SAP Business One,BeOne HQ,Reporting,K014,2022-04-26,2022-09-24,2022-09-21,151,148.0,679.0,871.0,Go-live Tepat Waktu
+P00117,O00350,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K025,2022-02-04,2022-07-24,2022-07-22,170,168.0,188.0,178.0,Go-live Tepat Waktu
+P00118,O00354,Manufaktur,SAP Business One,BeOne HQ,Reporting,K024,2021-12-07,2022-05-12,2022-05-02,156,146.0,103.0,99.0,Go-live Tepat Waktu
+P00119,O00355,Manufaktur,SAP Business One,BeOne HQ,Production,K024,2022-02-16,2022-08-28,2022-08-06,193,171.0,569.0,536.0,Go-live Tepat Waktu
+P00120,O00357,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K001,2021-10-22,2022-02-07,2022-02-19,108,120.0,816.0,791.0,Go-live Terlambat
+P00121,O00360,Manufaktur,Add-on & Integrasi,BeOne HQ,WMS,K005,2021-10-08,2021-12-21,2021-12-17,74,70.0,44.0,42.0,Go-live Tepat Waktu
+P00122,O00363,Pertambangan,SAP Business One,BeOne HQ,Purchasing,K026,2021-07-31,2022-01-08,2021-12-30,161,152.0,308.0,353.0,Go-live Tepat Waktu
+P00123,O00366,Konstruksi,SAP Business One,BeOne HQ,Inventory,K013,2021-04-07,2021-08-24,2021-08-17,139,132.0,75.0,69.0,Go-live Tepat Waktu
+P00124,O00371,Pertambangan,SAP Business One,BeOne HQ,Reporting,K027,2022-01-06,2022-08-08,2022-07-30,214,205.0,168.0,163.0,Go-live Tepat Waktu
+P00125,O00372,Manufaktur,SAP Business One,BeOne HQ,Sales,K014,2021-11-07,2022-04-18,2022-05-01,162,175.0,340.0,334.0,Go-live Terlambat
+P00126,O00373,Manufaktur,SAP Business One,BeOne HQ,Production,K005,2021-08-06,2022-01-30,2022-01-15,177,162.0,437.0,507.0,Go-live Tepat Waktu
+P00127,O00376,Agrikultur,SAP Business One,BeOne HQ,Financials,K001,2022-04-15,2022-09-14,2022-09-06,152,144.0,512.0,517.0,Go-live Tepat Waktu
+P00128,O00378,Manufaktur,SAP Business One,BeOne HQ,Inventory,K007,2021-05-12,2021-09-15,2021-11-01,126,173.0,992.0,988.0,Go-live Terlambat
+P00129,O00385,Agrikultur,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K012,2021-08-19,2021-10-18,2021-10-11,60,53.0,75.0,73.0,Go-live Tepat Waktu
+P00130,O00393,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K011,2022-10-30,2023-03-28,2023-03-18,149,139.0,462.0,508.0,Go-live Tepat Waktu
+P00131,O00395,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K004,2022-08-10,2022-10-27,2022-11-11,78,93.0,179.0,198.0,Go-live Terlambat
+P00132,O00397,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K008,2023-02-01,2023-05-01,2023-05-16,89,104.0,382.0,352.0,Go-live Terlambat
+P00133,O00398,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K001,2022-11-22,2023-01-08,2023-01-22,47,61.0,209.0,200.0,Go-live Terlambat
+P00134,O00399,Konstruksi,SAP Business One,BeOne HQ,Purchasing,K001,2023-02-20,2023-08-28,2023-10-10,189,232.0,357.0,433.0,Go-live Terlambat
+P00135,O00400,Retail,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K026,2022-10-26,2022-12-28,2022-12-25,63,60.0,535.0,501.0,Go-live Tepat Waktu
+P00136,O00412,F&B,SAP Business One,BeOne HQ,Sales,K011,2022-10-17,2023-02-25,2023-02-21,131,127.0,603.0,584.0,Go-live Tepat Waktu
+P00137,O00413,Agrikultur,SAP Business One,BeOne HQ,Production,K012,2023-01-15,2023-06-20,2023-07-17,156,183.0,265.0,281.0,Go-live Terlambat
+P00138,O00414,Manufaktur,Add-on & Integrasi,BeOne HQ,Coretax,K007,2023-02-09,2023-04-11,2023-04-14,61,64.0,107.0,132.0,Go-live Terlambat
+P00139,O00415,Jasa Profesional,SAP Business One,BeOne HQ,Financials,K011,2022-06-15,2022-10-31,2022-10-19,138,126.0,154.0,146.0,Go-live Tepat Waktu
+P00140,O00418,F&B,SAP Business One,BeOne HQ,Reporting,K005,2022-08-21,2023-02-11,2023-01-30,174,162.0,609.0,612.0,Go-live Tepat Waktu
+P00141,O00422,Retail,SAP Business One,BeOne HQ,Production,K002,2023-04-12,2023-09-19,2023-11-01,160,203.0,284.0,284.0,Go-live Terlambat
+P00142,O00430,Retail,Training/Xpertise Academy,BeOne HQ,In-house Training,K004,2022-08-29,2022-09-18,2022-09-17,20,19.0,51.0,51.0,Go-live Tepat Waktu
+P00143,O00433,Manufaktur,SAP Business One,BeOne HQ,Sales,K014,2023-04-07,2023-10-05,2023-09-23,181,169.0,143.0,132.0,Go-live Tepat Waktu
+P00144,O00435,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K002,2022-06-14,2022-07-04,2022-07-06,20,22.0,45.0,47.0,Go-live Terlambat
+P00145,O00436,Pertambangan,SAP Business One,BeOne HQ,Sales,K003,2022-05-09,2022-10-23,2022-10-16,167,160.0,379.0,381.0,Go-live Tepat Waktu
+P00146,O00440,Jasa Profesional,SAP Business One,BeOne HQ,Production,K014,2023-03-21,2023-09-03,2023-09-16,166,179.0,291.0,290.0,Go-live Terlambat
+P00147,O00441,Manufaktur,SAP Business One,BeOne HQ,Production,K005,2022-07-17,2023-01-06,2023-02-25,173,223.0,210.0,238.0,Go-live Terlambat
+P00148,O00442,Pertambangan,SAP Business One,BeOne HQ,Sales,K004,2022-12-28,2023-05-25,2023-06-05,148,159.0,354.0,394.0,Go-live Terlambat
+P00149,O00444,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K005,2022-08-24,2023-02-04,2023-03-03,164,191.0,256.0,318.0,Go-live Terlambat
+P00150,O00446,Agrikultur,SAP Business One,BeOne HQ,Sales,K013,2023-06-12,2023-11-02,2023-10-29,143,139.0,370.0,365.0,Go-live Tepat Waktu
+P00151,O00453,Manufaktur,Add-on & Integrasi,BeOne HQ,WMS,K008,2022-09-07,2022-11-11,2022-11-17,65,71.0,209.0,192.0,Go-live Terlambat
+P00152,O00456,Retail,TSplus,BeOne HQ,Advanced Security,K023,2023-01-04,2023-01-24,2023-01-22,20,18.0,21.0,20.0,Go-live Tepat Waktu
+P00153,O00460,Manufaktur,SAP Business One,BeOne HQ,Reporting,K010,2022-08-05,2023-01-29,2023-01-14,177,162.0,398.0,367.0,Go-live Tepat Waktu
+P00154,O00461,Retail,SAP Business One,BeOne HQ,Reporting,K003,2023-02-16,2023-08-01,2023-09-27,166,223.0,345.0,351.0,Go-live Terlambat
+P00155,O00462,Manufaktur,SAP Business One,BeOne HQ,Production,K027,2023-01-31,2023-07-19,2023-07-05,169,155.0,245.0,233.0,Go-live Tepat Waktu
+P00156,O00468,Manufaktur,SAP Business One,BeOne HQ,Reporting,K024,2023-03-29,2023-07-21,2023-07-17,114,110.0,489.0,577.0,Go-live Tepat Waktu
+P00157,O00469,Manufaktur,SAP Business One,BeOne HQ,Financials,K012,2022-12-19,2023-05-05,2023-06-15,137,178.0,467.0,448.0,Go-live Terlambat
+P00158,O00471,Pertambangan,SAP Business One,BeOne HQ,Financials,K005,2022-07-19,2023-01-14,2023-01-03,179,168.0,425.0,413.0,Go-live Tepat Waktu
+P00159,O00474,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K027,2022-09-01,2023-02-06,2023-01-25,158,146.0,280.0,268.0,Go-live Tepat Waktu
+P00160,O00476,F&B,SAP Business One,BeOne HQ,Inventory,K024,2023-02-09,2023-07-15,2023-07-09,156,150.0,570.0,569.0,Go-live Tepat Waktu
+P00161,O00478,Konstruksi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K006,2022-09-16,2022-11-02,2022-11-01,47,46.0,247.0,244.0,Go-live Tepat Waktu
+P00162,O00479,Manufaktur,SAP Business One,BeOne HQ,Sales,K010,2022-08-30,2023-01-16,2023-01-04,139,127.0,555.0,517.0,Go-live Tepat Waktu
+P00163,O00482,Retail,SAP Business One,BeOne HQ,Reporting,K011,2022-06-13,2022-12-12,2022-11-21,182,161.0,803.0,786.0,Go-live Tepat Waktu
+P00164,O00483,Retail,SAP Business One,BeOne HQ,Production,K010,2022-08-22,2023-01-25,2023-01-16,156,147.0,234.0,237.0,Go-live Tepat Waktu
+P00165,O00488,Retail,SAP Business One,BeOne HQ,Sales,K010,2023-02-02,2023-06-29,2023-06-22,147,140.0,106.0,107.0,Go-live Tepat Waktu
+P00166,O00489,Pertambangan,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K011,2022-11-10,2022-11-30,2022-11-28,20,18.0,33.0,31.0,Go-live Tepat Waktu
+P00167,O00491,Agrikultur,SAP Business One,BeOne HQ,Production,K008,2023-06-12,2023-12-15,2023-12-26,186,197.0,559.0,561.0,Go-live Terlambat
+P00168,O00494,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Analytics,K026,2022-08-06,2023-03-28,2023-03-21,234,227.0,2179.0,2012.0,Go-live Tepat Waktu
+P00169,O00496,Agrikultur,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K027,2022-12-21,2023-02-23,2023-02-18,64,59.0,49.0,45.0,Go-live Tepat Waktu
+P00170,O00498,F&B,SAP Business One,BeOne HQ,Inventory,K005,2023-01-07,2023-06-27,2023-06-19,171,163.0,156.0,164.0,Go-live Tepat Waktu
+P00171,O00500,Manufaktur,TSplus,BeOne HQ,Server Farm,K009,2022-06-03,2022-06-23,2022-06-21,20,18.0,44.0,47.0,Go-live Tepat Waktu
+P00172,O00503,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Finance,K009,2023-05-29,2024-02-20,2024-01-24,267,240.0,373.0,350.0,Go-live Tepat Waktu
+P00173,O00504,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K025,2022-10-21,2023-06-13,2023-05-24,235,215.0,59.0,76.0,Go-live Tepat Waktu
+P00174,O00512,Konstruksi,SAP Business One,BeOne HQ,Reporting,K008,2022-11-27,2023-05-19,2023-06-23,173,208.0,492.0,613.0,Go-live Terlambat
+P00175,O00513,Retail,SAP Business One,BeOne HQ,Production,K005,2023-01-26,2023-07-27,2023-07-21,182,176.0,381.0,359.0,Go-live Tepat Waktu
+P00176,O00515,Pertambangan,SAP Business One,BeOne HQ,Production,K014,2022-12-03,2023-04-18,2023-04-13,136,131.0,365.0,369.0,Go-live Tepat Waktu
+P00177,O00516,Retail,SAP Business One,BeOne HQ,Purchasing,K008,2022-06-13,2022-12-05,2022-11-19,175,159.0,336.0,310.0,Go-live Tepat Waktu
+P00178,O00518,Pertambangan,SAP Business One,BeOne HQ,Inventory,K013,2022-04-25,2022-09-14,2022-09-05,142,133.0,419.0,417.0,Go-live Tepat Waktu
+P00179,O00522,Konstruksi,SAP Business One,BeOne HQ,Financials,K024,2023-03-27,2023-12-04,2023-11-07,252,225.0,281.0,274.0,Go-live Tepat Waktu
+P00180,O00523,Konstruksi,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K027,2022-05-01,2022-05-21,2022-05-19,20,18.0,77.0,92.0,Go-live Tepat Waktu
+P00181,O00524,F&B,SAP Business One,BeOne HQ,Financials,K013,2022-08-09,2023-02-06,2023-01-20,181,164.0,384.0,454.0,Go-live Tepat Waktu
+P00182,O00525,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K014,2023-03-24,2023-07-31,2023-07-27,129,125.0,298.0,365.0,Go-live Tepat Waktu
+P00183,O00537,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K008,2023-04-30,2023-10-15,2023-11-09,168,193.0,205.0,202.0,Go-live Terlambat
+P00184,O00539,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Analytics,K010,2023-02-11,2023-10-25,2024-01-10,256,333.0,1382.0,1314.0,Go-live Terlambat
+P00185,O00541,Manufaktur,SAP Business One,BeOne HQ,Production,K014,2022-07-24,2023-01-24,2023-01-02,184,162.0,100.0,93.0,Go-live Tepat Waktu
+P00186,O00542,Retail,SAP Business One,BeOne HQ,Reporting,K003,2022-08-27,2023-01-07,2023-01-06,133,132.0,289.0,320.0,Go-live Tepat Waktu
+P00187,O00546,Agrikultur,SAP Business One,BeOne HQ,Inventory,K024,2023-03-02,2023-08-04,2023-07-27,155,147.0,143.0,139.0,Go-live Tepat Waktu
+P00188,O00551,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K008,2022-12-24,2023-08-04,2023-09-07,223,257.0,409.0,394.0,Go-live Terlambat
+P00189,O00552,Retail,SAP Business One,BeOne HQ,Sales,K008,2023-05-31,2023-12-28,2023-12-08,211,191.0,644.0,595.0,Go-live Tepat Waktu
+P00190,O00553,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K010,2022-11-15,2023-05-15,2023-06-30,181,227.0,293.0,367.0,Go-live Terlambat
+P00191,O00556,Manufaktur,TSplus,BeOne HQ,Remote Access,K027,2023-10-19,2023-11-08,2023-11-05,20,17.0,30.0,28.0,Go-live Tepat Waktu
+P00192,O00561,Manufaktur,SAP Business One,BeOne HQ,Sales,K010,2023-09-15,2024-02-07,2024-01-29,145,136.0,591.0,578.0,Go-live Tepat Waktu
+P00193,O00562,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K013,2023-08-04,2023-09-28,2023-09-22,55,49.0,83.0,82.0,Go-live Tepat Waktu
+P00194,O00567,F&B,SAP S/4HANA GROW,BeOne HQ,Procurement,K024,2024-03-18,2024-12-20,2025-04-09,277,387.0,758.0,898.0,Go-live Terlambat
+P00195,O00568,Agrikultur,SAP S/4HANA GROW,BeOne HQ,Analytics,K013,2024-05-23,2025-02-08,2025-02-25,261,278.0,902.0,955.0,Go-live Terlambat
+P00196,O00574,Manufaktur,Add-on & Integrasi,BeOne HQ,WMS,K024,2023-10-11,2024-01-01,2024-01-19,82,100.0,60.0,57.0,Go-live Terlambat
+P00197,O00576,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K012,2023-10-22,2024-04-30,2024-06-26,191,248.0,214.0,199.0,Go-live Terlambat
+P00198,O00577,Manufaktur,SAP Business One,BeOne HQ,Inventory,K024,2023-06-26,2023-12-06,2023-12-02,163,159.0,362.0,365.0,Go-live Tepat Waktu
+P00199,O00578,Manufaktur,SAP Business One,BeOne HQ,Sales,K013,2023-08-03,2024-01-31,2024-01-16,181,166.0,342.0,317.0,Go-live Tepat Waktu
+P00200,O00580,Konstruksi,Business Insight,BeOne HQ,Mobile Analytics,K014,2023-06-06,2023-07-26,2023-07-24,50,48.0,74.0,75.0,Go-live Tepat Waktu
+P00201,O00583,Manufaktur,SAP Business One,BeOne HQ,Production,K023,2023-07-16,2023-12-25,2024-01-18,162,186.0,200.0,235.0,Go-live Terlambat
+P00202,O00586,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K027,2024-02-08,2024-10-01,2024-09-03,236,208.0,633.0,621.0,Go-live Tepat Waktu
+P00203,O00591,Konstruksi,TSplus,BeOne HQ,Server Farm,K012,2023-06-15,2023-07-05,2023-07-02,20,17.0,59.0,56.0,Go-live Tepat Waktu
+P00204,O00593,Pertambangan,SAP Business One,BeOne HQ,Purchasing,K025,2024-04-11,2024-10-04,2024-09-23,176,165.0,234.0,217.0,Go-live Tepat Waktu
+P00205,O00598,Agrikultur,SAP Business One,BeOne HQ,Financials,K001,2023-09-27,2024-03-18,2024-03-15,173,170.0,210.0,197.0,Go-live Tepat Waktu
+P00206,O00600,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,In-house Training,K026,2023-06-16,2023-07-07,2023-07-06,21,20.0,74.0,75.0,Go-live Tepat Waktu
+P00207,O00603,F&B,SAP Business One,BeOne HQ,Inventory,K010,2024-04-17,2024-11-27,2025-01-19,224,277.0,421.0,394.0,Go-live Terlambat
+P00208,O00605,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Finance,K006,2024-07-11,2025-06-08,2025-05-18,332,311.0,367.0,402.0,Go-live Tepat Waktu
+P00209,O00608,Trading/Distribusi,TSplus,BeOne HQ,Advanced Security,K014,2023-02-23,2023-03-15,2023-03-13,20,18.0,40.0,45.0,Go-live Tepat Waktu
+P00210,O00613,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K005,2023-10-02,2023-12-10,2023-12-20,69,79.0,78.0,79.0,Go-live Terlambat
+P00211,O00617,Konstruksi,TSplus,BeOne HQ,Advanced Security,K006,2023-12-10,2023-12-30,2023-12-28,20,18.0,37.0,36.0,Go-live Tepat Waktu
+P00212,O00618,Jasa Profesional,Add-on & Integrasi,BeOne HQ,POS Integration,K006,2023-06-19,2023-08-27,2023-09-20,69,93.0,194.0,247.0,Go-live Terlambat
+P00213,O00620,Konstruksi,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K014,2023-12-28,2024-01-17,2024-01-16,20,19.0,56.0,63.0,Go-live Tepat Waktu
+P00214,O00625,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K027,2023-12-10,2024-08-10,2024-07-21,244,224.0,331.0,332.0,Go-live Tepat Waktu
+P00215,O00627,Manufaktur,SAP Business One,BeOne HQ,Financials,K001,2023-05-17,2023-11-10,2023-11-23,177,190.0,349.0,420.0,Go-live Terlambat
+P00216,O00628,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K012,2024-02-19,2024-05-03,2024-05-10,74,81.0,238.0,231.0,Go-live Terlambat
+P00217,O00634,Jasa Profesional,SAP S/4HANA GROW,BeOne HQ,Finance,K026,2023-12-27,2024-08-24,2024-11-18,241,327.0,911.0,915.0,Go-live Terlambat
+P00218,O00635,F&B,SAP Business One,BeOne HQ,Inventory,K004,2023-12-23,2024-05-04,2024-06-26,133,186.0,238.0,224.0,Go-live Terlambat
+P00219,O00636,Manufaktur,SAP Business One,BeOne HQ,Sales,K023,2024-05-09,2024-10-19,2024-10-14,163,158.0,322.0,390.0,Go-live Tepat Waktu
+P00220,O00639,Manufaktur,SAP Business One,BeOne HQ,Production,K011,2023-11-08,2024-05-15,2024-05-08,189,182.0,454.0,458.0,Go-live Tepat Waktu
+P00221,O00641,Retail,SAP Business One,BeOne HQ,Production,K003,2023-11-18,2024-03-19,2024-03-16,122,119.0,585.0,556.0,Go-live Tepat Waktu
+P00222,O00642,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Analytics,K001,2024-03-15,2025-03-01,2025-01-25,351,316.0,580.0,549.0,Go-live Tepat Waktu
+P00223,O00643,Pertambangan,Add-on & Integrasi,BeOne HQ,WMS,K014,2023-04-15,2023-06-25,2023-06-23,71,69.0,129.0,137.0,Go-live Tepat Waktu
+P00224,O00645,F&B,Add-on & Integrasi,BeOne HQ,POS Integration,K024,2023-03-18,2023-05-12,2023-05-17,55,60.0,141.0,132.0,Go-live Terlambat
+P00225,O00646,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K011,2023-12-23,2024-05-18,2024-06-27,147,187.0,1039.0,1053.0,Go-live Terlambat
+P00226,O00647,F&B,SAP Business One,BeOne HQ,Reporting,K008,2023-11-09,2024-04-19,2024-04-16,162,159.0,281.0,285.0,Go-live Tepat Waktu
+P00227,O00651,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Analytics,K012,2024-01-21,2025-02-18,2025-06-21,394,517.0,711.0,708.0,Go-live Terlambat
+P00228,O00653,Manufaktur,SAP Business One,BeOne HQ,Financials,K024,2024-04-14,2024-08-12,2024-08-03,120,111.0,371.0,347.0,Go-live Tepat Waktu
+P00229,O00656,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K009,2024-01-04,2025-01-02,2025-04-20,364,472.0,789.0,886.0,Go-live Terlambat
+P00230,O00665,Manufaktur,SAP Business One,BeOne HQ,Production,K007,2023-11-21,2024-05-27,2024-08-01,188,254.0,263.0,249.0,Go-live Terlambat
+P00231,O00670,F&B,SAP Business One,BeOne HQ,Purchasing,K025,2023-12-06,2024-04-18,2024-05-28,134,174.0,256.0,319.0,Go-live Terlambat
+P00232,O00672,Agrikultur,SAP Business One,BeOne HQ,Sales,K009,2024-04-08,2024-09-02,2024-08-19,147,133.0,308.0,382.0,Go-live Tepat Waktu
+P00233,O00676,Manufaktur,SAP Business One,BeOne HQ,Production,K001,2023-09-13,2024-01-25,2024-03-15,134,184.0,271.0,275.0,Go-live Terlambat
+P00234,O00677,Jasa Profesional,SAP Business One,BeOne HQ,Sales,K009,2024-02-09,2024-08-12,2024-10-11,185,245.0,1078.0,1013.0,Go-live Terlambat
+P00235,O00680,F&B,SAP Business One,BeOne HQ,Financials,K023,2023-12-18,2024-04-13,2024-05-14,117,148.0,276.0,261.0,Go-live Terlambat
+P00236,O00685,Agrikultur,Add-on & Integrasi,BeOne HQ,WMS,K006,2023-07-20,2023-09-13,2023-09-28,55,70.0,168.0,166.0,Go-live Terlambat
+P00237,O00690,Retail,SAP Business One,BeOne HQ,Purchasing,K007,2024-05-08,2024-08-22,2024-09-17,106,132.0,364.0,412.0,Go-live Terlambat
+P00238,O00692,Retail,SAP Business One,BeOne HQ,Sales,K024,2023-12-21,2024-06-27,2024-06-21,189,183.0,436.0,402.0,Go-live Tepat Waktu
+P00239,O00697,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K011,2024-02-05,2024-02-25,2024-02-24,20,19.0,74.0,74.0,Go-live Tepat Waktu
+P00240,O00699,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K001,2024-01-23,2024-06-20,2024-06-11,149,140.0,248.0,251.0,Go-live Tepat Waktu
+P00241,O00700,Retail,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K011,2023-09-06,2023-09-26,2023-09-24,20,18.0,31.0,29.0,Go-live Tepat Waktu
+P00242,O00702,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K010,2023-08-02,2024-02-14,2024-03-30,196,241.0,200.0,201.0,Go-live Terlambat
+P00243,O00703,F&B,SAP Business One,BeOne HQ,Production,K006,2024-03-19,2024-09-02,2024-09-27,167,192.0,174.0,176.0,Go-live Terlambat
+P00244,O00709,Manufaktur,SAP Business One,BeOne HQ,Reporting,K008,2023-09-20,2024-05-02,2024-05-16,225,239.0,376.0,449.0,Go-live Terlambat
+P00245,O00717,Retail,SAP Business One,BeOne HQ,Inventory,K012,2024-01-02,2024-04-28,2024-04-22,117,111.0,383.0,356.0,Go-live Tepat Waktu
+P00246,O00720,Manufaktur,SAP Business One,BeOne HQ,Production,K001,2024-04-14,2024-09-17,2024-09-02,156,141.0,504.0,533.0,Go-live Tepat Waktu
+P00247,O00722,Jasa Profesional,SAP Business One,BeOne HQ,Reporting,K001,2023-11-13,2024-03-31,2024-05-20,139,189.0,415.0,385.0,Go-live Terlambat
+P00248,O00726,Retail,SAP Business One,BeOne HQ,Purchasing,K003,2023-10-19,2024-02-24,2024-02-10,128,114.0,295.0,295.0,Go-live Tepat Waktu
+P00249,O00727,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K025,2023-10-22,2024-04-07,2024-03-27,168,157.0,187.0,189.0,Go-live Tepat Waktu
+P00250,O00729,Agrikultur,Business Insight,BeOne HQ,KPI Monitoring,K006,2023-08-07,2023-09-20,2023-09-17,44,41.0,89.0,93.0,Go-live Tepat Waktu
+P00251,O00731,Jasa Profesional,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K009,2023-07-03,2023-07-23,2023-07-22,20,19.0,75.0,75.0,Go-live Tepat Waktu
+P00252,O00733,Manufaktur,SAP Business One,BeOne HQ,Inventory,K002,2024-04-18,2024-10-29,2024-12-14,194,240.0,413.0,404.0,Go-live Terlambat
+P00253,O00738,Agrikultur,SAP Business One,BeOne HQ,Sales,K024,2023-08-04,2024-02-17,2024-03-10,197,219.0,164.0,151.0,Go-live Terlambat
+P00254,O00744,Konstruksi,SAP Business One,BeOne HQ,Purchasing,K008,2023-06-18,2023-11-26,2024-01-02,161,198.0,489.0,498.0,Go-live Terlambat
+P00255,O00748,Manufaktur,SAP Business One,BeOne HQ,Inventory,K027,2023-07-27,2024-02-17,2024-01-26,205,183.0,391.0,397.0,Go-live Tepat Waktu
+P00256,O00750,Retail,Business Insight,BeOne HQ,Mobile Analytics,K027,2023-03-14,2023-04-26,2023-04-21,43,38.0,50.0,49.0,Go-live Tepat Waktu
+P00257,O00751,Retail,SAP S/4HANA GROW,BeOne HQ,Procurement,K007,2023-12-03,2024-09-16,2024-12-31,288,394.0,1272.0,1251.0,Go-live Terlambat
+P00258,O00755,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K008,2023-09-02,2024-01-26,2024-01-15,146,135.0,820.0,780.0,Go-live Tepat Waktu
+P00259,O00762,Retail,Add-on & Integrasi,BeOne HQ,WMS,K023,2025-02-01,2025-04-01,2025-04-25,59,83.0,129.0,121.0,Go-live Terlambat
+P00260,O00765,Pertambangan,SAP Business One,PT CORE (sister),Production,K002,2025-04-24,2025-12-22,2025-12-06,242,226.0,198.0,194.0,Go-live Tepat Waktu
+P00261,O00766,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K010,2024-07-06,2025-06-08,2025-09-17,337,438.0,1173.0,1125.0,Go-live Terlambat
+P00262,O00768,Manufaktur,SAP Business One,BeOne HQ,Sales,K013,2024-07-08,2025-01-10,2025-03-05,186,240.0,225.0,244.0,Go-live Terlambat
+P00263,O00772,F&B,SAP Business One,BeOne HQ,Reporting,K009,2024-08-15,2025-02-14,2025-03-12,183,209.0,244.0,241.0,Go-live Terlambat
+P00264,O00777,Retail,SAP Business One,BeOne HQ,Production,K008,2024-04-26,2024-09-12,2024-09-08,139,135.0,208.0,196.0,Go-live Tepat Waktu
+P00265,O00782,Retail,SAP S/4HANA GROW,BeOne HQ,Finance,K012,2024-08-02,2025-05-02,2025-04-14,273,255.0,1191.0,1117.0,Go-live Tepat Waktu
+P00266,O00788,Retail,SAP S/4HANA GROW,BeOne HQ,Procurement,K010,2025-01-24,2025-11-29,2025-12-15,309,325.0,1021.0,1317.0,Go-live Terlambat
+P00267,O00796,Jasa Profesional,Add-on & Integrasi,BeOne HQ,WMS,K025,2024-10-25,2025-01-19,2025-02-14,86,112.0,122.0,121.0,Go-live Terlambat
+P00268,O00798,Manufaktur,TSplus,BeOne HQ,Advanced Security,K004,2024-08-14,2024-09-03,2024-09-05,20,22.0,44.0,44.0,Go-live Terlambat
+P00269,O00799,Manufaktur,SAP Business One,BeOne HQ,Financials,K008,2025-03-09,2025-08-14,2025-08-10,158,154.0,226.0,229.0,Go-live Tepat Waktu
+P00270,O00802,Manufaktur,SAP Business One,PT CORE (sister),Financials,K011,2025-06-09,2025-10-25,2025-10-15,138,128.0,615.0,592.0,Go-live Tepat Waktu
+P00271,O00807,F&B,SAP Business One,BeOne HQ,Production,K027,2025-05-24,2025-10-23,2025-10-15,152,144.0,228.0,228.0,Go-live Tepat Waktu
+P00272,O00810,F&B,SAP Business One,BeOne HQ,Financials,K002,2024-07-23,2024-11-02,2024-12-14,102,144.0,381.0,358.0,Go-live Terlambat
+P00273,O00816,Retail,SAP Business One,BeOne HQ,Sales,K009,2024-06-25,2024-10-26,2024-10-14,123,111.0,430.0,475.0,Go-live Tepat Waktu
+P00274,O00819,Manufaktur,SAP Business One,PT CORE (sister),Reporting,K007,2024-11-24,2025-04-17,2025-06-08,144,196.0,252.0,242.0,Go-live Terlambat
+P00275,O00820,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K005,2024-11-10,2025-04-21,2025-04-09,162,150.0,175.0,217.0,Go-live Tepat Waktu
+P00276,O00823,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K004,2024-10-12,2025-08-26,2025-10-19,318,372.0,937.0,894.0,Go-live Terlambat
+P00277,O00828,Trading/Distribusi,SAP Business One,PT CORE (sister),Reporting,K007,2025-04-17,2025-09-25,2025-09-16,161,152.0,266.0,258.0,Go-live Tepat Waktu
+P00278,O00829,Agrikultur,Add-on & Integrasi,BeOne HQ,Coretax,K005,2024-12-04,2025-02-16,2025-02-13,74,71.0,111.0,123.0,Go-live Tepat Waktu
+P00279,O00833,Retail,SAP Business One,BeOne HQ,Production,K011,2025-04-02,2025-08-09,2025-08-04,129,124.0,254.0,238.0,Go-live Tepat Waktu
+P00280,O00836,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K011,2024-12-04,2025-11-16,2025-10-28,347,328.0,537.0,534.0,Go-live Tepat Waktu
+P00281,O00837,Trading/Distribusi,Business Insight,BeOne HQ,Mobile Analytics,K008,2024-08-21,2024-10-18,2024-10-21,58,61.0,153.0,150.0,Go-live Terlambat
+P00282,O00841,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,Coretax,K008,2024-10-19,2024-12-18,2024-12-25,60,67.0,272.0,270.0,Go-live Terlambat
+P00283,O00842,Manufaktur,SAP Business One,PT CORE (sister),Sales,K024,2024-12-21,2025-06-13,2025-05-23,174,153.0,135.0,133.0,Go-live Tepat Waktu
+P00284,O00852,Manufaktur,SAP Business One,BeOne HQ,Production,K006,2024-09-21,2025-03-15,2025-05-10,175,231.0,193.0,184.0,Go-live Terlambat
+P00285,O00853,Retail,SAP S/4HANA GROW,BeOne HQ,Analytics,K010,2024-12-31,2025-11-07,,311,,940.0,940.0,On Progress
+P00286,O00854,F&B,SAP S/4HANA GROW,BeOne HQ,Finance,K009,2025-05-05,2025-12-30,2025-12-04,239,213.0,1080.0,1018.0,Go-live Tepat Waktu
+P00287,O00855,Manufaktur,SAP Business One,BeOne HQ,Production,K013,2025-03-17,2025-08-28,2025-11-02,164,230.0,510.0,648.0,Go-live Terlambat
+P00288,O00863,Manufaktur,SAP Business One,PT CORE (sister),Sales,K011,2025-03-01,2025-08-13,2025-07-31,165,152.0,126.0,124.0,Go-live Tepat Waktu
+P00289,O00864,F&B,TSplus,BeOne HQ,Remote Access,K002,2024-04-18,2024-05-08,2024-05-06,20,18.0,46.0,45.0,Go-live Tepat Waktu
+P00290,O00866,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Finance,K012,2025-03-06,2025-11-21,2025-11-15,260,254.0,750.0,730.0,Go-live Tepat Waktu
+P00291,O00876,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K003,2025-01-04,2025-06-07,2025-07-24,154,201.0,297.0,276.0,Go-live Terlambat
+P00292,O00877,Pertambangan,SAP Business One,PT CORE (sister),Purchasing,K008,2025-03-19,2025-10-03,2025-09-20,198,185.0,768.0,757.0,Go-live Tepat Waktu
+P00293,O00880,F&B,SAP Business One,BeOne HQ,Production,K004,2024-12-10,2025-05-17,2025-05-14,158,155.0,254.0,241.0,Go-live Tepat Waktu
+P00294,O00884,Manufaktur,SAP Business One,BeOne HQ,Reporting,K001,2025-06-01,2025-10-19,2025-10-08,140,129.0,476.0,452.0,Go-live Tepat Waktu
+P00295,O00885,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K026,2024-11-02,2025-04-12,2025-03-29,161,147.0,308.0,287.0,Go-live Tepat Waktu
+P00296,O00886,F&B,SAP Business One,BeOne HQ,Production,K004,2024-07-23,2025-02-04,2025-02-27,196,219.0,560.0,553.0,Go-live Terlambat
+P00297,O00889,F&B,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K005,2025-05-22,2026-03-07,,289,,500.0,500.0,On Progress
+P00298,O00894,Manufaktur,TSplus,BeOne HQ,Remote Access,K025,2024-04-21,2024-05-11,2024-05-10,20,19.0,47.0,48.0,Go-live Tepat Waktu
+P00299,O00895,F&B,SAP Business One,BeOne HQ,Reporting,K010,2025-03-30,2025-09-15,2025-10-17,169,201.0,368.0,355.0,Go-live Terlambat
+P00300,O00898,Manufaktur,SAP Business One,BeOne HQ,Production,K026,2024-08-08,2025-02-12,2025-04-16,188,251.0,566.0,559.0,Go-live Terlambat
+P00301,O00903,Retail,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K013,2024-05-23,2024-06-20,2024-06-17,28,25.0,31.0,36.0,Go-live Tepat Waktu
+P00302,O00908,Retail,SAP Business One,PT CORE (sister),Sales,K012,2024-07-14,2024-12-30,2024-12-28,169,167.0,329.0,329.0,Go-live Tepat Waktu
+P00303,O00909,Jasa Profesional,SAP Business One,PT CORE (sister),Financials,K014,2024-09-09,2025-02-02,2025-01-28,146,141.0,110.0,110.0,Go-live Tepat Waktu
+P00304,O00910,Manufaktur,Add-on & Integrasi,BeOne HQ,WMS,K024,2024-12-21,2025-02-22,2025-02-17,63,58.0,46.0,45.0,Go-live Tepat Waktu
+P00305,O00911,Trading/Distribusi,SAP Business One,BeOne HQ,Sales,K003,2024-09-02,2025-02-01,2025-01-26,152,146.0,226.0,250.0,Go-live Tepat Waktu
+P00306,O00916,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K024,2024-10-12,2025-04-02,2025-04-29,172,199.0,498.0,478.0,Go-live Terlambat
+P00307,O00918,Manufaktur,SAP Business One,PT CORE (sister),Financials,K009,2024-08-03,2025-02-16,2025-02-15,197,196.0,155.0,144.0,Go-live Tepat Waktu
+P00308,O00921,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K026,2024-07-29,2024-12-16,2025-01-06,140,161.0,210.0,197.0,Go-live Terlambat
+P00309,O00925,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,POS Integration,K007,2024-06-20,2024-07-26,2024-07-24,36,34.0,58.0,55.0,Go-live Tepat Waktu
+P00310,O00930,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K023,2024-07-24,2025-01-18,2025-01-04,178,164.0,168.0,164.0,Go-live Tepat Waktu
+P00311,O00933,Trading/Distribusi,SAP Business One,BeOne HQ,Financials,K004,2024-10-06,2025-03-21,2025-04-05,166,181.0,148.0,172.0,Go-live Terlambat
+P00312,O00935,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K014,2025-05-23,2025-09-25,2025-09-15,125,115.0,311.0,315.0,Go-live Tepat Waktu
+P00313,O00942,Konstruksi,SAP Business One,BeOne HQ,Sales,K011,2025-04-08,2025-10-03,2025-10-02,178,177.0,818.0,908.0,Go-live Tepat Waktu
+P00314,O00943,Manufaktur,TSplus,BeOne HQ,Advanced Security,K007,2024-08-10,2024-08-30,2024-09-03,20,24.0,41.0,41.0,Go-live Terlambat
+P00315,O00945,F&B,SAP Business One,BeOne HQ,Sales,K001,2024-09-16,2025-02-14,2025-04-21,151,217.0,211.0,201.0,Go-live Terlambat
+P00316,O00953,Agrikultur,SAP Business One,BeOne HQ,Production,K014,2024-11-14,2025-05-31,2025-06-28,198,226.0,516.0,564.0,Go-live Terlambat
+P00317,O00963,Retail,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K009,2024-07-06,2025-07-12,2025-06-17,371,346.0,630.0,624.0,Go-live Tepat Waktu
+P00318,O00965,Trading/Distribusi,SAP Business One,PT CORE (sister),Inventory,K023,2025-04-09,2025-08-13,2025-09-16,126,160.0,1022.0,995.0,Go-live Terlambat
+P00319,O00978,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Finance,K002,2025-11-12,2026-09-13,,305,,1195.0,1195.0,On Progress
+P00320,O00983,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Finance,K004,2025-06-22,2026-06-14,,357,,1193.0,1193.0,On Progress
+P00321,O00984,Manufaktur,Add-on & Integrasi,BeOne HQ,Plant Maintenance,K013,2025-07-19,2025-09-10,2025-09-27,53,70.0,44.0,44.0,Go-live Terlambat
+P00322,O00986,Retail,SAP Business One,BeOne HQ,Reporting,K001,2025-12-29,2026-06-04,,157,,273.0,273.0,On Progress
+P00323,O00994,Pertambangan,SAP Business One,BeOne HQ,Sales,K014,2025-10-22,2026-03-18,,147,,445.0,445.0,On Progress
+P00324,O01003,Trading/Distribusi,Business Insight,BeOne HQ,KPI Monitoring,K024,2025-03-03,2025-04-24,2025-04-30,52,58.0,146.0,149.0,Go-live Terlambat
+P00325,O01004,Manufaktur,SAP Business One,BeOne HQ,Inventory,K023,2025-12-11,2026-04-28,,138,,163.0,163.0,On Progress
+P00326,O01012,Retail,SAP S/4HANA GROW,BeOne HQ,Procurement,K008,2026-06-16,2027-06-06,,355,,764.0,764.0,On Progress
+P00327,O01013,Konstruksi,SAP Business One,BeOne HQ,Production,K023,2025-10-18,2026-02-06,,111,,532.0,532.0,On Progress
+P00328,O01016,Retail,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K010,2025-03-28,2025-06-04,2025-06-20,68,84.0,48.0,60.0,Go-live Terlambat
+P00329,O01020,F&B,SAP Business One,BeOne HQ,Reporting,K005,2025-06-13,2025-11-27,2025-11-15,167,155.0,380.0,381.0,Go-live Tepat Waktu
+P00330,O01022,Retail,TSplus,BeOne HQ,Advanced Security,K004,2025-06-22,2025-07-12,2025-07-10,20,18.0,23.0,22.0,Go-live Tepat Waktu
+P00331,O01024,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Manufacturing/MRP,K014,2025-09-22,2026-06-08,,259,,815.0,815.0,On Progress
+P00332,O01026,Trading/Distribusi,Add-on & Integrasi,BeOne HQ,WMS,K024,2026-02-24,2026-04-25,,60,,58.0,58.0,On Progress
+P00333,O01028,Retail,SAP Business One,BeOne HQ,Financials,K013,2025-11-11,2026-04-15,,155,,291.0,291.0,On Progress
+P00334,O01029,Manufaktur,Business Insight,BeOne HQ,KPI Monitoring,K006,2025-10-28,2025-12-09,2025-12-08,42,41.0,58.0,58.0,Go-live Tepat Waktu
+P00335,O01031,Manufaktur,SAP Business One,BeOne HQ,Reporting,K024,2025-07-15,2025-12-05,2025-11-28,143,136.0,313.0,293.0,Go-live Tepat Waktu
+P00336,O01035,Konstruksi,TSplus,BeOne HQ,Server Farm,K001,2026-02-20,2026-03-12,,20,,30.0,30.0,On Progress
+P00337,O01036,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Procurement,K007,2026-03-27,2027-03-20,,358,,594.0,594.0,On Progress
+P00338,O01037,Manufaktur,Training/Xpertise Academy,BeOne HQ,Campus Seminar/Workshop,K025,2025-10-15,2025-11-04,2025-11-01,20,17.0,26.0,24.0,Go-live Tepat Waktu
+P00339,O01042,Retail,SAP Business One,BeOne HQ,Reporting,K025,2025-08-29,2026-03-27,,210,,290.0,290.0,On Progress
+P00340,O01043,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Finance,K003,2025-10-25,2026-06-17,,235,,644.0,644.0,On Progress
+P00341,O01045,Retail,SAP Business One,PT CORE (sister),Reporting,K008,2025-06-05,2026-01-01,,210,,158.0,158.0,On Progress
+P00342,O01051,Konstruksi,SAP S/4HANA GROW,BeOne HQ,Analytics,K003,2026-08-13,2027-05-05,,265,,1300.0,1300.0,On Progress
+P00343,O01055,Jasa Profesional,SAP Business One,BeOne HQ,Purchasing,K007,2025-11-13,2026-04-07,,145,,286.0,286.0,On Progress
+P00344,O01058,Manufaktur,SAP S/4HANA GROW,BeOne HQ,Analytics,K011,2025-09-06,2026-04-29,,235,,457.0,457.0,On Progress
+P00345,O01063,Agrikultur,SAP Business One,BeOne HQ,Inventory,K003,2026-01-11,2026-07-29,,199,,462.0,462.0,On Progress
+P00346,O01064,Manufaktur,SAP Business One,BeOne HQ,Production,K024,2025-11-27,2026-03-28,,121,,292.0,292.0,On Progress
+P00347,O01066,Retail,TSplus,BeOne HQ,Advanced Security,K027,2025-11-14,2025-12-04,2025-12-01,20,17.0,27.0,27.0,Go-live Tepat Waktu
+P00348,O01068,Manufaktur,SAP Business One,PT CORE (sister),Sales,K025,2025-03-23,2025-07-16,2025-07-13,115,112.0,497.0,500.0,Go-live Tepat Waktu
+P00349,O01076,Konstruksi,SAP Business One,BeOne HQ,Financials,K012,2026-05-31,2026-10-09,,131,,535.0,535.0,On Progress
+P00350,O01077,F&B,SAP S/4HANA GROW,BeOne HQ,Finance,K004,2025-11-19,2026-10-17,,332,,609.0,609.0,On Progress
+P00351,O01080,Pertambangan,SAP Business One,BeOne HQ,Production,K003,2025-10-09,2026-01-18,,101,,270.0,270.0,On Progress
+P00352,O01084,Manufaktur,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K008,2025-05-20,2025-06-09,2025-06-08,20,19.0,18.0,18.0,Go-live Tepat Waktu
+P00353,O01086,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K012,2025-07-30,2025-12-26,2025-12-11,149,134.0,184.0,228.0,Go-live Tepat Waktu
+P00354,O01093,Konstruksi,SAP Business One,BeOne HQ,Financials,K023,2026-02-23,2026-08-04,,162,,448.0,448.0,On Progress
+P00355,O01095,Retail,SAP Business One,BeOne HQ,Reporting,K003,2025-11-25,2026-04-16,,142,,335.0,335.0,On Progress
+P00356,O01096,F&B,SAP Business One,BeOne HQ,Inventory,K027,2025-09-29,2026-03-19,,171,,199.0,199.0,On Progress
+P00357,O01104,Manufaktur,SAP Business One,BeOne HQ,Production,K014,2025-08-14,2025-12-10,2025-11-29,118,107.0,225.0,285.0,Go-live Tepat Waktu
+P00358,O01106,Trading/Distribusi,SAP Business One,BeOne HQ,Purchasing,K004,2026-02-04,2026-09-25,,233,,471.0,471.0,On Progress
+P00359,O01110,Trading/Distribusi,SAP Business One,PT CORE (sister),Production,K026,2026-02-08,2026-07-05,,147,,280.0,280.0,On Progress
+P00360,O01111,F&B,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K024,2025-11-06,2025-12-28,2025-12-23,52,47.0,165.0,210.0,Go-live Tepat Waktu
+P00361,O01113,Retail,SAP Business One,PT CORE (sister),Sales,K010,2025-11-30,2026-05-31,,182,,124.0,124.0,On Progress
+P00362,O01114,Pertambangan,SAP Business One,BeOne HQ,Reporting,K001,2026-01-09,2026-05-30,,141,,212.0,212.0,On Progress
+P00363,O01118,F&B,SAP S/4HANA GROW,BeOne HQ,Sales & Distribution,K025,2025-09-17,2026-06-10,,266,,492.0,492.0,On Progress
+P00364,O01119,F&B,SAP Business One,PT CORE (sister),Financials,K003,2026-01-08,2026-06-12,,155,,438.0,438.0,On Progress
+P00365,O01122,Jasa Profesional,SAP Business One,BeOne HQ,Inventory,K001,2025-07-17,2026-01-27,,194,,250.0,250.0,On Progress
+P00366,O01124,Jasa Profesional,SAP Business One,BeOne HQ,Production,K001,2026-01-31,2026-08-06,,187,,442.0,442.0,On Progress
+P00367,O01128,Trading/Distribusi,SAP Business One,BeOne HQ,Inventory,K001,2026-04-22,2026-08-13,,113,,265.0,265.0,On Progress
+P00368,O01130,Konstruksi,SAP Business One,BeOne HQ,Purchasing,K014,2025-10-30,2026-04-19,,171,,209.0,209.0,On Progress
+P00369,O01135,Konstruksi,Add-on & Integrasi,BeOne HQ,E-Commerce Link,K027,2025-04-14,2025-06-12,2025-06-06,59,53.0,338.0,328.0,Go-live Tepat Waktu
+P00370,O01140,Manufaktur,Training/Xpertise Academy,BeOne HQ,SAP B1 Functional,K027,2025-06-03,2025-06-23,2025-06-22,20,19.0,57.0,64.0,Go-live Tepat Waktu
+P00371,O01142,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Analytics,K003,2026-07-16,2027-02-08,,207,,1178.0,1178.0,On Progress
+P00372,O01148,F&B,SAP Business One,BeOne HQ,Purchasing,K003,2025-07-09,2025-11-22,2025-11-14,136,128.0,240.0,281.0,Go-live Tepat Waktu
+P00373,O01152,Manufaktur,Business Insight,BeOne HQ,Dashboard & Reporting,K011,2025-04-13,2025-05-29,2025-06-07,46,55.0,36.0,34.0,Go-live Terlambat
+P00374,O01160,Manufaktur,SAP Business One,PT CORE (sister),Sales,K014,2025-04-27,2025-09-11,2025-09-09,137,135.0,247.0,238.0,Go-live Tepat Waktu
+P00375,O01168,Trading/Distribusi,SAP Business One,PT CORE (sister),Purchasing,K024,2025-09-12,2026-01-21,,131,,271.0,271.0,On Progress
+P00376,O01169,Agrikultur,SAP S/4HANA GROW,BeOne HQ,Analytics,K003,2026-02-25,2027-01-28,,337,,1048.0,1048.0,On Progress
+P00377,O01171,Jasa Profesional,SAP Business One,BeOne HQ,Reporting,K014,2025-12-18,2026-05-31,,164,,460.0,460.0,On Progress
+P00378,O01186,Trading/Distribusi,SAP Business One,BeOne HQ,Production,K008,2026-02-20,2026-10-06,,228,,208.0,208.0,On Progress
+P00379,O01188,Retail,SAP Business One,BeOne HQ,Purchasing,K013,2026-03-11,2026-08-11,,153,,448.0,448.0,On Progress
+P00380,O01192,F&B,SAP Business One,PT CORE (sister),Inventory,K010,2025-10-08,2026-03-22,,165,,202.0,202.0,On Progress
+P00381,O01204,Trading/Distribusi,SAP S/4HANA GROW,BeOne HQ,Analytics,K007,2026-05-12,2027-02-15,,279,,676.0,676.0,On Progress
+P00382,O01205,Trading/Distribusi,Training/Xpertise Academy,BeOne HQ,SAP B1 End-User,K024,2025-11-13,2025-12-03,2025-12-02,20,19.0,42.0,41.0,Go-live Tepat Waktu
+P00383,O01207,Konstruksi,SAP Business One,BeOne HQ,Reporting,K004,2025-12-15,2026-03-29,,104,,267.0,267.0,On Progress
+P00384,O01211,Manufaktur,SAP Business One,BeOne HQ,Purchasing,K014,2025-12-06,2026-03-12,,96,,403.0,403.0,On Progress
+P00385,O01212,F&B,SAP Business One,PT CORE (sister),Inventory,K001,2026-04-01,2026-09-19,,171,,298.0,298.0,On Progress
+P00386,O01214,Konstruksi,Business Insight,BeOne HQ,Dashboard & Reporting,K023,2025-03-24,2025-05-02,2025-04-30,39,37.0,59.0,56.0,Go-live Tepat Waktu
+P00387,O01215,F&B,SAP Business One,BeOne HQ,Financials,K006,2026-03-13,2026-07-30,,139,,330.0,330.0,On Progress
+P00388,O01220,Manufaktur,SAP Business One,PT CORE (sister),Purchasing,K012,2026-02-09,2026-06-09,,120,,211.0,211.0,On Progress
+P00389,O01221,Pertambangan,Business Insight,BeOne HQ,Dashboard & Reporting,K013,2026-03-08,2026-05-01,,54,,146.0,146.0,On Progress

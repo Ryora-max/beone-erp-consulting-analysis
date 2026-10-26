@@ -49,8 +49,8 @@ print("\\nWin rate per sumber (%):")
 print((100*tab[1]/tab.sum(axis=1)).round(1).sort_values(ascending=False))
 """),
 MD("""**Baca:** p sangat kecil → dependen (sumber memang memengaruhi hasil).
-Tapi yang penting adalah **effect size** — V~0.2 = efek moderat, bukan
-sekadar "signifikan karena n besar"."""),
+Yang lebih penting adalah **effect size** (Cramér's V pada output di atas;
+≈0,1 kecil, ≈0,3 sedang) — bukan sekadar "signifikan karena n besar"."""),
 
 MD("""## 2. Sales cycle deal Won vs Lost (t-test + effect size)"""),
 CODE("""w = d.loc[d.won==1,"sales_cycle_hari"]; l = d.loc[d.won==0,"sales_cycle_hari"]
@@ -77,7 +77,12 @@ print(done.groupby("produk")["delay"].agg(["mean","std","count"]).round(1))
 MD("""## 4. Cohort: apakah proyek terlambat menghasilkan lebih banyak tiket?
 
 Ini menghubungkan **delivery → support burden** — pertanyaan bisnis nyata:
-apakah go-live yang telat berarti implementasi buruk (tiket banyak)?"""),
+apakah go-live yang telat berarti implementasi buruk (tiket banyak)?
+
+> Catatan metodologi: data sintetis — hubungan ini **diasumsikan** di
+> generator (hypercare lebih berat pada proyek telat). Notebook menguji
+> apakah pipeline analisis *memulihkan* efek tersebut dengan benar,
+> bukan menemukan fakta tentang perusahaan nyata."""),
 CODE("""coh = (tiket.groupby("id_proyek").size().rename("n_tiket").reset_index()
        .merge(done[["id_proyek","status_proyek","delay","produk"]],on="id_proyek"))
 coh["late"]=(coh.status_proyek=="Go-live Terlambat").astype(int)
@@ -116,8 +121,9 @@ ax.set_title("Odds ratio keterlambatan (95% CI) — >1 = menaikkan risiko")
 plt.tight_layout(); plt.savefig("../outputs/figures/odds_delay.png"); plt.show()
 """),
 MD("""**Baca:** OR>1 = risiko telat naik; OR<1 = protektif. CI yang tidak
-menyentuh 1 = signifikan di 95%. Level konsultan PIC & durasi target
-biasanya prediktor terkuat — mitigasi: assign PM senior + milestone gate."""),
+menyentuh 1 = signifikan di 95%. Perhatikan *lebar CI*: dengan ±340
+proyek selesai, banyak faktor punya CI lebar — sinyal ada, presisinya
+terbatas. Interpretasikan arah & besar efek, bukan hanya p-value."""),
 
 MD("""## Ringkasan inferensial
 

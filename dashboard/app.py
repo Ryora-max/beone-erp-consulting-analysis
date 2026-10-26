@@ -10,8 +10,9 @@ import plotly.graph_objects as go
 import statsmodels.api as sm
 import streamlit as st
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import train_test_split
+from scipy import stats
+from sklearn.model_selection import (StratifiedKFold, cross_val_predict,
+                                     cross_val_score)
 
 st.set_page_config(page_title="BeOne ERP Analytics", page_icon="📊",
                    layout="wide", initial_sidebar_state="expanded")
@@ -343,8 +344,8 @@ adalah asumsi skenario, bukan angka riil perusahaan.
         _wr = ws.iloc[-1]
         insight_box(f"Lead tumbuh <b>{_g:.0f}%</b> dalam periode terpilih — "
                     f"sumber paling efektif: <b>{_wr['sumber']}</b> "
-                    f"(win rate {_wr['wr']:.0f}%). Referral & event selalu "
-                    "mengalahkan cold outreach di B2B consulting.", "blue")
+                    f"(win rate {_wr['wr']:.0f}%) vs paling rendah "
+                    f"<b>{ws.iloc[0]['sumber']}</b> ({ws.iloc[0]['wr']:.0f}%).", "blue")
 
 # ------------------------------------------------------------------ #
 #  TAB 2 — Delivery Proyek                                            #
@@ -404,9 +405,8 @@ with tab2:
 
     penjelasan("Cara membaca bagian ini", """
 **On-time go-live** adalah KPI paling kritis di bisnis implementasi ERP —
-telat = biaya konsultan membengkak + kepercayaan klien turun. Benchmark
-industri: 40-60% proyek ERP terlambat; perusahaan dengan delivery matang
-menjaga angka ini di bawah 40%.
+telat = biaya konsultan membengkak + kepercayaan klien turun. Angka di
+dashboard ini berasal dari data sintetis dan **bukan benchmark industri**.
 
 **Distribusi delay** menunjukkan bentuk masalahnya: ekor kanan panjang =
 ada proyek "horror story" yang telat ratusan hari (biasanya scope creep
@@ -421,10 +421,17 @@ sering terlambat karena bergantung pada kesiapan data & proses sisi klien,
 bukan murni skill konsultan.
 """)
 
-    insight_box("Keterlambatan proyek ERP jarang soal coding — biasanya "
-                "<b>scope creep, kesiapan data master klien, dan sign-off UAT</b>. "
-                "Modul integrasi paling rentan karena bergantung pada sistem "
-                "pihak ketiga.", "amber")
+    if len(md):
+        _top = md.iloc[-1]
+        _prod = (pj_done.groupby("produk")["status_proyek"]
+                 .apply(lambda s: 100 * (s == "Go-live Terlambat").mean())
+                 .sort_values())
+        insight_box(f"Modul paling sering terlambat: <b>{_top['modul_utama']}</b> "
+                    f"({_top['late']:.0f}%); produk paling berisiko: "
+                    f"<b>{_prod.index[-1]}</b> ({_prod.iloc[-1]:.0f}% terlambat) "
+                    f"vs <b>{_prod.index[0]}</b> ({_prod.iloc[0]:.0f}%). "
+                    "Kompleksitas & ketergantungan pada data/proses klien "
+                    "adalah pendorong yang diasumsikan di model data.", "amber")
 
 # ------------------------------------------------------------------ #
 #  TAB 3 — Support & SLA                                              #
@@ -497,9 +504,16 @@ with tab3:
                              "status_proyek": ""})
         polish(fig, showlegend=False)
         chart(fig)
-        st.caption("Cohort analysis: menghubungkan kualitas delivery → beban "
-                   "support. Proyek terlambat → implementasi lebih berantakan → "
-                   "tiket lebih banyak?")
+        _a = coh.loc[coh.status_proyek == "Go-live Terlambat", "n_tiket"]
+        _b = coh.loc[coh.status_proyek == "Go-live Tepat Waktu", "n_tiket"]
+        if len(_a) > 5 and len(_b) > 5:
+            _p = stats.mannwhitneyu(_a, _b).pvalue
+            st.caption(
+                f"Cohort delivery → support: median tiket **{_a.median():.0f}** "
+                f"(terlambat) vs **{_b.median():.0f}** (tepat waktu); "
+                f"Mann-Whitney p = {_p:.2g} → "
+                + ("perbedaan signifikan secara statistik." if _p < 0.05
+                   else "tidak ada bukti perbedaan pada data terfilter."))
 
     penjelasan("Cara membaca bagian ini", """
 **SLA attainment** adalah janji service level ke klien (mis. Critical ≤8 jam).
@@ -580,10 +594,18 @@ waktu TAPI sering overrun punya masalah estimasi scope; yang tepat waktu
 DAN on-budget adalah delivery paling sehat.
 """)
 
-    insight_box("Model bisnis konsultan = <b>people business</b>: delivery "
-                "berkualitas terkonsentrasi di segelintir konsultan senior. "
-                "Risiko kunci: knowledge silo — dokumentasi & pairing "
-                "junior-senior adalah mitigasinya.", "blue")
+    _lv = (perf.groupby("level")
+           .apply(lambda g: pd.Series({"ot": 100 * (g["on_time"] * g["proyek"]).sum()
+                                       / g["proyek"].sum(),
+                                       "n": g["proyek"].sum()}),
+                  include_groups=False))
+    if len(_lv) >= 2:
+        insight_box("Ketepatan go-live per level PIC: " + " · ".join(
+            f"<b>{lv}</b> {r['ot']:.0f}% ({int(r['n'])} proyek)"
+            for lv, r in _lv.sort_values("ot", ascending=False).iterrows())
+            + ". Model bisnis konsultan adalah <i>people business</i> — "
+              "pairing junior-senior dan dokumentasi menekan risiko "
+              "knowledge silo.", "blue")
 
 # ------------------------------------------------------------------ #
 #  TAB 5 — Prediktif & Eksplorasi                                     #
@@ -594,19 +616,19 @@ def train_delay_model():
         konsultan[["id_konsultan", "level"]], on="id_konsultan")
     d["late"] = (d["status_proyek"] == "Go-live Terlambat").astype(int)
     feats = pd.get_dummies(
-        d[["produk", "industri", "modul_utama", "durasi_target_hari",
-           "budget_jt", "level"]], drop_first=True)
+        d[["produk", "modul_utama", "durasi_target_hari", "level"]],
+        drop_first=True).astype(float)
     y = d["late"]
-    Xtr, Xte, ytr, yte = train_test_split(
-        feats, y, test_size=0.3, random_state=7, stratify=y)
-    rf = RandomForestClassifier(n_estimators=200, max_depth=6,
-                                random_state=7, n_jobs=-1).fit(Xtr, ytr)
-    prob = rf.predict_proba(Xte)[:, 1]
-    auc = roc_auc_score(yte, prob)
+    rf = RandomForestClassifier(n_estimators=300, max_depth=3,
+                                min_samples_leaf=10, random_state=7, n_jobs=-1)
+    cv = StratifiedKFold(5, shuffle=True, random_state=7)
+    aucs = cross_val_score(rf, feats, y, cv=cv, scoring="roc_auc")
+    prob = cross_val_predict(rf, feats, y, cv=cv, method="predict_proba")[:, 1]
+    rf.fit(feats, y)
     imp = (pd.Series(rf.feature_importances_, index=feats.columns)
            .nlargest(10).sort_values().reset_index())
     imp.columns = ["fitur", "penting"]
-    return auc, imp, yte.to_numpy(), prob
+    return (aucs.mean(), aucs.std()), imp, y.to_numpy(), prob
 
 with tab5:
     c1, c2 = st.columns(2, gap="large")
@@ -653,9 +675,11 @@ with tab5:
         fig.update_traces(textposition="outside")
         polish(fig, coloraxis_showscale=False)
         chart(fig)
-        st.caption(f"ROC-AUC test set: **{auc:.2f}** — model flag risiko delay "
-                   "sejak kickoff (fitur: produk, industri, modul, durasi target, "
-                   "budget, level PIC).")
+        st.caption(f"ROC-AUC (5-fold CV): **{auc[0]:.2f} ± {auc[1]:.2f}** — "
+                   "sinyal ada tetapi **moderat**: cocok untuk triase risiko "
+                   "sejak kickoff (fitur: produk, modul, durasi target, level "
+                   "PIC), bukan untuk keputusan tunggal. Probabilitas dihitung "
+                   "out-of-fold sehingga tidak bocor.")
 
         sec("🎚️", "Threshold & trade-off deteksi delay", C_AMBER)
         thr = st.slider("Threshold klasifikasi delay", 0.10, 0.90, 0.50, 0.05,

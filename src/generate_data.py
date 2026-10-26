@@ -180,6 +180,13 @@ MODUL = {
     "Training/Xpertise Academy": ["SAP B1 End-User", "SAP B1 Functional",
                                    "Campus Seminar/Workshop", "In-house Training"],
 }
+PRODUK_RISK = {"SAP Business One": 0.03, "SAP S/4HANA GROW": 0.14,
+               "Add-on & Integrasi": 0.10, "Business Insight": -0.02,
+               "TSplus": -0.10, "Training/Xpertise Academy": -0.08}
+MODUL_RISIKO_TINGGI = {"Production", "Manufacturing/MRP", "Procurement",
+                       "Purchasing", "Coretax", "POS Integration", "WMS",
+                       "E-Commerce Link"}
+LEVEL_RISK = {"Senior": -0.10, "Mid": 0.0, "Junior": 0.12}
 proyek_rows, pid = [], 0
 for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
     if rng.random() > 0.88:      # sebagian deal batal sebelum kickoff
@@ -192,8 +199,18 @@ for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
               "Add-on & Integrasi": 60, "Business Insight": 45,
               "TSplus": 15, "Training/Xpertise Academy": 20}[o.produk]
     dur_target = max(20, int(rng.normal(mu_dur, mu_dur * 0.18)))
-    # ~38% proyek terlambat (masalah scope creep/data migrasi khas ERP)
-    if rng.random() < 0.38:
+    kons = konsultan[konsultan.role.isin(
+        ["Project Manager", "Functional Consultant"])].sample(
+        1, random_state=int(rng.integers(1_000_000_000)))
+    # Probabilitas telat = base + penyesuaian faktor risiko (ASUMSI MODEL,
+    # terdokumentasi di docs/DATA_DICTIONARY.md): kompleksitas produk &
+    # modul, level PIC, dan durasi target yang panjang.
+    p_late = (0.28 + PRODUK_RISK[o.produk]
+              + (0.08 if modul in MODUL_RISIKO_TINGGI else 0.0)
+              + LEVEL_RISK[kons.iloc[0].level]
+              + (0.08 if dur_target > mu_dur * 1.15 else 0.0))
+    p_late = float(np.clip(p_late, 0.05, 0.85))
+    if rng.random() < p_late:
         delay = rng.uniform(0.05, 0.45) * dur_target   # telat 5-45%
     else:
         delay = -rng.uniform(0.0, 0.12) * dur_target   # tepat/lebih cepat
@@ -206,8 +223,6 @@ for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
     overrun = rng.random() < 0.28
     aktual = round(budget * (rng.uniform(1.03, 1.30) if overrun
                              else rng.uniform(0.92, 1.02)), 0)
-    kons = konsultan[konsultan.role.isin(
-        ["Project Manager", "Functional Consultant"])].sample(1)
     selesai = tgl_golive <= pd.Timestamp("2026-01-01")
     status = ("On Progress" if not selesai else
               ("Go-live Tepat Waktu" if dur_aktual <= dur_target
@@ -236,7 +251,10 @@ SLA_JAM = {"Critical": 8, "High": 24, "Medium": 48, "Low": 96}
 tiket_rows, tid = [], 0
 golive_done = proyek.dropna(subset=["tanggal_golive"])
 for _, p in golive_done.iterrows():
-    n_tiket = int(rng.integers(4, 16))
+    # Hypercare lebih berat pada proyek yang go-live-nya terlambat
+    # (ASUMSI MODEL: rata-rata 12,5 vs 8,5 tiket)
+    lam = 12.5 if p.status_proyek == "Go-live Terlambat" else 8.5
+    n_tiket = max(3, int(rng.poisson(lam)))
     t0 = pd.Timestamp(p.tanggal_golive)
     for _ in range(n_tiket):
         tid += 1
