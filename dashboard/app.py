@@ -473,6 +473,23 @@ with tab3:
         polish(fig, coloraxis_showscale=False)
         chart(fig)
 
+    sec("🔗", "Apakah proyek telat menghasilkan lebih banyak tiket?", C_PURPLE)
+    pj_done2 = pj.dropna(subset=["tanggal_golive"])
+    coh = (tk.groupby("id_proyek").size().rename("n_tiket").reset_index()
+           .merge(pj_done2[["id_proyek", "status_proyek"]], on="id_proyek"))
+    if len(coh):
+        fig = px.box(coh, x="status_proyek", y="n_tiket", color="status_proyek",
+                     color_discrete_map={"Go-live Tepat Waktu": C_GREEN,
+                                         "Go-live Terlambat": C_RED},
+                     points="outliers",
+                     labels={"n_tiket": "Tiket pasca go-live",
+                             "status_proyek": ""})
+        polish(fig, showlegend=False)
+        chart(fig)
+        st.caption("Cohort analysis: menghubungkan kualitas delivery → beban "
+                   "support. Proyek terlambat → implementasi lebih berantakan → "
+                   "tiket lebih banyak?")
+
     penjelasan("Cara membaca bagian ini", """
 **SLA attainment** adalah janji service level ke klien (mis. Critical ≤8 jam).
 Prioritas tinggi harus punya attainment TERTINGGI — jika Critical justru
@@ -573,11 +590,12 @@ def train_delay_model():
         feats, y, test_size=0.3, random_state=7, stratify=y)
     rf = RandomForestClassifier(n_estimators=200, max_depth=6,
                                 random_state=7, n_jobs=-1).fit(Xtr, ytr)
-    auc = roc_auc_score(yte, rf.predict_proba(Xte)[:, 1])
+    prob = rf.predict_proba(Xte)[:, 1]
+    auc = roc_auc_score(yte, prob)
     imp = (pd.Series(rf.feature_importances_, index=feats.columns)
            .nlargest(10).sort_values().reset_index())
     imp.columns = ["fitur", "penting"]
-    return auc, imp
+    return auc, imp, yte.to_numpy(), prob
 
 with tab5:
     c1, c2 = st.columns(2, gap="large")
@@ -616,7 +634,7 @@ with tab5:
             st.info("Butuh minimal 3 tahun data untuk proyeksi.")
 
         sec("🤖", "Prediktor keterlambatan proyek (Random Forest)", C_RED)
-        auc, imp = train_delay_model()
+        auc, imp, y_true, y_prob = train_delay_model()
         fig = px.bar(imp, x="penting", y="fitur", orientation="h",
                      color="penting", color_continuous_scale="Sunset",
                      text=imp["penting"].map("{:.2f}".format),
@@ -627,6 +645,32 @@ with tab5:
         st.caption(f"ROC-AUC test set: **{auc:.2f}** — model flag risiko delay "
                    "sejak kickoff (fitur: produk, industri, modul, durasi target, "
                    "budget, level PIC).")
+
+        sec("🎚️", "Threshold & trade-off deteksi delay", C_AMBER)
+        thr = st.slider("Threshold klasifikasi delay", 0.10, 0.90, 0.50, 0.05,
+                        help="Di atas threshold → diprediksi terlambat. Turunkan "
+                             "untuk menangkap lebih banyak proyek berisiko.")
+        y_hat = (y_prob >= thr).astype(int)
+        tp = int(((y_hat == 1) & (y_true == 1)).sum())
+        fp = int(((y_hat == 1) & (y_true == 0)).sum())
+        fn = int(((y_hat == 0) & (y_true == 1)).sum())
+        tn = int(((y_hat == 0) & (y_true == 0)).sum())
+        prec = tp / max(tp + fp, 1)
+        rec = tp / max(tp + fn, 1)
+        f1 = 2 * prec * rec / max(prec + rec, 1e-9)
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Recall (telat terdeteksi)", f"{100*rec:.0f}%")
+        m2.metric("Precision (flag tepat)", f"{100*prec:.0f}%")
+        m3.metric("F1-score", f"{f1:.2f}")
+        cm = pd.DataFrame([[tn, fp], [fn, tp]],
+                          index=["Aktual: tepat", "Aktual: telat"],
+                          columns=["Pred: tepat", "Pred: telat"])
+        fig = px.imshow(cm, text_auto=True, aspect="auto",
+                        color_continuous_scale="Blues",
+                        labels=dict(color="n"))
+        fig.update_layout(height=270)
+        polish(fig, coloraxis_showscale=False)
+        chart(fig)
 
     with c2:
         sec("🔍", "Eksplorasi data interaktif", C_PURPLE)
