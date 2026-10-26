@@ -20,6 +20,10 @@
 | Aktivitas marketing: workshop "Business Hacks" bersama SAP Indonesia (Okt 2022) | https://wartaekonomi.co.id/read466359/ + https://www.marketeers.com/respons-revolusi-4-0-beone-optima-solusi-tawarkan-solusi-erp-dari-sap/ |
 | Add-on: Coretax, Plant Maintenance, integrasi ARD | https://beonesolution.com/sap-business-one-solusi-erp-terintegrasi/ + knowledge base Freshdesk BeOne |
 | Skala perusahaan: puluhan karyawan (Jobstreet 11–50, Glints 51–200), kantor Tangerang | https://id.jobstreet.com/companies/beone-optima-beone-solution-168549704476218 + situs resmi |
+| **Sister company PT Cipta Optima Ragam Era (CORE)** — badan hukum terpisah berbisnis identik (implementasi & support SAP B1), berdiri ~Okt 2023, personel bersama: Managing Partner BeOne jadi Komisaris CORE; beberapa konsultan pindah BeOne→CORE | LinkedIn (profil Cahyo Sugiarto, Daniel Febriano, Redia Veronika) + coretechindonesia.com |
+| **Business Insight** produk in-house (seller App Store = PT Beone Optima Solusi) | https://apps.apple.com/ (listing "BOS Business Insight") + katalog beonesolution.com |
+| **TSplus** distributor resmi Indonesia | https://beonesolution.com/reseller-tsplus-remote-access/ |
+| Model sales area (Jabar, Kalimantan) — bukan kantor cabang; cabang Bandung & Batam pernah disebut 2014 (tak terverifikasi kini) | posting rekrutmen LinkedIn + laporan UMN 2014 |
 
 ## Parameter skenario (asumsi, BUKAN fakta perusahaan)
 
@@ -43,3 +47,11 @@ realistis industri konsultan ERP UKM:
 - Angka "500+ projects / 50+ team" dari company profile tidak diverifikasi
   independen → tidak dijadikan basis volume data.
 - Klaim "first implementor in Asia" tidak terverifikasi → tidak dipakai.
+- **"Be One Solutions" (grup Swiss, beonesolutions.com) BUKAN afiliasi** —
+  kemiripan nama kebetulan; tidak dimodelkan.
+- **myECO** hampir pasti produk pihak ketiga (startup Tangsel/Malang
+  terpisah) yang dipasarkan ulang — tidak dimodelkan sebagai produk
+  in-house.
+- Relasi korporat formal BeOne↔CORE (kepemilikan saham) belum
+  terdokumentasi publik — dimodelkan sebagai "sister company" berdasarkan
+  bukti personel bersama, bukan klaim legal.

@@ -21,7 +21,8 @@ C_GREEN, C_AMBER, C_ORANGE = "#22C55E", "#F59E0B", "#F97316"
 C_PINK, C_PURPLE, C_RED = "#EC4899", "#8B5CF6", "#EF4444"
 PALETTE = [C_BLUE, C_CYAN, C_GREEN, C_AMBER, C_PINK, C_PURPLE, C_ORANGE, C_TEAL]
 PRODUK_COLOR = {"SAP Business One": C_BLUE, "SAP S/4HANA GROW": C_PURPLE,
-                "Add-on & Integrasi": C_AMBER}
+                "Add-on & Integrasi": C_AMBER, "Business Insight": C_GREEN,
+                "TSplus": C_CYAN}
 
 st.markdown("""
 <style>
@@ -266,7 +267,23 @@ with tab1:
         polish(fig, showlegend=False, xaxis_title="Win rate %")
         chart(fig)
 
-    sec("🏭", "Pipeline per industri × produk", C_ORANGE)
+    sec("�", "Revenue won per entitas (struktur grup)", C_PINK)
+    ent = (op[op.hasil == "Won"]
+           .join(ld.set_index("id_lead")["tahun"], on="id_lead")
+           .groupby(["tahun", "entitas"])["nilai_deal_jt"].sum()
+           .reset_index())
+    fig = px.bar(ent, x="tahun", y="nilai_deal_jt", color="entitas",
+                 barmode="stack",
+                 color_discrete_map={"BeOne HQ": C_BLUE,
+                                     "PT CORE (sister)": C_PINK},
+                 labels={"nilai_deal_jt": "Revenue (Rp jt)", "tahun": "",
+                         "entitas": ""})
+    polish(fig, legend=dict(orientation="h", y=1.14))
+    chart(fig)
+    st.caption("PT CORE = sister company yang berdiri ~2023 dan mengambil "
+               "alih sebagian implementasi SAP B1 sejak 2024.")
+
+    sec("�🏭", "Pipeline per industri × produk", C_ORANGE)
     heat = (op.join(ld.set_index("id_lead")["industri"], on="id_lead")
             .groupby(["industri", "produk"])["nilai_deal_jt"].sum()
             .unstack(fill_value=0))

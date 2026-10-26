@@ -36,8 +36,10 @@ INDUSTRI = {
     "Agrikultur":        0.06,
     "Jasa Profesional":  0.06,
 }
-# Produk: SAP Business One dominan; S/4HANA GROW baru ~2023; add-on kecil
-PRODUK = ["SAP Business One", "SAP S/4HANA GROW", "Add-on & Integrasi"]
+# Produk: SAP B1 dominan; S/4HANA GROW ~2023; Business Insight = produk
+# in-house (App Store ~2024); TSplus = distributor resmi; add-on kecil
+PRODUK = ["SAP Business One", "SAP S/4HANA GROW", "Add-on & Integrasi",
+          "Business Insight", "TSplus"]
 # Sumber lead: bukti publik = telemarketing intern, workshop Business Hacks,
 # website; referral khas bisnis konsultan
 SUMBER = ["Website", "Referral Klien", "Event/Workshop", "Telemarketing",
@@ -54,13 +56,13 @@ KOTA = {
 N_LEAD = {2019: 260, 2020: 300, 2021: 350, 2022: 420,
           2023: 480, 2024: 520, 2025: 570}
 
-# Probabilitas produk per tahun (S/4HANA GROW baru dipasarkan ~2023)
+# Probabilitas produk per tahun
 def prob_produk(tahun):
     if tahun <= 2022:
-        return [0.82, 0.06, 0.12]
+        return [0.74, 0.06, 0.12, 0.00, 0.08]
     if tahun <= 2024:
-        return [0.70, 0.17, 0.13]
-    return [0.62, 0.26, 0.12]
+        return [0.62, 0.15, 0.12, 0.04, 0.07]   # BI mulai ~2023
+    return [0.55, 0.22, 0.11, 0.06, 0.06]
 
 # Tren sumber akuisisi (digital naik, telemarketing melandai)
 def prob_sumber(tahun):
@@ -81,7 +83,9 @@ WIN_RATE_SUMBER = {"Referral Klien": 0.34, "Event/Workshop": 0.30,
 # Nilai deal per produk (juta IDR, lognormal-ish) — parameter skenario
 DEAL = {"SAP Business One":    dict(mu=5.7, sigma=0.55),   # median ~300jt
         "SAP S/4HANA GROW":    dict(mu=6.8, sigma=0.50),   # median ~900jt
-        "Add-on & Integrasi":  dict(mu=4.7, sigma=0.60)}   # median ~110jt
+        "Add-on & Integrasi":  dict(mu=4.7, sigma=0.60),   # median ~110jt
+        "Business Insight":    dict(mu=4.3, sigma=0.50),   # median ~75jt
+        "TSplus":              dict(mu=3.5, sigma=0.55)}   # median ~33jt
 
 def sample_deal(produk, n=1):
     p = DEAL[produk]
@@ -138,19 +142,25 @@ for _, r in leads.iterrows():
         continue
     oid += 1
     won = r.status_lead == "Converted"
-    # sales cycle: S4HANA lebih panjang
+    # sales cycle: S4HANA lebih panjang; produk ringan lebih singkat
     mu_cycle = {"SAP Business One": 105, "SAP S/4HANA GROW": 170,
-                "Add-on & Integrasi": 60}[r.produk_minat]
-    cycle = max(15, int(rng.normal(mu_cycle, mu_cycle * 0.30)))
+                "Add-on & Integrasi": 60, "Business Insight": 45,
+                "TSplus": 20}[r.produk_minat]
+    cycle = max(10, int(rng.normal(mu_cycle, mu_cycle * 0.30)))
     nilai = float(sample_deal(r.produk_minat)[0])
     tgl_buat = pd.Timestamp(int(r.tahun), int(r.bulan),
                             int(rng.integers(1, 28)))
     tgl_close = tgl_buat + pd.Timedelta(days=cycle)
-    opp_rows.append([f"O{oid:05d}", r.id_lead, r.produk_minat, nilai,
-                     "Won" if won else "Lost", tgl_buat.date(), tgl_close.date(),
-                     cycle])
+    # Entitas: PT CORE (sister company, berdiri ~Okt 2023) mengambil alih
+    # sebagian implementasi SAP B1 sejak 2024 — pola spin-off riil
+    entitas = "BeOne HQ"
+    if r.tahun >= 2024 and r.produk_minat == "SAP Business One":
+        entitas = rng.choice(["BeOne HQ", "PT CORE (sister)"], p=[0.7, 0.3])
+    opp_rows.append([f"O{oid:05d}", r.id_lead, r.produk_minat, entitas,
+                     nilai, "Won" if won else "Lost",
+                     tgl_buat.date(), tgl_close.date(), cycle])
 opportunities = pd.DataFrame(opp_rows, columns=[
-    "id_opportunity", "id_lead", "produk", "nilai_deal_jt",
+    "id_opportunity", "id_lead", "produk", "entitas", "nilai_deal_jt",
     "hasil", "tanggal_buat", "tanggal_close", "sales_cycle_hari"])
 
 # ------------------------------------------------------------------ #
@@ -163,6 +173,9 @@ MODUL = {
                           "Sales & Distribution", "Analytics"],
     "Add-on & Integrasi": ["Coretax", "Plant Maintenance", "POS Integration",
                             "WMS", "E-Commerce Link"],
+    "Business Insight": ["Dashboard & Reporting", "Mobile Analytics",
+                          "KPI Monitoring"],
+    "TSplus": ["Remote Access", "Advanced Security", "Server Farm"],
 }
 proyek_rows, pid = [], 0
 for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
@@ -173,7 +186,8 @@ for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
     modul = rng.choice(MODUL[o.produk])
     # durasi implementasi: B1 3-8 bln, S4HANA 6-14 bln, add-on 1-3 bln
     mu_dur = {"SAP Business One": 160, "SAP S/4HANA GROW": 300,
-              "Add-on & Integrasi": 60}[o.produk]
+              "Add-on & Integrasi": 60, "Business Insight": 45,
+              "TSplus": 15}[o.produk]
     dur_target = max(20, int(rng.normal(mu_dur, mu_dur * 0.18)))
     # ~38% proyek terlambat (masalah scope creep/data migrasi khas ERP)
     if rng.random() < 0.38:
@@ -196,14 +210,15 @@ for _, o in opportunities[opportunities.hasil == "Won"].iterrows():
               ("Go-live Tepat Waktu" if dur_aktual <= dur_target
                else "Go-live Terlambat"))
     proyek_rows.append([f"P{pid:05d}", o.id_opportunity, ld.industri,
-                        o.produk, modul, kons.iloc[0].id_konsultan,
+                        o.produk, o.entitas, modul, kons.iloc[0].id_konsultan,
                         tgl_mulai.date(), tgl_target.date(),
                         tgl_golive.date() if selesai else None,
                         dur_target, dur_aktual if selesai else None,
                         budget, aktual if selesai else budget,
                         status])
 proyek = pd.DataFrame(proyek_rows, columns=[
-    "id_proyek", "id_opportunity", "industri", "produk", "modul_utama",
+    "id_proyek", "id_opportunity", "industri", "produk", "entitas",
+    "modul_utama",
     "id_konsultan", "tanggal_mulai", "target_golive", "tanggal_golive",
     "durasi_target_hari", "durasi_aktual_hari", "budget_jt", "aktual_jt",
     "status_proyek"])

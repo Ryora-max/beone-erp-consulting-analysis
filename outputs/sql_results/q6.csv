@@ -1,17 +1,23 @@
 modul_utama,proyek,late_pct
-Financials,57,31.4
-Purchasing,55,34.7
-Production,52,31.1
-Sales,47,31.7
-Reporting,42,35.3
-Inventory,40,36.4
-POS Integration,14,50.0
-Manufacturing/MRP,14,62.5
-Analytics,13,30.0
-Sales & Distribution,10,33.3
-Plant Maintenance,10,11.1
-Finance,10,57.1
-WMS,8,37.5
-E-Commerce Link,8,37.5
-Coretax,7,57.1
-Procurement,6,0.0
+Purchasing,51,34.9
+Financials,51,38.1
+Production,46,34.9
+Reporting,40,48.6
+Sales,35,27.6
+Inventory,32,31.0
+WMS,15,42.9
+Advanced Security,14,42.9
+Remote Access,12,25.0
+Sales & Distribution,10,16.7
+Server Farm,9,33.3
+Plant Maintenance,9,50.0
+Finance,9,42.9
+Analytics,9,14.3
+POS Integration,8,50.0
+Manufacturing/MRP,8,16.7
+Coretax,7,28.6
+Procurement,6,75.0
+Mobile Analytics,5,50.0
+E-Commerce Link,5,20.0
+Dashboard & Reporting,4,25.0
+KPI Monitoring,3,0.0

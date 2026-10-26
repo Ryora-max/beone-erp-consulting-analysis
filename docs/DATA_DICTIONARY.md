@@ -17,6 +17,7 @@
 | id_opportunity | str PK | ID opportunity |
 | id_lead | str FK → leads | Lead sumber |
 | produk | str | Produk yang ditawarkan |
+| entitas | str | Entitas penjual: BeOne HQ / PT CORE (sister — hanya SAP B1, mulai 2024) |
 | nilai_deal_jt | float | Nilai kontrak (Rp juta) |
 | hasil | str | Won / Lost |
 | tanggal_buat / tanggal_close | date | Periode pipeline |

@@ -64,6 +64,15 @@ check("SLA konsisten dengan flag",
 check("status proyek valid",
       proyek["status_proyek"].isin(
           ["Go-live Tepat Waktu", "Go-live Terlambat", "On Progress"]).all())
+# entitas CORE baru beroperasi 2024+ dan hanya pegang SAP B1
+_e = opp.merge(leads[["id_lead", "tahun"]], on="id_lead")
+check("entitas valid",
+      opp["entitas"].isin(["BeOne HQ", "PT CORE (sister)"]).all())
+check("CORE hanya menangani SAP B1",
+      (_e.loc[_e.entitas == "PT CORE (sister)", "produk"]
+       == "SAP Business One").all())
+check("CORE belum ada sebelum 2024",
+      (_e.loc[_e.entitas == "PT CORE (sister)", "tahun"] >= 2024).all())
 
 gagal = [n for ok, n in hasil if not ok]
 for ok, n in hasil:

@@ -100,6 +100,17 @@ SELECT industri,
 FROM tiket
 GROUP BY industri ORDER BY tiket_per_proyek DESC;
 
+-- Q10b. Perbandingan entitas: BeOne HQ vs sister company PT CORE
+SELECT o.entitas,
+       COUNT(*)                                       AS opportunities,
+       ROUND(100.0*SUM(o.hasil='Won')/COUNT(*),1)     AS win_rate_pct,
+       ROUND(SUM(CASE WHEN o.hasil='Won'
+             THEN o.nilai_deal_jt END)/1000.0,1)      AS revenue_m,
+       COUNT(DISTINCT p.id_proyek)                    AS proyek
+FROM opportunities o
+LEFT JOIN proyek p ON p.id_opportunity = o.id_opportunity
+GROUP BY o.entitas;
+
 -- Q10. Tren bulanan pipeline & revenue won (12 bulan terakhir)
 SELECT strftime('%Y-%m', tanggal_close) AS bulan,
        COUNT(*) FILTER (WHERE hasil='Won')           AS won,

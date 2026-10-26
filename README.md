@@ -35,7 +35,7 @@ go-live → managed support**, dengan konteks perusahaan nyata
 | Tabel | Baris | Isi |
 |---|---|---|
 | `leads` | 2.900 | akuisisi: sumber, industri, kota, produk minat, status |
-| `opportunities` | 1.189 | pipeline: nilai deal, hasil, sales cycle |
+| `opportunities` | 1.189 | pipeline: produk, **entitas** (BeOne HQ vs sister company PT CORE), nilai deal, hasil, sales cycle |
 | `proyek` | 393 | delivery: jadwal vs aktual go-live, budget vs aktual |
 | `tiket` | 3.135 | support: kategori, prioritas, jam resolusi, SLA |
 | `konsultan` | 36 | dimensi tim: role, level |
