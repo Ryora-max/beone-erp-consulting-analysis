@@ -73,7 +73,17 @@ Fastest Growing Partner (2018) · Indonesia Partner of the Year (2018) · Strate
 
 ## 5. Analisis pola jaringan
 
-1. **Ekosistem bertingkat:** SAP (platform inti) → partner add-on (CompuTec, Pajak.io) → produk sendiri (BI, Ruby POS) → distribusi (TSplus) → akademi (Xpertise) → delivery arm (CORE). Ini arsitektur partner-typical perusahaan ERP matang.
-2. **CORE = strategi spin-off**: implementasi B1 dialihkan ke entitas terpisah sejak 2024 — kemungkinan untuk fokus BeOne di sales/cloud/produk + isolasi risiko delivery. Personel shared = transisi terkontrol.
-3. **Talent funnel berlapis:** kampus (magang D3/S1) → Xpertise Academy (sertifikasi) → CORE/BeOne (konsultan) — pipeline talenta internal yang cerdas untuk bisnis yang langka SDM SAP.
-4. **Gap:** tidak ada kantor cabang fisik di luar Jabodetabek; ekspansi lewat sales area + partner reseller. Klien terkonsentrasi Jabodetabek + nasional via remote delivery.
+### Profil kuantitatif
+- ~15 mitra terverifikasi ✅, ~5 klaim lemah, 5 kategori jaringan
+- Jangkar tunggal: SAP (platform inti seluruh revenue engine)
+
+### Temuan analitis
+1. **Ekosistem bertingkat = rantai nilai:** SAP (platform inti) → add-on (CompuTec, Pajak.io, KAMI) → own-IP (BI, Ruby POS) → distribusi (TSplus) → akademi (Xpertise) → delivery arm (CORE). Ini arsitektur platform-business, bukan sekadar daftar partner.
+2. **Kredibilitas terverifikasi pihak ketiga:** 7 penghargaan SAP resmi (2018–2023) adalah sinyal performa partner-level tinggi yang tidak bisa dipalsukan — pembeda kuat vs kompetitor seukuran.
+3. **CORE = strategi spin-off** 🔶: implementasi B1 dialihkan ke entitas terpisah sejak 2024 — kemungkinan untuk fokus BeOne di sales/cloud/produk + isolasi risiko delivery. Personel shared = transisi terkontrol (bukan konflik).
+4. **Talent funnel berlapis:** kampus → Xpertise Academy → CORE/BeOne — memecahkan kelangkaan SDM SAP secara internal, bukan bergantung pasar kerja.
+
+### Risiko & rekomendasi analis
+- **Risiko konsentrasi #1:** SAP adalah jangkar tunggal revenue engine — perubahan program partner SAP berdampak langsung ke seluruh bisnis. Diversifikasi ada (TSplus, cloud, own-IP) tapi masih lapis kedua.
+- **Risiko geografi:** tidak ada kantor cabang fisik di luar Jabodetabek; ekspansi bergantung sales area + remote delivery — scalable tapi lemah di relationship lokal.
+- **Peluang terbuka:** (a) kampus politeknik negeri (mis. wilayah Ciayumajakuning) untuk Xpertise Goes to Campus — pipeline SDM baru sekaligus branding; (b) memperkuat own-IP (BI/Ruby POS) sebagai buffer jika konsentrasi SAP jadi masalah.

@@ -48,24 +48,35 @@ Relasi: `leads → opportunities → proyek → tiket` + `konsultan → proyek`.
 pip install -r requirements.txt
 python src/generate_data.py     # generate CSV
 python src/db_setup.py          # load ke SQLite
-python src/validate_data.py     # 24 data-quality checks
+python src/validate_data.py     # 27 data-quality checks
 python src/run_sql_analysis.py  # 10 query -> outputs/sql_results/
 streamlit run dashboard/app.py  # dashboard
 ```
 
-## Temuan kunci (data sintetis)
+## Temuan kunci (fakta → implikasi)
 
-- **Referral & event menang 2-3× win rate** vs telemarketing — warm > cold.
-- **~35% proyek terlambat**; S/4HANA & modul integrasi paling berisiko.
-- **How-to/Training mendominasi tiket** → peluang recurring revenue
-  (paket training + knowledge base).
-- **Delay predictor (RF):** durasi target & level PIC paling menentukan —
-  screening risiko bisa dilakukan sejak kickoff.
+- **Referral & event menang 2-3× win rate** vs telemarketing → realokasi
+  budget: cold outreach menghasilkan volume lead tapi bukan deal;
+  warm channel adalah *revenue engine* sebenarnya.
+- **~35% proyek terlambat**; S/4HANA & modul integrasi paling berisiko →
+  delay bukan masalah coding melainkan *scope creep & kesiapan data
+  klien* → mitigasi: discovery phase lebih ketat di proyek integrasi.
+- **How-to/Training mendominasi tiket** → sinyal klasik under-training
+  saat handover → peluang *recurring revenue* (paket training +
+  knowledge base) sekaligus menekan beban support.
+- **Proyek terlambat → tiket pasca go-live lebih banyak** (cohort
+  delivery→support) → kualitas implementasi langsung menentukan
+  biaya operasional jangka panjang, bukan cuma reputasi delivery.
+- **Delay predictor (RF, AUC ~0.8):** risiko telat bisa diflag sejak
+  kickoff — durasi target & level PIC paling menentukan → alokasikan
+  PM senior ke proyek berisiko *sebelum* telat, bukan sesudah.
 
 ## Skill yang ditunjukkan
 
 Python · pandas/NumPy · SQL (JOIN multi-tabel, FILTER, CTE-style) ·
-data quality (24 checks) · EDA + storytelling · visualisasi
-(seaborn/Plotly) · dashboard Streamlit · machine learning
-(Random Forest, ROC-AUC) · business metrics B2B (win rate, sales cycle,
-pipeline value, SLA, on-time delivery, budget variance)
+data quality (27 checks) · EDA + storytelling · uji statistik
+(chi-square, ANOVA, effect size) · visualisasi (seaborn/Plotly) ·
+dashboard Streamlit · machine learning (Random Forest, ROC-AUC,
+threshold tuning) · business metrics B2B (win rate, sales cycle,
+pipeline value, SLA, on-time delivery, budget variance, cohort
+delivery→support)
