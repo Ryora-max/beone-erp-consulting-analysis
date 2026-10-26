@@ -61,4 +61,6 @@ realistis industri konsultan ERP UKM:
 - `docs/PROFIL_BEONE.md` — timeline legal 2012-2026, struktur grup
   (CORE, Xpertise Academy, Gooday Cloud, BMOlsson), partner vendor,
   klien terverifikasi, relasi kampus.
-- `docs/ANALISIS_KONEKSI.md` — analisis kemungkinan koneksi BeOne-POLINDRA.
+
+- `docs/MITRA_BEONE.md` — peta mitra eksternal: vendor (SAP, TSplus,
+  CompuTec, Pajak.io, Zettagrid), struktur grup, relasi kampus.
