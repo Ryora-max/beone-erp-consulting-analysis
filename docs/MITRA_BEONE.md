@@ -3,11 +3,17 @@
 > Analisis jaringan kerjasama PT Beone Optima Solusi (terverifikasi).
 > Untuk konteks dataset sintetis — bukan data resmi perusahaan.
 
+**Legenda level bukti:**
+✅ **VERIFIED** — sumber resmi (sap.com partner directory, beonesolution.com, mitra resmi)
+🟡 **CLAIMED** — klaim perusahaan/satu pihak tanpa konfirmasi silang
+🔶 **INFERRED** — dugaan kuat berbasis bukti tidak langsung
+❌ **UNVERIFIED** — sumber lemah/kontradiktif
+
 ## 1. Vendor & teknologi (revenue engine)
 
-| Partner | Status | Signifikansi bisnis |
+| Partner | Bukti | Signifikansi bisnis |
 |---|---|---|
-| **SAP** | ✅ Gold Partner (B1 + S/4HANA GROW) | Inti bisnis — implementasi ERP UKM-mid |
+| **SAP** | ✅ Gold Partner (B1 + S/4HANA GROW) — direktori resmi sap.com | Inti bisnis — implementasi ERP UKM-mid |
 | **TSplus** | ✅ Distributor resmi Indonesia + program reseller | Lini produk remote access — recurring |
 | **CompuTec/ProcessForce** | ✅ Partner directory + webinar produksi | Add-on manufaktur di atas SAP B1 |
 | **Pajak.io** | ✅ Kolaborasi CoreTax 2025 | Lini lokalisasi pajak (E-Faktur/Coretax) |
@@ -15,34 +21,55 @@
 | **KAMI Workforce** | ✅ Partner webinar | Add-on workforce/HR |
 | myECO | 🟡 dipasarkan di situs (kemungkinan reseller) | AIoT green building |
 | Microsoft | 🔶 jual M365/Power BI — tak ada bukti tier | Produk pelengkap |
+| Ruby POS, Automation Product | 🟡 terdaftar di portofolio (sumber: laporan magang UMN) | Lini produk non-SAP |
+
+### Penghargaan SAP (terverifikasi di sap.com)
+Fastest Growing Partner (2018) · Indonesia Partner of the Year (2018) · Strategic Partner of the Year (2019) · Intelligent Enterprise Industry Disruptor APJ (2019) · Digital Marketing Partner of the Year (2020) · Partner of the Year Cloud Indonesia (2020) · **Strategic Partner of the Year Indonesia (2023)**
+
+## 1b. Klien terdokumentasi (testimoni resmi)
+
+| Klien | Bukti | Konteks |
+|---|---|---|
+| PT Meprofarm | ✅ testimoni (Andi Djatmiko, Head of IT) | Farmasi — migrasi & integrasi data B1 |
+| PT Sumber Mega Jaya | ✅ testimoni (Djohan Halim, Direktur) | Implementasi sampai go-live + improvement "intelligent enterprise" |
+| PT Adyabina Putramas | ✅ testimoni | Integrasi payment B1 ↔ Mandiri/BCA |
+| JNE Express Tangerang | ✅ | Implementasi B1 |
+| Perusahaan farmasi & EO (33 cabang) | 🟡 testimoni anonim | Customization kompleks multi-cabang |
 
 ## 2. Struktur grup internal
 
-| Entitas | Peran | Relasi |
-|---|---|---|
-| PT Beone Optima Solusi | Induk — sales, implementasi, produk | — |
-| **PT Cipta Optima Ragam Era (CORE)** | Sister company (~Okt 2023) — implementasi & support SAP B1 | Komisaris = ex-Managing Partner BeOne; personel pindah BeOne→CORE |
-| **Xpertise Academy** | Unit training & sertifikasi SAP B1; "Goes to Campus" | Head of Academy = ex-Senior HRGA BeOne |
-| **Gooday Cloud** | Merek/alias lini cloud | Alamat & telp identik PT BOS |
-| BMOlsson Group | 🔶 kemungkinan induk awal (merek didaftarkan PT BMO Indonesia) | status saham tak terverifikasi |
+| Entitas | Bukti | Peran | Relasi |
+|---|---|---|---|
+| PT Beone Optima Solusi | ✅ | Induk — sales, implementasi, produk | — |
+| **PT Cipta Optima Ragam Era (CORE)** | ✅ (keberadaan) · 🔶 (status sister) | Sister company (~Okt 2023) — implementasi & support SAP B1 | Komisaris = ex-Managing Partner BeOne; personel pindah BeOne→CORE. **Kepemilikan saham tak terverifikasi publik** |
+| **Xpertise Academy** | ✅ | Unit training & sertifikasi SAP B1; "Goes to Campus" | Head of Academy = ex-Senior HRGA BeOne |
+| **Gooday Cloud** | ✅ (alias terverifikasi) | Merek/alias lini cloud | Alamat & telp identik PT BOS |
+| BMOlsson Group | 🔶 | Kemungkinan induk awal (merek didaftarkan PT Bo Michael Olsson Indonesia) | Status saham tak terverifikasi — **hipotesis, bukan fakta** |
+
+### Alamat (diverifikasi silang)
+- **Operasional saat ini** ✅: Greenlake City Ruko Food City No.07-08, Ketapang, Cipondoh, Kota Tangerang, Banten 15147 (beonesolution.com)
+- **Terdaftar di direktori SAP** ✅: Duri Kosambi, Cengkareng, Jakarta Barat — alamat awal/registered office
+- Rukan Crown Greenlake City — alamat lama (listing Google Maps, rating 4.5/59 review)
+- Cabang Bandung & Batam ❌ — hanya sumber ~2014, kemungkinan sudah tutup; jangan klaim kantor aktif
 
 ## 3. Relasi kampus (talent pipeline)
 
-| Kampus | Bentuk | Bukti |
-|---|---|---|
-| **UMN** | Pipeline magang sejak 2014 (3 laporan terdokumentasi) | kc.umn.ac.id |
-| **Esa Unggul** | Implementation of Arrangement + Praktisi Mengajar + kuliah tamu (Nov 2025) | kerjasama.esaunggul.ac.id |
-| Telkom U, UGM, Mercu Buana, UBM | Career center — lowongan intern SAP Support, HRGA, telemarketing | CDC masing-masing |
-| Polbeng, Tarumanagara | Xpertise Goes to Campus (khusus politeknik!) | LinkedIn Xpertise |
-| **MagangHub (Kemnaker)** | Rekrutmen intern via platform nasional | LinkedIn |
+| Kampus | Bukti | Bentuk | Sumber |
+|---|---|---|---|
+| **UMN** | ✅ | Pipeline magang sejak 2014 (beberapa laporan terdokumentasi — salah satunya memverifikasi "berdiri 2012" & portofolio produk) | kc.umn.ac.id |
+| **Esa Unggul** | ✅ | Implementation of Arrangement + Praktisi Mengajar + kuliah tamu (Nov 2025) | kerjasama.esaunggul.ac.id |
+| Telkom U, UGM, Mercu Buana, UBM | ✅ | Career center — lowongan intern SAP Support, HRGA, telemarketing | CDC masing-masing |
+| Polbeng, Tarumanagara | ✅ | Xpertise Goes to Campus (khusus politeknik!) | LinkedIn Xpertise |
+| **MagangHub (Kemnaker)** | ✅ | Rekrutmen intern via platform nasional | LinkedIn |
 
 ## 4. Channel sales & marketing
 
-- **Event**: Business Hacks 2022 (bareng SAP Indonesia, liputan 5 media nasional)
-- **Webinar series**: ProcessForce 2022, CoreTax 2024, Business Insight 2023, KAMI 2024
-- **Media**: Direktur Utama tampil di BeritaSatu Corporate Insight (Jul 2024)
-- **Area ekspansi**: Sales Area Jabar & Kalimantan (lowongan 2026) — model sales coverage, bukan kantor cabang
-- **Online**: MagangHub, Glints (kanal utama screening), Talenta, LinkedIn
+- **Event** ✅: Business Hacks 2022 (bareng SAP Indonesia, liputan 5 media nasional)
+- **Webinar series** ✅: ProcessForce 2022, CoreTax 2024, Business Insight 2023, KAMI 2024
+- **Media** ✅: Direktur Utama tampil di BeritaSatu Corporate Insight (Jul 2024)
+- **Area ekspansi** ✅: Sales Area Jabar & Kalimantan (lowongan 2026) — model sales coverage, bukan kantor cabang
+- **Layanan support** 🟡: klaim 14 jam/hari untuk pelanggan ERP se-Indonesia (situs resmi, tak terkonfirmasi independen)
+- **Online** ✅: MagangHub, Glints (kanal utama screening), Talenta, LinkedIn
 
 ## 5. Analisis pola jaringan
 

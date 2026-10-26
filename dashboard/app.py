@@ -16,59 +16,57 @@ from sklearn.model_selection import train_test_split
 st.set_page_config(page_title="BeOne ERP Analytics", page_icon="📊",
                    layout="wide", initial_sidebar_state="expanded")
 
-C_BLUE, C_CYAN, C_TEAL = "#3B82F6", "#06B6D4", "#14B8A6"
-C_GREEN, C_AMBER, C_ORANGE = "#22C55E", "#F59E0B", "#F97316"
-C_PINK, C_PURPLE, C_RED = "#EC4899", "#8B5CF6", "#EF4444"
-PALETTE = [C_BLUE, C_CYAN, C_GREEN, C_AMBER, C_PINK, C_PURPLE, C_ORANGE, C_TEAL]
-PRODUK_COLOR = {"SAP Business One": C_BLUE, "SAP S/4HANA GROW": C_PURPLE,
-                "Add-on & Integrasi": C_AMBER, "Business Insight": C_GREEN,
-                "TSplus": C_CYAN, "Training/Xpertise Academy": C_PINK}
+# ---- Clean minimal palette: satu aksen teal + netral ----
+# Warna hanya dipakai saat bermakna (merah=risiko, hijau=positif, amber=perhatian)
+C_BLUE, C_CYAN, C_TEAL = "#0F766E", "#0E7490", "#0F766E"
+C_GREEN, C_AMBER, C_ORANGE = "#16A34A", "#D97706", "#B45309"
+C_PINK, C_PURPLE, C_RED = "#B05A78", "#1E40AF", "#DC2626"
+PALETTE = ["#0F766E", "#94A3B8", "#64748B", "#475569",
+           "#1E40AF", "#A5B4C5", "#0E7490", "#CBD5E1"]
+PRODUK_COLOR = {"SAP Business One": "#1E40AF", "SAP S/4HANA GROW": "#0E7490",
+                "Add-on & Integrasi": "#64748B", "Business Insight": "#B05A78",
+                "TSplus": "#475569", "Training/Xpertise Academy": "#B45309"}
 
 st.markdown("""
 <style>
-    .block-container {padding-top:0;padding-bottom:2rem;max-width:1280px;}
-    [data-testid="stSidebar"] {
-        background:linear-gradient(180deg,#0C4A6E 0%,#155E75 55%,#134E4A 100%);}
-    [data-testid="stSidebar"] * {color:#EFFBFF !important;}
+    .block-container {padding-top:1.5rem;padding-bottom:2rem;max-width:1280px;}
+    [data-testid="stSidebar"] {background:#F8FAFC;}
+    [data-testid="stSidebar"] * {color:#334155 !important;}
     [data-testid="stSidebar"] .stMultiSelect label {font-weight:600;}
     .hero {
-        background:linear-gradient(115deg,#0369A1 0%,#0D9488 45%,#22C55E 110%);
-        border-radius:20px;padding:2.3rem 2.4rem 1.9rem;margin:1rem 0 1.5rem;
-        color:white;box-shadow:0 14px 34px rgba(13,148,136,.30);
-        position:relative;overflow:hidden;}
-    .hero::after {content:"";position:absolute;right:-70px;top:-70px;
-        width:230px;height:230px;border-radius:50%;background:rgba(255,255,255,.14);}
-    .hero::before {content:"";position:absolute;right:60px;bottom:-90px;
-        width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.10);}
-    .hero h1 {margin:0;font-size:2rem;font-weight:900;letter-spacing:.3px;}
-    .hero p  {margin:.55rem 0 0;font-size:1rem;opacity:.93;}
-    .kpi {border-radius:16px;padding:1.1rem 1.2rem 1rem;height:100%;color:white;
-        box-shadow:0 6px 18px rgba(22,32,46,.12);position:relative;overflow:hidden;}
-    .kpi::after {content:"";position:absolute;right:-30px;top:-30px;
-        width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.18);}
-    .kpi .label {font-size:.76rem;font-weight:700;opacity:.92;
-        text-transform:uppercase;letter-spacing:.7px;}
-    .kpi .value {font-size:1.8rem;font-weight:900;line-height:1.15;}
-    .kpi .sub   {font-size:.8rem;opacity:.88;margin-top:.15rem;}
-    .sec-pill {display:inline-block;font-size:1.05rem;font-weight:800;
-        color:#16202E;margin:.5rem 0 .3rem;padding:.15rem .8rem .15rem 0;}
-    .sec-pill::before {content:"●";margin-right:.45rem;font-size:.9rem;}
-    .insight {border-radius:0 12px 12px 0;padding:.8rem 1rem;font-size:.88rem;
-        margin:.6rem 0;}
-    .insight.blue  {background:#EAF2FF;border-left:4px solid #3B82F6;color:#274C8E;}
-    .insight.green {background:#E9F9F0;border-left:4px solid #22C55E;color:#166534;}
-    .insight.amber {background:#FFF6E5;border-left:4px solid #F59E0B;color:#92580A;}
-    .insight b {font-weight:800;}
-    .stTabs [data-baseweb="tab-list"] {gap:.45rem;}
-    .stTabs [data-baseweb="tab"] {background:#ECECF6;border-radius:10px 10px 0 0;
-        padding:.45rem 1.1rem;font-weight:700;color:#5A5F7E;}
-    .stTabs [aria-selected="true"] {
-        background:linear-gradient(120deg,#0D9488,#0369A1) !important;
-        color:white !important;}
-    [data-testid="stExpander"] {background:#FFF;border-radius:12px;
-        border:1px solid #E6E8F2;}
-    [data-testid="stDataFrame"] {border-radius:12px;overflow:hidden;
-        border:1px solid #E6E8F2;}
+        background:#FFFFFF;border:1px solid #E5E7EB;
+        border-left:5px solid #0F766E;border-radius:12px;
+        padding:1.4rem 1.6rem;margin:0 0 1.4rem;color:#1F2937;}
+    .hero h1 {margin:0;font-size:1.55rem;font-weight:800;letter-spacing:.2px;}
+    .hero p  {margin:.35rem 0 0;font-size:.95rem;color:#64748B;}
+    .kpi {background:#FFFFFF;border:1px solid #E5E7EB;
+        border-top:3px solid #0F766E;border-radius:10px;
+        padding:1rem 1.1rem .9rem;height:100%;}
+    .kpi .label {font-size:.74rem;font-weight:700;color:#64748B;
+        text-transform:uppercase;letter-spacing:.6px;}
+    .kpi .value {font-size:1.7rem;font-weight:800;color:#111827;line-height:1.15;}
+    .kpi .sub   {font-size:.78rem;color:#94A3B8;margin-top:.15rem;}
+    .sec-pill {display:inline-block;font-size:1.02rem;font-weight:800;
+        color:#1F2937;margin:.6rem 0 .3rem;
+        padding-bottom:.2rem;border-bottom:2px solid #E5E7EB;}
+    .sec-pill::before {content:"●";margin-right:.45rem;font-size:.85rem;}
+    .insight {border-radius:0 10px 10px 0;padding:.8rem 1rem;font-size:.88rem;
+        margin:.6rem 0;background:#F8FAFC;border:1px solid #E5E7EB;
+        border-left:3px solid;color:#334155;}
+    .insight.blue  {border-left-color:#0F766E;}
+    .insight.green {border-left-color:#16A34A;}
+    .insight.amber {border-left-color:#D97706;}
+    .insight b {color:#111827;font-weight:700;}
+    .stTabs [data-baseweb="tab-list"] {gap:.4rem;border-bottom:1px solid #E5E7EB;}
+    .stTabs [data-baseweb="tab"] {background:transparent;
+        padding:.45rem .9rem;font-weight:600;color:#64748B;
+        border-bottom:2px solid transparent;}
+    .stTabs [aria-selected="true"] {background:transparent !important;
+        color:#0F766E !important;border-bottom:2px solid #0F766E !important;}
+    [data-testid="stExpander"] {background:#FFF;border-radius:10px;
+        border:1px solid #E5E7EB;}
+    [data-testid="stDataFrame"] {border-radius:10px;overflow:hidden;
+        border:1px solid #E5E7EB;}
 </style>
 """, unsafe_allow_html=True)
 
@@ -90,16 +88,16 @@ def miliar(x):
     return f"Rp{x/1000:.1f} M".replace(".", ",")
 
 BASE_LAYOUT = dict(
-    font=dict(family="Inter, Segoe UI, sans-serif", size=13, color="#16202E"),
+    font=dict(family="Inter, Segoe UI, sans-serif", size=13, color="#1F2937"),
     paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
     margin=dict(l=10, r=10, t=46, b=10),
-    title=dict(font=dict(size=15, color="#16202E")),
+    title=dict(font=dict(size=15, color="#1F2937")),
     colorway=PALETTE)
 
 def polish(fig, **kw):
     fig.update_layout(**{**BASE_LAYOUT, **kw})
     fig.update_xaxes(showgrid=False, zeroline=False, automargin=True)
-    fig.update_yaxes(gridcolor="#ECECF6", zeroline=False, automargin=True,
+    fig.update_yaxes(gridcolor="#EEF2F6", zeroline=False, automargin=True,
                      title_standoff=10)
     fig.update_traces(cliponaxis=False, selector=dict(type="bar"))
     fig.update_layout(uniformtext_minsize=9, uniformtext_mode="hide")
@@ -174,24 +172,17 @@ on_time = (100 * (pj_done["status_proyek"] == "Go-live Tepat Waktu").mean()
            if len(pj_done) else 0)
 sla_pct = 100 * tk["sla_tercapai"].mean() if len(tk) else 0
 
-GRAD = {
-    "blue":   "linear-gradient(135deg,#3B82F6 0%,#2563EB 100%)",
-    "teal":   "linear-gradient(135deg,#14B8A6 0%,#0D9488 100%)",
-    "amber":  "linear-gradient(135deg,#F59E0B 0%,#F97316 100%)",
-    "purple": "linear-gradient(135deg,#8B5CF6 0%,#7C3AED 100%)",
-    "pink":   "linear-gradient(135deg,#EC4899 0%,#EF4444 120%)",
-}
 kpis = [
-    ("🧲 Total Leads", titik(n_lead), f"{len(th_pilih)} tahun", GRAD["blue"]),
-    ("💼 Pipeline Value", miliar(pipeline_jt), f"{titik(n_opp)} opportunity", GRAD["teal"]),
-    ("🏆 Win Rate", f"{100*n_won/max(n_opp,1):.1f}%".replace(".", ","),
-     f"{miliar(won_jt)} revenue won", GRAD["amber"]),
-    ("🚀 On-time Go-live", f"{on_time:.0f}%", f"{len(pj_done)} proyek selesai", GRAD["purple"]),
-    ("⏱️ SLA Support", f"{sla_pct:.0f}%", f"{titik(len(tk))} tiket", GRAD["pink"]),
+    ("Total Leads", titik(n_lead), f"{len(th_pilih)} tahun"),
+    ("Pipeline Value", miliar(pipeline_jt), f"{titik(n_opp)} opportunity"),
+    ("Win Rate", f"{100*n_won/max(n_opp,1):.1f}%".replace(".", ","),
+     f"{miliar(won_jt)} revenue won"),
+    ("On-time Go-live", f"{on_time:.0f}%", f"{len(pj_done)} proyek selesai"),
+    ("SLA Support", f"{sla_pct:.0f}%", f"{titik(len(tk))} tiket"),
 ]
-for col, (label, val, sub, grad) in zip(st.columns(5), kpis):
+for col, (label, val, sub) in zip(st.columns(5), kpis):
     col.markdown(f"""
-    <div class="kpi" style="background:{grad}">
+    <div class="kpi">
         <div class="label">{label}</div>
         <div class="value">{val}</div>
         <div class="sub">{sub}</div>
@@ -249,8 +240,8 @@ with tab1:
             y=["Leads", "Opportunity", "Won", "Proyek Jalan"],
             x=[n_lead, n_opp, n_won, n_pj],
             textinfo="value+percent initial",
-            marker=dict(color=[C_BLUE, C_CYAN, C_GREEN, C_AMBER]),
-            connector=dict(line=dict(color="#D6D8F0", width=2))))
+            marker=dict(color=["#134E4A", "#0F766E", "#14B8A6", "#99F6E4"]),
+            connector=dict(line=dict(color="#E5E7EB", width=2))))
         polish(fig)
         chart(fig)
 
@@ -267,15 +258,15 @@ with tab1:
         polish(fig, showlegend=False, xaxis_title="Win rate %")
         chart(fig)
 
-    sec("�", "Revenue won per entitas (struktur grup)", C_PINK)
+    sec("🏢", "Revenue won per entitas (struktur grup)", C_PURPLE)
     ent = (op[op.hasil == "Won"]
            .join(ld.set_index("id_lead")["tahun"], on="id_lead")
            .groupby(["tahun", "entitas"])["nilai_deal_jt"].sum()
            .reset_index())
     fig = px.bar(ent, x="tahun", y="nilai_deal_jt", color="entitas",
                  barmode="stack",
-                 color_discrete_map={"BeOne HQ": C_BLUE,
-                                     "PT CORE (sister)": C_PINK},
+                 color_discrete_map={"BeOne HQ": "#0F766E",
+                                     "PT CORE (sister)": "#B05A78"},
                  labels={"nilai_deal_jt": "Revenue (Rp jt)", "tahun": "",
                          "entitas": ""})
     polish(fig, legend=dict(orientation="h", y=1.14))
@@ -283,11 +274,11 @@ with tab1:
     st.caption("PT CORE = sister company yang berdiri ~2023 dan mengambil "
                "alih sebagian implementasi SAP B1 sejak 2024.")
 
-    sec("�🏭", "Pipeline per industri × produk", C_ORANGE)
+    sec("🏭", "Pipeline per industri × produk", C_ORANGE)
     heat = (op.join(ld.set_index("id_lead")["industri"], on="id_lead")
             .groupby(["industri", "produk"])["nilai_deal_jt"].sum()
             .unstack(fill_value=0))
-    fig = px.imshow(heat, aspect="auto", color_continuous_scale="Turbo",
+    fig = px.imshow(heat, aspect="auto", color_continuous_scale="Teal",
                     text_auto=True,
                     labels=dict(x="", y="", color="Rp jt"))
     polish(fig)
@@ -384,7 +375,7 @@ with tab2:
                    late=lambda s: 100 * (s == "Go-live Terlambat").mean())
               .query("n >= 8").sort_values("late").reset_index())
         fig = px.bar(md, x="late", y="modul_utama", orientation="h",
-                     color="late", color_continuous_scale="Sunset",
+                     color="late", color_continuous_scale="Reds",
                      text=md["late"].map("{:.0f}%".format),
                      labels={"late": "% terlambat", "modul_utama": ""})
         fig.update_traces(textposition="outside")
@@ -429,8 +420,8 @@ with tab3:
         sa["prioritas"] = pd.Categorical(sa["prioritas"], order_p, True)
         sa = sa.sort_values("prioritas")
         fig = px.bar(sa, x="prioritas", y="pct", color="prioritas",
-                     color_discrete_map={"Critical": C_RED, "High": C_ORANGE,
-                                         "Medium": C_AMBER, "Low": C_GREEN},
+                     color_discrete_map={"Critical": "#DC2626", "High": "#B45309",
+                                         "Medium": "#D97706", "Low": "#64748B"},
                      text=sa["pct"].map("{:.0f}%".format),
                      labels={"pct": "% SLA tercapai", "prioritas": ""})
         fig.update_traces(textposition="outside")
@@ -450,8 +441,8 @@ with tab3:
     with c2:
         sec("⚡", "Distribusi waktu resolusi (jam)", C_PURPLE)
         fig = px.box(tk, x="prioritas", y="jam_resolusi", color="prioritas",
-                     color_discrete_map={"Critical": C_RED, "High": C_ORANGE,
-                                         "Medium": C_AMBER, "Low": C_GREEN},
+                     color_discrete_map={"Critical": "#DC2626", "High": "#B45309",
+                                         "Medium": "#D97706", "Low": "#64748B"},
                      labels={"jam_resolusi": "Jam resolusi",
                              "prioritas": ""},
                      category_orders={"prioritas": order_p})
@@ -466,7 +457,7 @@ with tab3:
               .assign(tpp=lambda d: d["tiket"] / d["proyek"])
               .sort_values("tpp").reset_index())
         fig = px.bar(tb, x="tpp", y="industri", orientation="h",
-                     color="tpp", color_continuous_scale="Emrld",
+                     color="tpp", color_continuous_scale="Teal",
                      text=tb["tpp"].map("{:.1f}".format),
                      labels={"tpp": "Tiket per proyek", "industri": ""})
         fig.update_traces(textposition="outside")
@@ -479,8 +470,8 @@ with tab3:
            .merge(pj_done2[["id_proyek", "status_proyek"]], on="id_proyek"))
     if len(coh):
         fig = px.box(coh, x="status_proyek", y="n_tiket", color="status_proyek",
-                     color_discrete_map={"Go-live Tepat Waktu": C_GREEN,
-                                         "Go-live Terlambat": C_RED},
+                     color_discrete_map={"Go-live Tepat Waktu": "#16A34A",
+                                         "Go-live Terlambat": "#DC2626"},
                      points="outliers",
                      labels={"n_tiket": "Tiket pasca go-live",
                              "status_proyek": ""})
@@ -529,8 +520,8 @@ with tab4:
         perf["dev_pct"] = 100 * (perf["dev"] - perf["budget"]) / perf["budget"]
         fig = px.scatter(perf, x="proyek", y="on_time", size="proyek",
                          color="level", hover_name="id_konsultan",
-                         color_discrete_map={"Senior": C_GREEN, "Mid": C_BLUE,
-                                             "Junior": C_AMBER},
+                         color_discrete_map={"Senior": "#1E40AF", "Mid": "#0F766E",
+                                             "Junior": "#94A3B8"},
                          labels={"proyek": "Proyek ditangani",
                                  "on_time": "% tepat waktu", "level": ""})
         polish(fig, legend=dict(orientation="h", y=1.14))
@@ -542,8 +533,8 @@ with tab4:
         sec("🧭", "Komposisi tim per role & level", C_TEAL)
         komp = konsultan.groupby(["role", "level"]).size().reset_index(name="n")
         fig = px.bar(komp, x="role", y="n", color="level", barmode="stack",
-                     color_discrete_map={"Senior": C_GREEN, "Mid": C_BLUE,
-                                         "Junior": C_AMBER},
+                     color_discrete_map={"Senior": "#1E40AF", "Mid": "#0F766E",
+                                         "Junior": "#94A3B8"},
                      labels={"n": "Orang", "role": "", "level": ""})
         polish(fig, legend=dict(orientation="h", y=1.15))
         chart(fig)
@@ -618,7 +609,7 @@ with tab5:
             fig.add_trace(go.Scatter(
                 x=pd.concat([fut["tahun"], fut["tahun"][::-1]]),
                 y=pd.concat([fut["hi"], fut["lo"][::-1]]),
-                fill="toself", fillcolor="rgba(139,92,246,.15)",
+                fill="toself", fillcolor="rgba(15,118,110,.12)",
                 line=dict(width=0), name="Interval 90%", hoverinfo="skip"))
             fig.add_trace(go.Scatter(x=fut["tahun"], y=fut["pred"],
                                      mode="lines+markers", name="Proyeksi",
@@ -636,7 +627,7 @@ with tab5:
         sec("🤖", "Prediktor keterlambatan proyek (Random Forest)", C_RED)
         auc, imp, y_true, y_prob = train_delay_model()
         fig = px.bar(imp, x="penting", y="fitur", orientation="h",
-                     color="penting", color_continuous_scale="Sunset",
+                     color="penting", color_continuous_scale="Teal",
                      text=imp["penting"].map("{:.2f}".format),
                      labels={"fitur": "", "penting": "Feature importance"})
         fig.update_traces(textposition="outside")
