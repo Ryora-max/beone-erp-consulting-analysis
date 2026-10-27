@@ -1,5 +1,11 @@
 # ERP Consulting Performance Analytics — PT Beone Optima Solusi
 
+![Python](https://img.shields.io/badge/Python-3.12-0F766E)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B)
+![pandas](https://img.shields.io/badge/pandas-EDA-150458)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-Modeling-F7931E)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 Portofolio Data Analyst: analisis end-to-end bisnis konsultan ERP B2B —
 dari **lead generation → sales pipeline → delivery implementasi →
 go-live → managed support**, dengan konteks perusahaan nyata
