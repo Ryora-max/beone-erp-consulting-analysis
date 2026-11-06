@@ -46,7 +46,7 @@ satu split) agar angka tidak ditentukan oleh keberuntungan pembagian data.
 - **Data:** 2.900 leads + 1.221 opportunities + 389 proyek + 3.397 tiket
   + 36 konsultan (5 tabel relasional, SQLite). Generator ber-seed dan
   **terbukti reprodusibel** (hash CSV identik antar-run).
-- **Analisis:** funnel & cohort deskriptif, SQL multi-join (11 query),
+- **Analisis:** funnel & cohort deskriptif, SQL multi-join (15 query),
   uji inferensial (χ², Welch t, ANOVA, Mann-Whitney, logit OR), Random
   Forest dengan CV, forecast OLS.
 - **Validasi:** 27 data-quality checks lolos; notebook ter-execute 0 error.

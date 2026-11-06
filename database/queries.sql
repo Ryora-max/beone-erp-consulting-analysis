@@ -118,3 +118,43 @@ SELECT strftime('%Y-%m', tanggal_close) AS bulan,
              THEN nilai_deal_jt END)/1000.0,2)       AS revenue_m
 FROM opportunities
 GROUP BY bulan ORDER BY bulan;
+
+-- Q11. Kinerja per level konsultan: on-time & deviasi (JOIN konsultan->proyek)
+SELECT k.level,
+       COUNT(DISTINCT p.id_proyek) AS n_proyek,
+       ROUND(100.0 * SUM(p.status_proyek = 'Go-live Tepat Waktu')
+             / COUNT(*), 1) AS pct_tepat,
+       ROUND(AVG(100.0 * (p.aktual_jt - p.budget_jt) / p.budget_jt), 1)
+             AS avg_deviasi_pct
+FROM proyek p
+JOIN konsultan k ON k.id_konsultan = p.id_konsultan
+WHERE p.tanggal_golive IS NOT NULL
+GROUP BY k.level
+ORDER BY pct_tepat DESC;
+
+-- Q12. Profil tiket: kategori x prioritas — jumlah & rata-rata jam resolusi
+SELECT kategori, prioritas,
+       COUNT(*) AS n_tiket,
+       ROUND(AVG(jam_resolusi), 1) AS avg_jam,
+       ROUND(100.0 * SUM(sla_tercapai) / COUNT(*), 1) AS pct_sla
+FROM tiket
+GROUP BY kategori, prioritas
+ORDER BY kategori, prioritas;
+
+-- Q13. Sales cycle: deal Won vs Lost per produk — lama negosiasi yang kalah
+SELECT produk, hasil,
+       COUNT(*) AS n_deal,
+       ROUND(AVG(sales_cycle_hari), 0) AS avg_cycle_hari,
+       ROUND(AVG(nilai_deal_jt), 0) AS avg_deal_jt
+FROM opportunities
+WHERE hasil IN ('Won', 'Lost')
+GROUP BY produk, hasil
+ORDER BY produk, hasil DESC;
+
+-- Q14. Pipeline health: komposisi status lead — berapa yang macet?
+SELECT status_lead,
+       COUNT(*) AS n_lead,
+       ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM leads), 1) AS persen
+FROM leads
+GROUP BY status_lead
+ORDER BY n_lead DESC;

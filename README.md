@@ -28,7 +28,7 @@ go-live → managed support**, dengan konteks perusahaan nyata
 
 ```
 ├── data/raw/              5 tabel relasional (CSV)
-├── database/              beone.db (SQLite) + queries.sql (10 query)
+├── database/              beone.db (SQLite) + queries.sql (15 query)
 ├── notebooks/             EDA ter-execute (0 error)
 ├── dashboard/app.py       Streamlit 5 tab interaktif
 ├── src/                   generator, db setup, SQL runner, validator, notebook gen
